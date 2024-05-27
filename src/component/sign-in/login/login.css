@@ -1,0 +1,108 @@
+.login {
+	border-radius: 0px 10px 10px 0px;
+}
+.login h1 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: var(--primary-black);
+	margin-bottom: 25px;
+}
+.login-p {
+	/* display: flex; */
+	/* width: 100%; */
+	font-size: 1.1rem;
+	font-weight: 500;
+	/* background: darkblue; */
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+.login-p span {
+	color: var(--primary-green);
+}
+
+.login-p span:nth-child(2) {
+	color: var(--orange-color);
+}
+.login-p span:nth-child(2):hover {
+	color: var(--orange-color-hover);
+}
+.login-p span:nth-child(3) {
+	color: var(--primary-black);
+}
+.login-form {
+	margin-top: 40px;
+}
+.login-form input {
+	width: 100%;
+	padding: 14px 25px;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid var(--primary-green);
+	background: transparent;
+	font-size: 1rem;
+	font-weight: 600;
+	color: var(--primary-green);
+}
+.login-form input::placeholder {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--primary-green);
+}
+.login-username {
+	margin-bottom: 30px;
+}
+.login-form p {
+	margin-top: 15px;
+	font-size: 14px;
+	font-weight: normal;
+	color: var(--primary-green);
+	text-align: right;
+}
+.login-form p a {
+	text-decoration: none;
+	color: var(--orange-color);
+}
+.login-form p a:hover {
+	color: var(--orange-color-hover);
+	/* transition: 0.3s ease-in-out; */
+}
+
+.login-form button {
+	border-radius: 8px;
+	background: var(--primary-green);
+	color: var(--white);
+	padding: 13px 40px;
+	border: none;
+	outline: none;
+	margin-top: 40px;
+	cursor: pointer;
+}
+.login-form button:hover {
+	background: var(--primary-green-hover);
+	transition: 0.3s ease-in-out;
+}
+.alternative-login {
+	margin-top: 27px;
+	border-top: 1px solid #d5e2de;
+}
+.alternative-login p {
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--primary-green);
+	margin-top: 9px;
+	text-align: center;
+}
+.alternative-login-icon {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.alternative-login-icon-div {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+.alternative-login-icon-div svg {
+	height: 30px;
+	width: 30px;
+}

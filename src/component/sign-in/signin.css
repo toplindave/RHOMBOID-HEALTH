@@ -1,0 +1,70 @@
+.sign-in {
+	height: 90vh;
+	width: 100%;
+	background: var(--greyish);
+	padding: 4% 10%;
+}
+.signin-details-container {
+	background: var(--greyish);
+	/* background: green; */
+	width: 100%;
+	height: 100%;
+	box-shadow: var(--shadow);
+	border-radius: 10px;
+	display: flex;
+}
+.signin-details {
+	width: 68%;
+	/* background: darkblue; */
+	height: 100%;
+	border-radius: 10px 0px 0px 10px;
+}
+.login-container {
+	width: 32%;
+	background: var(--white);
+	height: 100%;
+	border-radius: 0px 10px 10px 0px;
+	padding: 15px 25px;
+}
+.signin-details {
+	display: grid;
+	grid-template-columns: auto auto;
+	/* gap: 40px; */
+	padding: 40px 30px;
+}
+.card {
+	display: flex;
+	width: 100%;
+	/* background: goldenrod; */
+	justify-content: space-between;
+}
+.details-card-icon {
+	width: auto;
+	height: 40px;
+	/* background-color: aquamarine; */
+}
+.details-card-icon svg {
+	width: 40px;
+	height: 40px;
+	fill: var(--primary-green);
+}
+
+.card:nth-child(5) .details-card-icon svg {
+	fill: var(--orange-color);
+}
+.details-card-texts {
+	width: 87%;
+}
+.details-card-texts h2 {
+	font-size: 1.3rem;
+	font-weight: 600;
+	width: 80%;
+	color: var(--secondary-green);
+}
+.details-card-texts p {
+	font-size: 14px;
+	font-weight: normal;
+	color: var(--secondary-black);
+	width: 82%;
+	margin-top: 5px;
+}

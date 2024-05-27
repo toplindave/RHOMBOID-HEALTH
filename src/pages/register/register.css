@@ -1,0 +1,293 @@
+.register {
+	height: 90vh;
+	width: 100%;
+	background: var(--greyish);
+	padding: 8% 23% 4% 23%;
+}
+.register-container {
+	width: 100%;
+	height: 100%;
+	background: var(--greyish);
+	box-shadow: var(--shadow);
+	border-radius: 10px;
+	display: flex;
+}
+.welcome {
+	background: var(--white);
+	width: 100%;
+	height: 100%;
+	box-shadow: var(--shadow);
+	border-radius: 8px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.welcome h1 {
+	font-size: 32px;
+	font-weight: bold;
+	color: var(--secondary-green);
+}
+.welcome p {
+	font-size: 18px;
+	color: var(--primary-black);
+	margin-top: 15px;
+}
+.register-container-left {
+	height: 100%;
+	width: 38%;
+	border-radius: 10px 0px 0px 10px;
+}
+.circle-container {
+	position: relative;
+	height: 50%;
+	overflow: hidden;
+	border-radius: 10px 0px 0px 10px;
+}
+.circle {
+	width: 440px;
+	height: 360px;
+	border-radius: 50%;
+	position: absolute;
+	top: -75px;
+	left: -40px;
+	background-image: url("./doctor.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.circle-text {
+	padding: 15% 16%;
+}
+.circle-text p {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--secondary-green);
+	text-align: center;
+}
+.register-container-right {
+	background: var(--white);
+	height: 100%;
+	width: 62%;
+	border-radius: 0px 10px 10px 0px;
+	padding: 2% 3%;
+}
+.index-num {
+	text-align: right;
+	color: var(--orange-color);
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.register-container-right h2 {
+	color: var(--primary-black);
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+.register-container-right p {
+	color: var(--primary-black);
+	font-size: 1rem;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+.register-container-right form input {
+	width: 100%;
+	padding: 3%;
+	border-radius: 8px;
+	border: 1px solid var(--primary-green);
+	outline: none;
+	margin-bottom: 100px;
+	color: var(--primary-green);
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.register-container-right form input::placeholder {
+	font-size: 14px;
+	font-weight: 500;
+	color: var(--primary-green);
+}
+.email-register-button {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+}
+.email-register-button button {
+	padding: 2% 4%;
+	outline: none;
+	background: var(--primary-green);
+	border-radius: 8px;
+	border: none;
+	color: var(--white);
+	font-size: 14px;
+	font-weight: bold;
+}
+.alternative-login {
+	margin-top: 27px;
+	border-top: 1px solid #d5e2de;
+}
+.alternative-login p {
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--primary-green);
+	margin-top: 9px;
+	text-align: center;
+}
+.alternative-login-icon {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.alternative-login-icon-div {
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+.alternative-login-icon-div svg {
+	height: 30px;
+	width: 30px;
+}
+
+/* register name */
+#reg-input {
+	margin-bottom: 20px;
+}
+.phone-num {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+}
+.country-code {
+	width: 18%;
+}
+#code {
+	margin-bottom: 0;
+	height: 100%;
+}
+.number {
+	width: 80%;
+}
+.name-register-button {
+	display: flex;
+	justify-content: end;
+}
+.prev-btn,
+.next-btn {
+	padding: 5% 5%;
+	background: var(--primary-green);
+	border-radius: 8px;
+	outline: none;
+	cursor: pointer;
+}
+.prev-btn {
+	width: 55%;
+	color: var(--primary-green);
+	font-size: 14px;
+	font-weight: bold;
+	border: 1px solid var(--primary-green);
+	background: none;
+}
+.next-btn {
+	width: 35%;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--white);
+	border: none;
+}
+/* register address */
+
+.country-selection {
+	display: flex;
+	justify-content: space-between;
+}
+#country-input,
+#state-input {
+	width: 48%;
+	margin-bottom: 20px;
+}
+#add-ress {
+	margin-bottom: 20px;
+}
+.terms {
+	text-decoration: none;
+	color: var(--primary-black);
+	font-weight: 500;
+	font-size: 14px;
+}
+.terms span {
+	color: var(--orange-color);
+}
+.reg-add {
+	margin-top: 45px;
+}
+.prevv {
+	width: 50%;
+}
+.sub-btn {
+	width: 45%;
+}
+/* verify-number */
+
+#verifyNumb {
+	width: 60%;
+	margin-bottom: 0px;
+}
+.verif-con {
+	display: flex;
+	justify-content: end;
+}
+.send-code-btn {
+	background: var(--primary-green);
+	color: var(--white);
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2% 4%;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	margin-top: 226px;
+}
+/* verify-code */
+
+.verf-code {
+	text-align: center;
+}
+.veri-h4 {
+	text-align: center;
+	font-size: 14px;
+	font-weight: bold;
+	color: var(--primary-black);
+	margin-bottom: 17px;
+}
+#verifyCodee {
+	width: 40%;
+	background: none;
+	margin-bottom: 0px;
+}
+.confirm-code-btn {
+	padding: 2% 6%;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	background: var(--primary-green);
+	color: var(--white);
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.code-not-recieved {
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--primary-black);
+	margin-top: 17px;
+}
+.resend-code {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--orange-color);
+	margin-top: 11px;
+}
