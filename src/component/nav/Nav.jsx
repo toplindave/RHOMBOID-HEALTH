@@ -7,9 +7,9 @@ function Nav() {
 			<div className="logo">
 				<h1>RHOMBOID HEALTH</h1>
 			</div>
-			<div className="nav-button-container">
-				<button>Request for Ambulance</button>
-			</div>
+			{/* <div className="nav-button-container"> */}
+			<button className="nav-button">Request for Ambulance</button>
+			{/* </div> */}
 		</div>
 	);
 }

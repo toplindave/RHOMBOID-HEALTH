@@ -13,6 +13,10 @@
 	--secondary-black: #707070;
 	font-family: "Montserrat", sans-serif;
 	--shadow: 0px 3px 6px #d5d9e2;
+	/* background: var(--greyish); */
+}
+body {
+	background: var(--greyish);
 }
 button {
 	cursor: pointer;

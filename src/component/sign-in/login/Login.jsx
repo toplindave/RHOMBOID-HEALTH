@@ -1,5 +1,6 @@
 import React from "react";
 import "./login.css";
+import "./login-media.css";
 import { Link } from "react-router-dom";
 import { ReactComponent as Apple } from "./apple.svg";
 import { ReactComponent as Facebook } from "./facebook.svg";
@@ -34,7 +35,7 @@ function Login() {
 			</form>
 
 			<div className="alternative-login">
-				<p>Or Login with</p>
+				<p className="alternative-login-p">Or Login with</p>
 				<div className="alternative-login-icon">
 					<div className="alternative-login-icon-div">
 						<Link>

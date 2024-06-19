@@ -1,13 +1,17 @@
 import React from "react";
 import "./register.css";
+import "./register-media.css";
 
+import Doctor from "./doctor.jpg";
 function VerifyCode({ nextStep }) {
 	return (
 		<div className="register">
 			<div className="register-container">
 				<div className="register-container-left">
 					<div className="circle-container">
-						<div className="circle"></div>
+						<div className="circle">
+							<img src={Doctor} alt="doctor" className="cicle-img" />
+						</div>
 					</div>
 					<div className="circle-text">
 						<p>Welcome to Rhomboid Health</p>
@@ -15,8 +19,12 @@ function VerifyCode({ nextStep }) {
 				</div>
 				<div className="register-container-right">
 					<div className="index-num"></div>
-					<h2>Verify Phone Number</h2>
-					<p>We've sent a security code to +2348035765411</p>
+					<h2 className="register-container-right-sub-header">
+						Verify Phone Number
+					</h2>
+					<p className="register-container-right-text">
+						We've sent a security code to +2348035765411
+					</p>
 
 					<h4 className="veri-h4">Enter your code below to continue</h4>
 

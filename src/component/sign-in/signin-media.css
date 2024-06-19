@@ -1,0 +1,56 @@
+@media screen and (max-width: 1076px) and (min-width: 860px) {
+	.sign-in {
+		padding: 7% 6%;
+		display: flex;
+		justify-content: center;
+	}
+	.signin-details {
+		width: 66%;
+	}
+	.login-container {
+		width: 34%;
+	}
+
+	.card {
+		width: 50%;
+	}
+	.details-card-icon {
+		width: 12%;
+	}
+	.details-card-icon svg {
+		width: 30px;
+		height: 30px;
+	}
+	.details-card-texts {
+		width: 88%;
+	}
+	.details-card-texts h2 {
+		font-size: 0.9rem;
+	}
+	.details-card-texts p {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 859px) {
+	.sign-in {
+		padding: 15% 4%;
+		height: auto;
+		/* display: block; */
+		/* justify-content: center; */
+	}
+	.signin-details-container {
+		display: block;
+	}
+	.signin-details {
+		width: 100%;
+	}
+	.login-container {
+		width: 100%;
+	}
+	.card {
+		width: 100%;
+		/* display: block; */
+		/* background: teal; */
+		margin-bottom: 60px;
+	}
+}

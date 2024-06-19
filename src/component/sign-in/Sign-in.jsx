@@ -1,5 +1,6 @@
 import React from "react";
 import "./signin.css";
+import "./signin-media.css";
 import signinDetails from "../../data/sign-in-data/SignData";
 import Login from "./login/Login";
 

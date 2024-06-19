@@ -2,11 +2,13 @@
 	height: 90vh;
 	width: 100%;
 	background: var(--greyish);
-	padding: 8% 23% 4% 23%;
+	padding: 4% 23%;
+	display: flex;
+	justify-content: center;
 }
 .register-container {
 	width: 100%;
-	height: 100%;
+	/* height: 100%; */
 	background: var(--greyish);
 	box-shadow: var(--shadow);
 	border-radius: 10px;
@@ -34,34 +36,55 @@
 	margin-top: 15px;
 }
 .register-container-left {
-	height: 100%;
+	/* height: 100%; */
 	width: 38%;
 	border-radius: 10px 0px 0px 10px;
 }
 .circle-container {
 	position: relative;
 	height: 50%;
+	/* background: thistle; */
 	overflow: hidden;
 	border-radius: 10px 0px 0px 10px;
 }
 .circle {
-	width: 440px;
-	height: 360px;
+	/* width: 440px;
+	height: 360px; */
+	width: 100%;
+	height: 100%;
 	border-radius: 50%;
+	/* background: teal; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	position: absolute;
-	top: -75px;
-	left: -40px;
-	background-image: url("./doctor.jpg");
-	background-position: bottom;
+	top: -11%;
+	scale: 1.3;
+	/* left: %; */
+	/* background-image: url("./doctor.jpg"); */
+	/* background-position: bottom;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
+	overflow: hidden;
 }
-
+.cicle-img {
+	width: 100%;
+	height: 100%;
+	scale: 1.55;
+	/* border-radius: 50%; */
+	position: absolute;
+	top: 45%;
+}
 .circle-text {
-	padding: 15% 16%;
+	/* background: yellowgreen; */
+	height: 50%;
+	padding: 0px 14%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .circle-text p {
-	font-size: 22px;
+	font-size: 1.1rem;
 	font-weight: 600;
 	color: var(--secondary-green);
 	text-align: center;
@@ -81,17 +104,17 @@
 	margin-bottom: 15px;
 }
 
-.register-container-right h2 {
+.register-container-right-sub-header {
 	color: var(--primary-black);
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	font-weight: bold;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
-.register-container-right p {
+.register-container-right-text {
 	color: var(--primary-black);
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 500;
-	margin-bottom: 40px;
+	margin-bottom: 35px;
 }
 .register-container-right form input {
 	width: 100%;
@@ -99,9 +122,9 @@
 	border-radius: 8px;
 	border: 1px solid var(--primary-green);
 	outline: none;
-	margin-bottom: 100px;
+	margin-bottom: 90px;
 	color: var(--primary-green);
-	font-size: 1rem;
+	font-size: 0.9rem;
 	font-weight: 600;
 }
 
@@ -124,31 +147,6 @@
 	color: var(--white);
 	font-size: 14px;
 	font-weight: bold;
-}
-.alternative-login {
-	margin-top: 27px;
-	border-top: 1px solid #d5e2de;
-}
-.alternative-login p {
-	font-size: 1rem;
-	font-weight: normal;
-	color: var(--primary-green);
-	margin-top: 9px;
-	text-align: center;
-}
-.alternative-login-icon {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
-}
-.alternative-login-icon-div {
-	display: flex;
-	justify-content: space-between;
-	width: 30%;
-}
-.alternative-login-icon-div svg {
-	height: 30px;
-	width: 30px;
 }
 
 /* register name */

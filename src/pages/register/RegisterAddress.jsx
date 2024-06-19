@@ -1,6 +1,8 @@
 import React from "react";
 import "./register.css";
+import "./register-media.css";
 import { Link } from "react-router-dom";
+import Doctor from "./doctor.jpg";
 
 function RegisterAddress({ nextStep, prevStep }) {
 	return (
@@ -8,7 +10,9 @@ function RegisterAddress({ nextStep, prevStep }) {
 			<div className="register-container">
 				<div className="register-container-left">
 					<div className="circle-container">
-						<div className="circle"></div>
+						<div className="circle">
+							<img src={Doctor} alt="doctor" className="cicle-img" />
+						</div>
 					</div>
 					<div className="circle-text">
 						<p>Find nearby Hospitals, Clinics or Labs with ease</p>
@@ -16,8 +20,12 @@ function RegisterAddress({ nextStep, prevStep }) {
 				</div>
 				<div className="register-container-right">
 					<div className="index-num">3/3</div>
-					<h2>Create your account</h2>
-					<p>Tell us about yourself</p>
+					<h2 className="register-container-right-sub-header">
+						Create your account
+					</h2>
+					<p className="register-container-right-text">
+						Tell us about yourself
+					</p>
 
 					<form action="">
 						<div className="country-selection">
