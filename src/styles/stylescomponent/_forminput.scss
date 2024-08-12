@@ -1,0 +1,98 @@
+@use 'sass:math';
+
+@mixin input{
+        cursor: pointer;
+        width: 100%;
+	    padding: 10px;
+	    background: transparent;
+	    border-radius: $base-border-radius;
+	    outline: none;
+	    color:map-get($primarycolors ,primary-1  );
+	    font-size: $normal-font-size;
+        text-transform: capitalize;
+        @include sm{
+           	padding: 4px;
+            font-size: 8px;
+            border-radius:math.div($base-border-radius, 2);
+
+        }
+        @include md{
+            padding: 6px;
+            font-size: 10px;
+            border-radius:math.div($base-border-radius, 1.25);
+
+        }
+        @include lg{
+            padding: 7px;
+            font-size: 13px;
+        }
+     
+}
+@mixin inputspan {
+       	position: absolute;
+	    left: 0;
+	    top: 0;
+	    padding: 10px;
+	    pointer-events: none;
+	    font-size: $normal-font-size;
+	    color: map-get($primarycolors ,primary-1  );
+	    transition: 0.5s; 
+        opacity: 0.6;
+        @include sm{
+           	padding: 6px;
+            font-size: 8px;
+        }
+        @include md{
+            padding: 7px;
+            font-size: 10px;
+        }
+        @include lg{
+            padding: 7px;
+            font-size: 13px;
+
+        }
+}
+
+
+
+
+
+
+
+
+.inputBox {
+	position: relative;
+    overflow: hidden;
+    width: 100%;
+    input{
+        @include input();
+	    border: $base-border-thickness solid map-get($primarycolors ,primary-1  );
+	    // transition: 0.5s;
+        &:hover{
+            border: $base-border-thickness solid map-get($primarycolors ,primary);
+            color: map-get($primarycolors ,primary);
+        }
+        &:hover ~ span{
+            color: map-get($primarycolors ,primary-1  );
+            opacity: 1;
+        }
+        &:valid ~ span,:focus ~ span
+          {
+            color: map-get($primarycolors ,primary  );
+	        transform: translateX(10px) translateY(-15px);
+	        font-size: 0.65em;
+	        padding: 0 10px;
+	        background: none;
+	        letter-spacing: 0.2em;
+          }
+        &:valid,:focus{
+	        border: $base-border-thickness solid map-get($primarycolors ,primary  );
+
+        }
+    
+    }
+    span{
+        @include inputspan();
+    }
+}
+

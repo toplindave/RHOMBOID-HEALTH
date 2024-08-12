@@ -1,0 +1,26 @@
+// reset styles
+
+*{
+    color: inherit;
+    margin: 0;
+}
+body{
+    font-family: 'Montserrat';
+}
+ul{
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+hr{
+    border: 0;
+    border-top: 1px dotted #efefef;
+}
+img{
+    max-width: 100%;
+}
+svg{
+    max-width: 100%;
+}

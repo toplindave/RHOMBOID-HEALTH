@@ -1,0 +1,123 @@
+// mapping through each primary colors
+@each $key, $val in $primarycolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+
+// mapping through each secondary colors
+
+@each $key, $val in $secondarycolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+// mapping through each black colors
+
+@each $key, $val in $blackcolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+// mapping through each white colors
+
+@each $key, $val in $whitecolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+
+// mapping through each success colors
+
+@each $key, $val in $successcolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+
+// mapping through each info colors
+
+@each $key, $val in $infocolors{
+    .text-#{$key}{
+        color: $val;
+    }
+    .text-hover-#{$key} {
+        &:hover{
+            color: $val;
+        }
+    }
+    .bg-#{$key}{
+        background-color: $val;
+    }
+    .bg-hover-#{$key}{
+        &:hover{
+            color: $val;
+        }
+    }
+}
+

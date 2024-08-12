@@ -1,0 +1,185 @@
+@use 'sass:math';
+
+@mixin searchinput{
+        cursor: pointer;
+        width: 100%;
+	    padding: 10px;
+        background: transparent;
+        border: none;
+	    outline: none;
+	    color:map-get($primarycolors ,primary-1  );
+	    font-size: $normal-font-size;
+        font-weight: $font-weight-medium;
+	    transition: 0.5s;
+        text-transform: capitalize;
+        opacity: 1;
+        @include sm{
+           	padding: 4px;
+            font-size: 8px;
+            border-radius:math.div($base-border-radius, 2);
+
+        }
+        @include md{
+            padding: 6px;
+            font-size: 10px;
+            border-radius:math.div($base-border-radius, 1.25);
+
+        }
+        @include lg{
+            padding: 7px;
+            font-size: 12px;
+        }
+}
+@mixin searchspan {
+       	position: absolute;
+	    left: 0;
+	    top: 0;
+	    padding: 10px;
+	    pointer-events: none;
+	    font-size: $normal-font-size;
+	    color: map-get($primarycolors ,search-input-text  );
+	    transition: 0.5s; 
+        opacity: 0.6;
+        @include sm{
+           	padding: 6px;
+            font-size: 8px;
+        }
+        @include md{
+            padding: 7px;
+            font-size: 10px;
+        }
+        @include lg{
+            padding: 7px;
+            font-size: 13px;
+
+        }
+}
+@mixin dropdown{
+         border: $base-border-thickness solid map-get($primarycolors ,primary-2);
+        background:map-get($whitecolors ,normalwhite) ;
+        border-radius: $base-border-radius;
+        margin-top: 3px;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+}
+@mixin dropdown-row{
+        padding: 2% 3%;
+        text-transform: capitalize;
+        font-size: $normal-font-size;
+        font-weight: $font-weight-medium;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        @include sm{
+            font-size: 8px;
+        }
+        @include md{
+            font-size: 10px;
+        }
+        @include lg{
+            font-size: 13px;
+
+        }
+}
+
+
+
+
+
+
+.search-container{
+
+    width: 30%;
+    margin-left: 150px;
+    position: relative;
+    .search-box{
+        display: flex;
+	    background:  map-get($primarycolors ,primary-3  );
+        border-radius: $base-border-radius;
+        &:has(input:hover, input:focus){
+            border: $base-border-thickness solid map-get($primarycolors ,primary);
+
+        }
+        .search-input-box{
+            position: relative;
+            overflow: hidden;
+            flex: 1;
+            input{  
+                @include searchinput();
+                border: none;
+                &:hover{
+                    color: map-get($primarycolors ,search-input-text  ); 
+                }
+                &:hover ~ span{
+                    color: map-get($primarycolors ,search-input-text  );
+                    opacity: 1;
+                }
+                &:valid ~ span,:focus ~ span{
+                    color: map-get($primarycolors ,primary  );
+                    transform: translateX(10px) translateY(-15px);
+                    font-size: 0.65em;
+                    padding: 0 10px;
+                    background: none;
+                    letter-spacing: 0.2em;
+                }
+                // &:valid,:focus{
+                //     // border: $base-border-thickness solid map-get($primarycolors ,primary  );
+
+                // }
+                
+            }
+          
+            span{
+                @include searchspan();
+            }
+        }
+        button{
+            padding-right: 3%;
+            outline: none;
+            border: none;
+            background: transparent;
+            svg{
+                fill: map-get($primarycolors ,primary  );
+                cursor: pointer;
+                transition: all .2s ease-in;
+                &:hover{
+                    fill: map-get($primarycolors ,search-input-text  );
+                    scale: 1.3;
+                }
+                @include sm{
+                    width: 9px;
+                    height: 9px;
+                }
+                @include md{
+                    width: 11px;
+                    height: 11px;
+                }
+                @include lg{
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+        }
+    }
+    .search-dropdown{
+        @include dropdown();
+        position: absolute;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+        z-index: 900000;
+        &::-webkit-scrollbar{
+            display: none
+        }
+        &:empty{
+            display: none;
+        }
+        .dropdown-row{
+            @include dropdown-row();
+            &:hover{
+                background: map-get($whitecolors ,white-3);
+            }
+        }
+    }
+}

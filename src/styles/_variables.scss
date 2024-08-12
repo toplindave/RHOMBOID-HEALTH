@@ -1,0 +1,80 @@
+// variable ( theme color)
+
+// $primary :#326dee !default;
+// $secondary:#1ac888 !default;
+// $error: #d32752 !default;
+// $info: #f6c31c !default;
+
+
+// color palette
+$primarycolors:(
+    "primary": #337364,
+    "primary-1":#4B9181,
+    "primary-2":#80C2B2,
+    "primary-3":#EFFFF9,
+    "primary-4":#F4FDFA ,
+    "primary-disabled":#D5E2DE,
+    "search-input-text":#0D2237
+);
+$secondarycolors:(
+    "secondary": #EF8C68,
+    "secondary-1":#FFD0BF,
+    "secondary-2":#FBDBCF,
+    "secondary-3":#F5ECE8,
+);
+$blackcolors:(
+    "normalblack": #02130F,
+    "black-1":#092922,
+    "black-2":#285B4C,
+    "black-3":#72998D,
+    "black-4":#F5F5F5,
+);
+$whitecolors:(
+    "normalwhite": #FFFFFF,
+    "white-1":#ACCDC2,
+    "white-2":#C6DCD6,
+    "white-3":#D5E2DE,
+    "white-4":#F4F6FD,
+);
+$successcolors:(
+    "success": #01913A,
+    "success-1":#0BAB4B,
+    "success-2":#0DC556,
+    "success-3":#56D689,
+    "success-4":#E6FAF3,
+);
+$infocolors:(
+    "info": #B20000,
+    "info-1":#CC0E0E,
+    "info-2":#E01010,
+    "info-3":#E95758,
+    "info-4":#FEEAEB,
+);
+
+// spacing
+
+$base-padding:0.75rem !default; //12px
+$base-margin:0.75rem !default; //12px
+
+// border
+$base-border-thickness:1px !default;
+$base-border-radius:8px !default;
+
+// box-shadow
+$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+
+// font size
+$base-font-size:1rem !default; //16px
+$normal-font-size:$base-font-size * 0.875!default; //14px
+$font-size-sm:$base-font-size * 0.75 !default; // 12px
+$font-size-lg:$base-font-size * 1.5 !default; //24px
+$font-size-xl:$base-font-size * 2 !default; // 32px
+$font-size-xxl:$base-font-size * 3 !default; // 48px
+
+// font weight
+$base-font-weight:400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi-bold: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+

@@ -1,0 +1,24 @@
+// variable & functions
+// @import 'function';
+@import 'variables';
+
+
+// base and layout
+@import 'base';
+@import 'breakpoints';
+@import 'flex';
+
+// colors
+@import 'colors';
+
+// components( button, card, navbar)
+// @import 'component/card';
+@import 'stylescomponent/button';
+@import 'stylescomponent/forminput';
+@import 'stylescomponent/searchinput';
+// @import 'component/navbar';
+// @import 'component/badge';
+
+
+// utilities ( margin, paddind, opacity)
+@import 'utilities';

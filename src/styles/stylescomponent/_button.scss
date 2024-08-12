@@ -1,0 +1,95 @@
+@use 'sass:math';
+
+@mixin btn(){
+    // width: 145px;
+    // height: 48px;
+    padding: 1% 1.2%;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    border-radius: $base-border-radius;
+    font-size:$font-size-sm;
+    font-weight: $font-weight-bold;
+    text-transform: capitalize;
+    transition: all ease-in-out .3s;
+    @include sm{
+            font-size: 7px;
+            border-radius:math.div($base-border-radius, 2);
+
+        }
+        @include md{
+            font-size: 9px;
+            border-radius:math.div($base-border-radius, 1.25);
+
+        }
+        @include lg{
+            font-size: 10px;
+        }
+
+}
+.btn{
+    @include btn;
+}
+.btn-primary{
+    @include btn();
+    color: map-get( $whitecolors, normalwhite);
+    background-color: map-get($primarycolors ,primary-1  );
+    &:hover{
+         background-color: map-get($primarycolors ,primary-2  );
+    }
+    &:focus{
+         background-color: map-get($primarycolors ,primary  );
+        outline: none;
+        border: none;
+    }
+    &:disabled,[disabled]{
+         background-color: map-get($primarycolors ,primary-disabled  );
+        cursor:not-allowed;
+
+    }
+}
+.btn-secondary{
+    @include btn();
+    color: map-get( $primarycolors, primary);
+    background-color: map-get($primarycolors ,primary-3  );
+    &:hover{
+         background-color: map-get($primarycolors ,primary-3  );
+    }
+    &:focus{
+         background-color: map-get($primarycolors ,primary-3  );
+        outline: none;
+        border: none;
+    }
+    &:disabled,[disabled]{
+         background-color: map-get($primarycolors ,primary-disabled  );
+        cursor:not-allowed;
+
+    }
+}
+.btn-tertiary{
+    @include btn();
+    color: map-get( $primarycolors, primary);
+    border:$base-border-thickness solid map-get($primarycolors ,primary-1  );
+    background: transparent;
+    &:hover{
+        border:$base-border-thickness solid map-get($primarycolors ,primary-2  );
+        color: map-get( $primarycolors, primary-2);
+
+    }
+    &:focus{
+        border:$base-border-thickness solid map-get($primarycolors ,primary  );
+        color: map-get( $primarycolors, primary);
+        outline: $base-border-thickness solid map-get($primarycolors ,primary  );
+    }
+    &:disabled,[disabled]{
+        border:$base-border-thickness solid map-get($primarycolors ,primary  );
+        opacity: .2;
+        cursor:not-allowed;
+    }
+}
+.btn-cta{
+    @include btn();
+     color: map-get( $whitecolors, normalwhite);
+    background-color: map-get($secondarycolors ,secondary  );
+}

@@ -1,0 +1,15 @@
+$justify-content-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
+$align-item-values: normal, stretch, center, flex-start, flex-end, baseline,;
+
+
+
+@each $val in $justify-content-values{
+    .justify-#{$val}{
+        justify-content: $val;
+    }
+}
+@each $val in $align-item-values{
+    .align-#{$val}{
+        align-items: $val;
+    }
+}
