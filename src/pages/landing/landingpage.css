@@ -1,0 +1,22 @@
+.__hero {
+  border: 1px solid plum;
+}
+.__hero .__hero-inner {
+  border: 1px solid purple;
+  width: 20%;
+}
+
+.__navigation {
+  position: sticky;
+  top: 0px;
+}
+.__navigation ul {
+  font-size: 16px;
+  width: 20%;
+  background: teal;
+}
+
+.__section1 {
+  background: grey;
+  height: 100vh;
+}/*# sourceMappingURL=landingpage.css.map */

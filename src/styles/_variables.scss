@@ -5,76 +5,76 @@
 // $error: #d32752 !default;
 // $info: #f6c31c !default;
 
-
 // color palette
-$primarycolors:(
-    "primary": #337364,
-    "primary-1":#4B9181,
-    "primary-2":#80C2B2,
-    "primary-3":#EFFFF9,
-    "primary-4":#F4FDFA ,
-    "primary-disabled":#D5E2DE,
-    "search-input-text":#0D2237
+$primarycolors: (
+  "primary": #337364,
+  "primary-1": #4b9181,
+  "primary-2": #80c2b2,
+  "primary-3": #effff9,
+  "primary-4": #f4fdfa,
+  "primary-disabled": #d5e2de,
+  "search-input-text": #0d2237,
 );
-$secondarycolors:(
-    "secondary": #EF8C68,
-    "secondary-1":#FFD0BF,
-    "secondary-2":#FBDBCF,
-    "secondary-3":#F5ECE8,
+$secondarycolors: (
+  "secondary": #ef8c68,
+  "secondary-1": #ffd0bf,
+  "secondary-2": #fbdbcf,
+  "secondary-3": #f5ece8,
 );
-$blackcolors:(
-    "normalblack": #02130F,
-    "black-1":#092922,
-    "black-2":#285B4C,
-    "black-3":#72998D,
-    "black-4":#F5F5F5,
+$blackcolors: (
+  "normalblack": #02130f,
+  "black-1": #092922,
+  "black-2": #285b4c,
+  "black-3": #72998d,
+  "black-4": #f5f5f5,
+  "blue": #132a50,
 );
-$whitecolors:(
-    "normalwhite": #FFFFFF,
-    "white-1":#ACCDC2,
-    "white-2":#C6DCD6,
-    "white-3":#D5E2DE,
-    "white-4":#F4F6FD,
+$whitecolors: (
+  "normalwhite": #ffffff,
+  "white-1": #accdc2,
+  "white-2": #c6dcd6,
+  "white-3": #d5e2de,
+  "white-4": #f4f6fd,
+  "grey": #677294,
 );
-$successcolors:(
-    "success": #01913A,
-    "success-1":#0BAB4B,
-    "success-2":#0DC556,
-    "success-3":#56D689,
-    "success-4":#E6FAF3,
+$successcolors: (
+  "success": #01913a,
+  "success-1": #0bab4b,
+  "success-2": #0dc556,
+  "success-3": #56d689,
+  "success-4": #e6faf3,
 );
-$infocolors:(
-    "info": #B20000,
-    "info-1":#CC0E0E,
-    "info-2":#E01010,
-    "info-3":#E95758,
-    "info-4":#FEEAEB,
+$infocolors: (
+  "info": #b20000,
+  "info-1": #cc0e0e,
+  "info-2": #e01010,
+  "info-3": #e95758,
+  "info-4": #feeaeb,
 );
 
 // spacing
 
-$base-padding:0.75rem !default; //12px
-$base-margin:0.75rem !default; //12px
+$base-padding: 0.5% !default; //12px
+$base-margin: 0.75rem !default; //12px
 
 // border
-$base-border-thickness:1px !default;
-$base-border-radius:8px !default;
+$base-border-thickness: 1px !default;
+$base-border-radius: 8px !default;
 
 // box-shadow
-$base-box-shadow: 1px 3px 5px rgba(0,0,0,0.1) !default;
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 
 // font size
-$base-font-size:1rem !default; //16px
-$normal-font-size:$base-font-size * 0.875!default; //14px
-$font-size-sm:$base-font-size * 0.75 !default; // 12px
-$font-size-lg:$base-font-size * 1.5 !default; //24px
-$font-size-xl:$base-font-size * 2 !default; // 32px
-$font-size-xxl:$base-font-size * 3 !default; // 48px
+$base-font-size: 1rem !default; //16px
+$normal-font-size: $base-font-size * 0.875 !default; //14px
+$font-size-sm: $base-font-size * 0.75 !default; // 12px
+$font-size-lg: $base-font-size * 1.5 !default; //24px
+$font-size-xl: $base-font-size * 2 !default; // 32px
+$font-size-xxl: $base-font-size * 3 !default; // 48px
 
 // font weight
-$base-font-weight:400 !default;
+$base-font-weight: 400 !default;
 $font-weight-medium: 500 !default;
 $font-weight-semi-bold: 600 !default;
 $font-weight-bold: 700 !default;
 $font-weight-bolder: 800 !default;
-

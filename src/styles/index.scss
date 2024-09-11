@@ -1,24 +1,25 @@
 // variable & functions
 // @import 'function';
-@import 'variables';
-
+@import "variables";
 
 // base and layout
-@import 'base';
-@import 'breakpoints';
-@import 'flex';
+@import "base";
+@import "breakpoints";
+@import "flex";
 
 // colors
-@import 'colors';
+@import "colors";
 
 // components( button, card, navbar)
 // @import 'component/card';
-@import 'stylescomponent/button';
-@import 'stylescomponent/forminput';
-@import 'stylescomponent/searchinput';
+@import "stylescomponent/button";
+// @import "stylescomponent/forminput";
+// @import "stylescomponent/searchinput";
+@import "stylescomponent/container";
+@import "stylescomponent/_landingpage";
+@import "stylescomponent/texts";
 // @import 'component/navbar';
 // @import 'component/badge';
 
-
 // utilities ( margin, paddind, opacity)
-@import 'utilities';
+@import "utilities";

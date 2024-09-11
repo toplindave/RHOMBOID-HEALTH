@@ -1,0 +1,91 @@
+.big-text {
+  font-size: 64px;
+  @include sm {
+    font-size: 20px;
+  }
+  @include md {
+    font-size: 30px;
+  }
+  @include lg {
+    font-size: 40px;
+  }
+  @include xl {
+    font-size: 54px;
+  }
+}
+.p-text {
+  font-size: $base-font-size;
+  @include sm {
+    font-size: 10px;
+  }
+  @include md {
+    font-size: 12px;
+  }
+  @include lg {
+    font-size: 14px;
+  }
+  @include xl {
+    font-size: 16px;
+  }
+}
+.title-text {
+  font-size: $font-size-lg;
+  @include sm {
+    font-size: 12px;
+  }
+  @include md {
+    font-size: 14px;
+  }
+  @include lg {
+    font-size: 18px;
+  }
+  @include xl {
+    font-size: 20px;
+  }
+}
+.h3-text {
+  font-size: 18px;
+  @include sm {
+    font-size: 10px;
+  }
+  @include md {
+    font-size: 12px;
+  }
+  @include lg {
+    font-size: 14px;
+  }
+  @include xl {
+    font-size: 16px;
+  }
+}
+
+.sub-title-text {
+  font-size: 28px;
+  @include sm {
+    font-size: 14px;
+  }
+  @include md {
+    font-size: 16px;
+  }
+  @include lg {
+    font-size: 20px;
+  }
+  @include xl {
+    font-size: 24px;
+  }
+}
+.normal-font-text {
+  font-size: $normal-font-size; // 14px
+  @include sm {
+    font-size: 8px;
+  }
+  @include md {
+    font-size: 10px;
+  }
+  @include lg {
+    font-size: 12px;
+  }
+  @include xl {
+    font-size: 13px;
+  }
+}
