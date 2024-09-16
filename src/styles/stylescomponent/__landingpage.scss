@@ -109,77 +109,23 @@
     }
   }
 }
+.__overlay {
+  border-image: fill 1
+    linear-gradient(116deg, rgba(244, 247, 254, 0.5), rgba(245, 236, 232, 0.7));
+}
 .__section1 {
   // background: grey;
-  background-image: linear-gradient(
-    116deg,
-    #f4f7fe,
-    map-get($secondarycolors, secondary-3)
-  );
-  padding-bottom: 8%;
   // height: 100vh;
-  h1 {
-    width: 50%;
-    text-align: left;
-    // background-color: tan;
-  }
-  .__get-started {
-    width: 11%;
-    cursor: pointer;
-    @include sm {
-      width: 28%;
-    }
-    @include md {
-      width: 22%;
-    }
-    @include lg {
-      width: 18%;
-    }
-    @include xl {
-      width: 14%;
-    }
-
-    .__get-btn {
-      // transform: matrix(0.63, -0.78, 0.78, 0.63, 0, 0);
-      transform: rotate(45deg);
-      margin-left: 6px;
-      // transform-origin: 10;
-      // rotate: 140deg;
-      width: 30px;
-      height: 30px;
-      cursor: pointer;
-      @include sm {
-        width: 20px;
-        height: 20px;
-      }
-      @include md {
-        width: 24px;
-        height: 24px;
-      }
-      @include lg {
-        width: 25px;
-        height: 25px;
-      }
-      @include xl {
-        width: 27px;
-        height: 27px;
-      }
-      svg {
-        transform: rotate(-45deg);
-      }
-    }
-    h2 {
-      // font-size: 15px;
-      font-weight: 600;
-    }
-    &:hover {
-      h2 {
-        color: map-get($primarycolors, primary-2);
-        transition: all 0.3s ease-in-out;
-      }
-      .__get-btn {
-        background-color: map-get($primarycolors, primary-2);
-        transition: all 0.3s ease-in-out;
+  .__heroo {
+    background-image: url(../../pages/landing/icons/centogene.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 8%;
+    .section1-con {
+      h1 {
+        width: 50%;
+        text-align: left;
+        // background-color: tan;
       }
     }
   }
@@ -251,7 +197,7 @@
   padding-bottom: 8%;
   height: auto;
   h1 {
-    margin-bottom: 5px;
+    margin-bottom: 88px;
   }
   h4,
   h3 {

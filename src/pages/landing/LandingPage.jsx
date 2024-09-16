@@ -1,19 +1,20 @@
 import React from "react";
 import "../../styles/index.scss";
 // import "./landingpage.scss";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ReactComponent as User } from "./icons/user.svg";
 import { ReactComponent as ArrownDown } from "./icons/arrowDown.svg";
-import { ReactComponent as ListIcon } from "./icons/listBullet.svg";
-import { ReactComponent as Download } from "./icons/download.svg";
-import { ReactComponent as QRCode } from "./icons/QrCode.svg";
+import { ReactComponent as ListIcon } from "./icons/listIcon.svg";
+import { ReactComponent as Download } from "./icons/downloadSharpSolid.svg";
+import { ReactComponent as QRCode } from "./icons/qrcodeSolid.svg";
 import { ReactComponent as FaceBookIcon } from "./icons/facebook.svg";
 import { ReactComponent as TwitterIcon } from "./icons/xIcon.svg";
 import { ReactComponent as LinkedInIcon } from "./icons/linkedin.svg";
 import { ReactComponent as YouTubeIcon } from "./icons/youtube.svg";
-import { ReactComponent as ArrowRight } from "./icons/arrowRight.svg";
+// import { ReactComponent as ArrowRight } from "./icons/arrowRight.svg";
 import AdultCare from "./icons/adultcare.png";
 import ChildrenCare from "./icons/childrenCare.jpg";
+import ButtonWithText from "../../component/buttonWithText/ButtonWithText";
 
 function LandingPage() {
   return (
@@ -22,43 +23,57 @@ function LandingPage() {
         <p className="text-normalwhite ">For Job seekers</p>
 
         <div className="text-normalwhite display-f justify-space-between __hero-inner align-center">
-          <p>Search</p>
-          <p>Language</p>
-          <div className="__hero-account display-f justify-space-between align-center">
-            <div className="__hero-account-svg">
-              <User />
-            </div>
-            <p>Account</p>
+          <p>
+            <Link to="">Search</Link>
+          </p>
+          <p>
+            <Link to="">Language</Link>
+          </p>
+          <div className="__hero-account">
+            <Link
+              className=" display-f justify-space-between align-center"
+              to="../account/sign-in"
+            >
+              <div className="__hero-account-svg">
+                <User />
+              </div>
+              <p>Account</p>
+            </Link>
           </div>
         </div>
       </div>
       <div className=" __navigation container display-f justify-space-between pt-2 pb-2 bg-normalwhite">
         <div className="logo text-success">
-          <h1>logo</h1>
+          <Link to="">
+            <h1>logo</h1>
+          </Link>
         </div>
         <ul className="text-normalblack display-f justify-space-between align-center ">
-          <li>Home</li>
-          <li>Referral</li>
+          <li>
+            <Link to="">Home Care</Link>
+          </li>
+          <li>
+            <Link to="">Referral</Link>
+          </li>
           <li className=" display-f justify-space-between align-center">
             About <ArrownDown />
           </li>
         </ul>
       </div>
-      <section className="__section1 container pt-9  ">
-        <h1 className=" text-primary font-weight-semi big-text">
-          Better care,
-          <br />
-          <span className="text-grey">
-            cheaper rates,
-            <br /> faster processes,
-            <br /> better outcomes
-          </span>
-        </h1>
-        <div className="__get-started display-f justify-space-between align-center mt-4">
-          <div className="__get-btn bg-primary-1 ">
-            <ArrowRight />
+      <section className="__section1   ">
+        <div className="__heroo  __overlay">
+          <div className="section1-con container pt-9 ">
+            <h1 className=" text-primary font-weight-semi big-text">
+              Better care,
+              <br />
+              <span className="text-grey">
+                cheaper rates,
+                <br /> faster processes,
+                <br /> better outcomes
+              </span>
+            </h1>
+            <ButtonWithText text={"Get started"} />
           </div>
-          <h2 className=" text-primary p-text">Get started</h2>
         </div>
       </section>
       <section className="__section2 container pt-4">
@@ -79,9 +94,7 @@ function LandingPage() {
               personalized, one-on-one care, enhancing safety and independence
               and allowing for a continuum of care.
             </p>
-            <button className="__home-care-card-btn btn-tertiary">
-              Learn more
-            </button>
+            <ButtonWithText text={" Learn more"} />
           </div>
           <div className="_home-care-card">
             <div className="__home-care-card-img">
@@ -94,13 +107,11 @@ function LandingPage() {
               development and overall well-being, allowing them to thrive at
               home while providing peace of mind to their families.
             </p>
-            <button className="__home-care-card-btn btn-tertiary">
-              Learn more
-            </button>
+            <ButtonWithText text={" Learn more"} />
           </div>
         </div>
       </section>
-      <section className="__section3 container  pt-4 bg-primary-3">
+      <section className="__section3 container  pt-4  bg-white-3">
         <h1 className="sub-title-text">When to seek for a home care</h1>
         <h4 className="h3-text">
           Choosing home care doesn't have to be overwhelming with our
