@@ -976,82 +976,20 @@ svg {
   height: 20px;
 }
 
-.__section1 {
-  background-image: linear-gradient(116deg, #f4f7fe, #f5ece8);
+.__overlay {
+  -o-border-image: fill 1 linear-gradient(116deg, rgba(244, 247, 254, 0.6), rgba(245, 236, 232, 0.7));
+     border-image: fill 1 linear-gradient(116deg, rgba(244, 247, 254, 0.6), rgba(245, 236, 232, 0.7));
+}
+
+.__section1 .__heroo {
+  background-image: url(../../pages/landing/icons/firstSectionBackgoung.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 8%;
 }
-.__section1 h1 {
+.__section1 .__heroo .__section1-con h1 {
   width: 50%;
   text-align: left;
-}
-.__section1 .__get-started {
-  width: 11%;
-  cursor: pointer;
-}
-@media screen and (max-width: 480px) and (min-width: 0) {
-  .__section1 .__get-started {
-    width: 28%;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
-  .__section1 .__get-started {
-    width: 22%;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 720px) {
-  .__section1 .__get-started {
-    width: 18%;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-  .__section1 .__get-started {
-    width: 14%;
-  }
-}
-.__section1 .__get-started .__get-btn {
-  transform: rotate(45deg);
-  margin-left: 6px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-@media screen and (max-width: 480px) and (min-width: 0) {
-  .__section1 .__get-started .__get-btn {
-    width: 20px;
-    height: 20px;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
-  .__section1 .__get-started .__get-btn {
-    width: 24px;
-    height: 24px;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 720px) {
-  .__section1 .__get-started .__get-btn {
-    width: 25px;
-    height: 25px;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-  .__section1 .__get-started .__get-btn {
-    width: 27px;
-    height: 27px;
-  }
-}
-.__section1 .__get-started .__get-btn svg {
-  transform: rotate(-45deg);
-}
-.__section1 .__get-started h2 {
-  font-weight: 600;
-}
-.__section1 .__get-started:hover h2 {
-  color: #80c2b2;
-  transition: all 0.3s ease-in-out;
-}
-.__section1 .__get-started:hover .__get-btn {
-  background-color: #80c2b2;
-  transition: all 0.3s ease-in-out;
 }
 
 .__section2 {
@@ -1127,7 +1065,7 @@ svg {
   height: auto;
 }
 .__section3 h1 {
-  margin-bottom: 5px;
+  margin-bottom: 88px;
 }
 .__section3 h4,
 .__section3 h3 {
@@ -1555,6 +1493,82 @@ svg {
   .normal-font-text {
     font-size: 13px;
   }
+}
+
+.__btn-texts {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2.5%;
+}
+.__btn-texts .__arrow-bg {
+  transform: rotate(45deg);
+  margin-left: 7px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__btn-texts .__arrow-bg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__btn-texts .__arrow-bg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__btn-texts .__arrow-bg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__btn-texts .__arrow-bg {
+    width: 27px;
+    height: 27px;
+  }
+}
+.__btn-texts .__arrow-bg svg {
+  transform: rotate(-45deg);
+  fill: white;
+  width: 17px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__btn-texts .__arrow-bg svg {
+    width: 10px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__btn-texts .__arrow-bg svg {
+    width: 12px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__btn-texts .__arrow-bg svg {
+    width: 13px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__btn-texts .__arrow-bg svg {
+    width: 15px;
+  }
+}
+.__btn-texts h2 {
+  font-weight: 600;
+}
+.__btn-texts:hover h2 {
+  color: #80c2b2;
+  transition: all 0.3s ease-in-out;
+}
+.__btn-texts:hover .__arrow-bg {
+  background-color: #80c2b2;
+  transition: all 0.3s ease-in-out;
 }
 
 .p-0 {

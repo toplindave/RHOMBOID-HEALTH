@@ -1,0 +1,78 @@
+.__btn-texts {
+  //   background: palegoldenrod;
+  cursor: pointer;
+  display: flex;
+  //   justify-content: space-between;
+  //   width: 12%;
+  align-items: center;
+  gap: 2.5%;
+  //   @include sm {
+  //     width: 28%;
+  //   }
+  //   @include md {
+  //     width: 22%;
+  //   }
+  //   @include lg {
+  //     width: 18%;
+  //   }
+  //   @include xl {
+  //     width: 14%;
+  //   }
+
+  .__arrow-bg {
+    transform: rotate(45deg);
+    margin-left: 7px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sm {
+      width: 20px;
+      height: 20px;
+    }
+    @include md {
+      width: 24px;
+      height: 24px;
+    }
+    @include lg {
+      width: 25px;
+      height: 25px;
+    }
+    @include xl {
+      width: 27px;
+      height: 27px;
+    }
+    svg {
+      transform: rotate(-45deg);
+      fill: white;
+      width: 17px;
+      @include sm {
+        width: 10px;
+      }
+      @include md {
+        width: 12px;
+      }
+      @include lg {
+        width: 13px;
+      }
+      @include xl {
+        width: 15px;
+      }
+    }
+  }
+  h2 {
+    // font-size: 15px;
+    font-weight: 600;
+  }
+  &:hover {
+    h2 {
+      color: map-get($primarycolors, primary-2);
+      transition: all 0.3s ease-in-out;
+    }
+    .__arrow-bg {
+      background-color: map-get($primarycolors, primary-2);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
