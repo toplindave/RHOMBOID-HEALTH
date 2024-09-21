@@ -1,0 +1,13 @@
+/* .main-nav{
+    width: 80px;
+} */
+
+.logo-container{
+    width: 60%;
+    height: 50px;
+    border: 1px solid red;
+}
+
+.logo-container img{
+    width: 100%;
+}

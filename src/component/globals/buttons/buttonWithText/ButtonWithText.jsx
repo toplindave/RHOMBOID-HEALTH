@@ -1,6 +1,6 @@
 import React from "react";
-import "../../styles/index.scss";
-import { ReactComponent as ArrowRight } from "../../pages/landing/icons/arrowRightLongLight.svg";
+import "../../../../styles/index.scss";
+import { ReactComponent as ArrowRight } from "../../icons/arrowRightLongLight.svg";
 
 function ButtonWithText({ text }) {
   return (
