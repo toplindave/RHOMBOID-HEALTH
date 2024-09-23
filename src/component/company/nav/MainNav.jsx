@@ -11,13 +11,13 @@ const MainNav = () => {
   return (
     <div className=" __navigation container display-f justify-space-between pt-2 pb-2 bg-normalwhite main-nav">
         <div className="logo text-success">
-          <Link to="">
+          <Link to="/">
            <Logo />
           </Link>
         </div>
         <ul className="text-normalblack display-f justify-space-between align-center ">
           <li>
-            <Link to="">Home Care</Link>
+            <Link to="/rhomboid/home-care">Home Care</Link>
           </li>
           <li>
             <Link to="">Referral</Link>
