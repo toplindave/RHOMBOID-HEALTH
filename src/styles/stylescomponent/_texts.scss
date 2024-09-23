@@ -1,5 +1,5 @@
 .big-text {
-  font-size: 64px;
+  font-size: 72px;
   @include sm {
     font-size: 20px;
   }
@@ -44,18 +44,18 @@
   }
 }
 .h3-text {
-  font-size: 18px;
+  font-size: 20px;
   @include sm {
-    font-size: 10px;
-  }
-  @include md {
     font-size: 12px;
   }
-  @include lg {
+  @include md {
     font-size: 14px;
   }
-  @include xl {
+  @include lg {
     font-size: 16px;
+  }
+  @include xl {
+    font-size: 18px;
   }
 }
 
@@ -87,5 +87,42 @@
   }
   @include xl {
     font-size: 13px;
+  }
+}
+.letter-spacing-24 {
+  line-height: 24px;
+  letter-spacing: 0.34px;
+}
+.letter-spacing-32 {
+  line-height: 32px;
+  letter-spacing: 0.34px;
+}
+.care-header {
+  font-size: 46px;
+  line-height: 66px;
+  letter-spacing: 0.92px;
+  @include sm {
+    font-size: 20px;
+    background: paleturquoise;
+    line-height: 45px;
+    letter-spacing: 0.7px;
+  }
+  @include md {
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    background: pink;
+  }
+  @include lg {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.7px;
+    background: palegreen;
+  }
+  @include xl {
+    font-size: 38px;
+    line-height: 58px;
+    letter-spacing: 0.92px;
+    background: green;
   }
 }

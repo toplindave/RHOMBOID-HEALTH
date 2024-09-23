@@ -232,6 +232,54 @@ svg {
   color: #0d2237;
 }
 
+.text-ash {
+  color: #e3e5e0;
+}
+
+.text-hover-ash:hover {
+  color: #e3e5e0;
+}
+
+.bg-ash {
+  background-color: #e3e5e0;
+}
+
+.bg-hover-ash:hover {
+  color: #e3e5e0;
+}
+
+.text-greenish {
+  color: #192f32;
+}
+
+.text-hover-greenish:hover {
+  color: #192f32;
+}
+
+.bg-greenish {
+  background-color: #192f32;
+}
+
+.bg-hover-greenish:hover {
+  color: #192f32;
+}
+
+.text-green {
+  color: #0f7c62;
+}
+
+.text-hover-green:hover {
+  color: #0f7c62;
+}
+
+.bg-green {
+  background-color: #0f7c62;
+}
+
+.bg-hover-green:hover {
+  color: #0f7c62;
+}
+
 .text-secondary {
   color: #ef8c68;
 }
@@ -842,6 +890,10 @@ svg {
   padding: 0px 5.5%;
 }
 
+.container-care {
+  padding: 0px 3.5%;
+}
+
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__hero p {
     font-size: 10px;
@@ -943,13 +995,11 @@ svg {
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__navigation ul {
-    background: teal;
     display: none;
   }
 }
 @media screen and (max-width: 720px) and (min-width: 480px) {
   .__navigation ul {
-    background: plum;
     width: 45%;
     display: none;
   }
@@ -957,13 +1007,11 @@ svg {
 @media screen and (max-width: 960px) and (min-width: 720px) {
   .__navigation ul {
     width: 35%;
-    background: tomato;
     display: none;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 960px) {
   .__navigation ul {
-    background: blueviolet;
     width: 30%;
     display: none;
   }
@@ -982,7 +1030,7 @@ svg {
 }
 
 .__section1 .__heroo {
-  background-image: url(../../pages/landing/icons/centogene.webp);
+  background-image: url(../../component/globals/icons/centogene.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 8%;
@@ -1352,7 +1400,7 @@ svg {
 }
 
 .big-text {
-  font-size: 64px;
+  font-size: 72px;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
   .big-text {
@@ -1400,7 +1448,7 @@ svg {
 }
 
 .title-text {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
   .title-text {
@@ -1424,26 +1472,26 @@ svg {
 }
 
 .h3-text {
-  font-size: 18px;
+  font-size: 20px;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
-  .h3-text {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
   .h3-text {
     font-size: 12px;
   }
 }
-@media screen and (max-width: 960px) and (min-width: 720px) {
+@media screen and (max-width: 720px) and (min-width: 480px) {
   .h3-text {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 1200px) and (min-width: 960px) {
+@media screen and (max-width: 960px) and (min-width: 720px) {
   .h3-text {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .h3-text {
+    font-size: 18px;
   }
 }
 
@@ -1492,6 +1540,54 @@ svg {
 @media screen and (max-width: 1200px) and (min-width: 960px) {
   .normal-font-text {
     font-size: 13px;
+  }
+}
+
+.letter-spacing-24 {
+  line-height: 24px;
+  letter-spacing: 0.34px;
+}
+
+.letter-spacing-32 {
+  line-height: 32px;
+  letter-spacing: 0.34px;
+}
+
+.care-header {
+  font-size: 46px;
+  line-height: 66px;
+  letter-spacing: 0.92px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .care-header {
+    font-size: 20px;
+    background: paleturquoise;
+    line-height: 45px;
+    letter-spacing: 0.7px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .care-header {
+    font-size: 25px;
+    line-height: 40px;
+    letter-spacing: 0.6px;
+    background: pink;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .care-header {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.7px;
+    background: palegreen;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .care-header {
+    font-size: 38px;
+    line-height: 58px;
+    letter-spacing: 0.92px;
+    background: green;
   }
 }
 
@@ -1569,6 +1665,201 @@ svg {
 .__btn-texts:hover .__arrow-bg {
   background-color: #80c2b2;
   transition: all 0.3s ease-in-out;
+}
+
+.__care-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0px;
+}
+.__care-logo svg {
+  width: 197px;
+  height: 62px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-logo svg {
+    width: 145px;
+    height: 35px;
+    border: 3px solid plum;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-logo svg {
+    border: 3px solid red;
+    width: 155px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-logo svg {
+    width: 165px;
+    height: 45px;
+    border: 3px solid green;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__care-logo svg {
+    border: 3px solid darkcyan;
+    width: 172px;
+    height: 58px;
+  }
+}
+
+.__care-nav {
+  align-items: center;
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+}
+.__care-nav .__care-nav-location {
+  cursor: pointer;
+}
+.__care-nav .__care-nav-location:hover p {
+  color: #35767e;
+}
+.__care-nav .__care-nav-location:hover p svg {
+  fill: #35767e;
+}
+.__care-nav .__care-nav-location p {
+  align-items: center;
+  gap: 5px;
+}
+.__care-nav .__care-nav-location p svg {
+  width: 15px;
+  height: 15px;
+  fill: #192f32;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-nav .__care-nav-location p svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-nav .__care-nav-location p svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-nav .__care-nav-location p svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__care-nav .__care-nav-location p svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+.__care-nav ul {
+  width: 30%;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-nav ul {
+    display: none;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-nav ul {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-nav ul {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__care-nav ul {
+    width: 35%;
+  }
+}
+.__care-nav ul li {
+  cursor: pointer;
+}
+.__care-nav ul li:hover {
+  color: #0e5342;
+}
+.__care-nav ul li:last-child {
+  align-items: center;
+  gap: 5px;
+}
+.__care-nav ul li:last-child svg {
+  width: 15px;
+  height: 15px;
+  fill: #192f32;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-nav ul li:last-child svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-nav ul li:last-child svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-nav ul li:last-child svg {
+    width: 11px;
+    height: 11px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__care-nav ul li:last-child svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.__care-section-1 {
+  padding-top: 52px;
+  padding-bottom: 50px;
+}
+.__care-section-1 .__sub-section-1 {
+  border-radius: 10px;
+}
+.__care-section-1 .__sub-section-1 .__sub-left {
+  width: 50%;
+  padding: 64px 3.5% 0px 2.5%;
+}
+.__care-section-1 .__sub-section-1 .__sub-left h1 {
+  margin-bottom: 80px;
+}
+.__care-section-1 .__sub-section-1 .__sub-left p {
+  line-height: 24px;
+  letter-spacing: 0.03px;
+  width: 75%;
+}
+.__care-section-1 .__sub-section-1 .__sub-right {
+  width: 48%;
+  height: 554px;
+  border-radius: 0px 10px 10px 0px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-section-1 .__sub-section-1 .__sub-right {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-section-1 .__sub-section-1 .__sub-right {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-section-1 .__sub-section-1 .__sub-right {
+    height: 450px;
+  }
+}
+.__care-section-1 .__sub-section-1 .__sub-right img {
+  border-radius: 0px 10px 10px 0px;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
 }
 
 .p-0 {
@@ -2004,7 +2295,7 @@ svg {
 }
 
 .font-lg {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .font-xl {

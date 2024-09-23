@@ -78,22 +78,22 @@
     font-size: 16px;
     width: 20%;
     @include sm {
-      background: teal;
+      // background: teal;
       // width: 50%;
       display: none;
     }
     @include md {
-      background: plum;
+      // background: plum;
       width: 45%;
       display: none;
     }
     @include lg {
       width: 35%;
-      background: tomato;
+      // background: tomato;
       display: none;
     }
     @include xl {
-      background: blueviolet;
+      // background: blueviolet;
       width: 30%;
       display: none;
     }

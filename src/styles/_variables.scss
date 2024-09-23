@@ -6,6 +6,7 @@
 // $info: #f6c31c !default;
 
 // color palette
+
 $primarycolors: (
   "primary": #337364,
   "primary-1": #4b9181,
@@ -14,6 +15,9 @@ $primarycolors: (
   "primary-4": #f4fdfa,
   "primary-disabled": #d5e2de,
   "search-input-text": #0d2237,
+  "ash": #e3e5e0,
+  "greenish": #192f32,
+  "green": #0f7c62,
 );
 $secondarycolors: (
   "secondary": #ef8c68,
@@ -68,7 +72,7 @@ $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 $base-font-size: 1rem !default; //16px
 $normal-font-size: $base-font-size * 0.875 !default; //14px
 $font-size-sm: $base-font-size * 0.75 !default; // 12px
-$font-size-lg: $base-font-size * 1.5 !default; //24px
+$font-size-lg: $base-font-size * 1.75 !default; //28px
 $font-size-xl: $base-font-size * 2 !default; // 32px
 $font-size-xxl: $base-font-size * 3 !default; // 48px
 
