@@ -3,9 +3,12 @@ import { ReactComponent as TwitterIcon } from "../../../component/globals/icons/
 import { ReactComponent as LinkedInIcon } from "../../../component/globals/icons/linkedin.svg";
 import { ReactComponent as YouTubeIcon } from "../../../component/globals/icons/youtube.svg";
 
-const Footer = () => {
+const Footer = ({ bg }) => {
   return (
-    <footer className="__footer container pt-4 display-f justify-space-between bg-primary text-normalwhite">
+    <footer
+      className={` ${bg} __footer container pt-4 display-f justify-space-between  text-normalwhite `}
+    >
+      {/* <div className={`${bg}`}></div> */}
       <div className="__footer-logo">
         <h1 className=" text-normalwhite title-text font-weight-bold">
           Rhomboid

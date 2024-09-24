@@ -77,16 +77,16 @@
 .normal-font-text {
   font-size: $normal-font-size; // 14px
   @include sm {
-    font-size: 8px;
+    font-size: 7px;
   }
   @include md {
-    font-size: 10px;
+    font-size: 9px;
   }
   @include lg {
-    font-size: 12px;
+    font-size: 11px;
   }
   @include xl {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 .letter-spacing-24 {
@@ -103,26 +103,37 @@
   letter-spacing: 0.92px;
   @include sm {
     font-size: 20px;
-    background: paleturquoise;
-    line-height: 45px;
+    line-height: 25px;
     letter-spacing: 0.7px;
   }
   @include md {
     font-size: 25px;
-    line-height: 40px;
+    line-height: 30px;
     letter-spacing: 0.6px;
-    background: pink;
   }
   @include lg {
     font-size: 30px;
-    line-height: 45px;
+    line-height: 40px;
     letter-spacing: 0.7px;
-    background: palegreen;
   }
   @include xl {
     font-size: 38px;
     line-height: 58px;
     letter-spacing: 0.92px;
-    background: green;
+  }
+}
+.faq-header {
+  font-size: 36px;
+  @include sm {
+    font-size: 20px;
+  }
+  @include md {
+    font-size: 24px;
+  }
+  @include lg {
+    font-size: 28px;
+  }
+  @include xl {
+    font-size: 30px;
   }
 }

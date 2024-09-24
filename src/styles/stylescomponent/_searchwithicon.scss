@@ -1,0 +1,53 @@
+.search-container-with-icon {
+  width: 100%;
+  @include sm {
+    margin-bottom: 10px;
+  }
+  @include md {
+    margin-bottom: 10px;
+  }
+  .search-input-box-with-icon {
+    height: 30px;
+    background: map-get($blackcolors, light-black);
+    display: flex;
+    justify-content: space-between;
+    @include sm {
+      height: 18px;
+    }
+    @include md {
+      height: 20px;
+    }
+    span {
+      width: 15%;
+      //   background:#F1F1F1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 12px;
+        height: 12px;
+        @include sm {
+          width: 7px;
+          height: 7px;
+        }
+        @include md {
+          width: 9px;
+          height: 9px;
+        }
+      }
+    }
+    input {
+      width: 85%;
+      border: none;
+      outline: none;
+      background: none;
+      padding: 2%;
+      font-size: 12px;
+      font-weight: 500;
+      color: #192f32;
+      &::placeholder {
+        opacity: 0.9;
+      }
+    }
+  }
+}
