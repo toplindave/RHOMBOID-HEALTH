@@ -1,39 +1,57 @@
 import "./App.css";
-import HomeCare from "./pages/company/homeCare/HomeCare";
-// import Body from "./component/body/Body";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import Sign from "./component/sign-in/Sign-in";
-// import Register from "./pages/company/account/register/Register";
-// import LandingPage from "./pages/company/landing/LandingPage";
-// import Layout from "./layouts/Layout";
-// import CompanyLayout from "./layouts/CompanyLayout";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import LandingPage from "./pages/company/landing/LandingPage";
+import Layout from "./layouts/Layout";
+import CompanyLayout from "./layouts/CompanyLayout";
+import HomeCareLayout from "./layouts/HomeCareLayout";
+import Home from "./pages/divisions/home-care/home/Home";
+import AdultCare from "./pages/divisions/home-care/adult-care/AdultCare";
+import ChildrenCare from "./pages/divisions/home-care/children-care/ChildrenCare";
+
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <HomeCare />
-      {/* <LandingPage /> */}
-      {/* <Free /> */}
-      {/* <BrowserRouter> */}
-      {/* <Routes> */}
-      {/* <Body /> */}
 
-      {/* <Route element={ <Layout /> }>  */}
+      <BrowserRouter>
+        <Routes>
 
-      {/* company routes */}
 
-      {/* <Route element={ <CompanyLayout />}> */}
+          <Route element={<Layout />}>
 
-      {/* <Route path="/" element={<LandingPage />} /> */}
-      {/* <Route path="/account/sign-in" element={<Sign />} />
-              <Route path="/account/register" element={<Register />} /> */}
+            {/* company routes */}
 
-      {/* </Route> */}
+            <Route element={<CompanyLayout />}>
 
-      {/* </Route> */}
+              <Route path="/" element={<LandingPage />} />
 
-      {/* </Routes> */}
-      {/* </BrowserRouter> */}
+
+            </Route>
+
+            {/* home care routes */}
+
+            <Route path="/rhomboid/home-care" element={<HomeCareLayout />}>
+
+              <Route index element={<Home />} />
+              <Route path="adult-care" element={<AdultCare />} />
+              <Route path="children-care" element={<ChildrenCare />} />
+
+
+
+            </Route>
+
+
+
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

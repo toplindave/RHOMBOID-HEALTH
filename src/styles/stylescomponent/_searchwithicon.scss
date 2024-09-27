@@ -7,7 +7,7 @@
     margin-bottom: 10px;
   }
   .search-input-box-with-icon {
-    height: 30px;
+    height: 45px;
     background: map-get($blackcolors, light-black);
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,8 @@
       outline: none;
       background: none;
       padding: 2%;
-      font-size: 12px;
+      font-size: 14
+      px;
       font-weight: 500;
       color: #192f32;
       &::placeholder {

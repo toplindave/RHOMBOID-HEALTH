@@ -6,7 +6,8 @@ import { ReactComponent as YouTubeIcon } from "../../../component/globals/icons/
 const Footer = ({ bg }) => {
   return (
     <footer
-      className={` ${bg} __footer container pt-4 display-f justify-space-between  text-normalwhite `}
+      style={{background: bg}}
+      className={`__footer container pt-4 display-f justify-space-between  text-normalwhite `}
     >
       {/* <div className={`${bg}`}></div> */}
       <div className="__footer-logo">

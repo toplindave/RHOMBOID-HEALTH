@@ -1799,39 +1799,6 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
-.__care-logo {
-  display: flex;
-  justify-content: center;
-  padding: 1% 0px;
-}
-.__care-logo svg {
-  width: 197px;
-  height: 62px;
-}
-@media screen and (max-width: 480px) and (min-width: 0) {
-  .__care-logo svg {
-    width: 145px;
-    height: 35px;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
-  .__care-logo svg {
-    width: 155px;
-    height: 40px;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 720px) {
-  .__care-logo svg {
-    width: 165px;
-    height: 45px;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-  .__care-logo svg {
-    width: 172px;
-    height: 58px;
-  }
-}
 
 .__care-nav {
   align-items: center;
@@ -2023,14 +1990,14 @@ svg {
     width: 80%;
   }
 }
-.__care-section-1 .__sub-section-1 .__sub-left .__floating {
+/* .__care-section-1 .__sub-section-1 .__sub-left  {
   justify-content: space-between;
   align-items: end;
   padding: 3% 2%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   width: 130%;
   margin-bottom: 87px;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__care-section-1 .__sub-section-1 .__sub-left .__floating {
     display: block;
@@ -2342,7 +2309,6 @@ svg {
   }
 }
 .search-container-with-icon .search-input-box-with-icon {
-  height: 30px;
   background: #f1f1f1;
   display: flex;
   justify-content: space-between;

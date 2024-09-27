@@ -7,11 +7,11 @@ import GlobalTopNav from '../component/globals/navigations/GlobalTopNav'
 
 const HomeCareLayout = () => {
   return (
-    <>
+    <div style={{background: "#fff"}}>
         <GlobalTopNav />
         <HomeCareMainNav />
         <Outlet />
-    </>
+    </div>
   )
 }
 
