@@ -1,10 +1,10 @@
 .__hero {
   border: 1px solid plum;
 }
-.__hero .__hero-inner {
+/* .__hero .__hero-inner {
   border: 1px solid purple;
   width: 20%;
-}
+} */
 
 .__navigation {
   position: sticky;

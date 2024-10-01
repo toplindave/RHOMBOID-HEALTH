@@ -9,6 +9,7 @@ import HomeCareLayout from "./layouts/HomeCareLayout";
 import Home from "./pages/divisions/home-care/home/Home";
 import AdultCare from "./pages/divisions/home-care/adult-care/AdultCare";
 import ChildrenCare from "./pages/divisions/home-care/children-care/ChildrenCare";
+import Caregivers from "./pages/divisions/home-care/caregivers/Caregivers";
 
 
 
@@ -41,6 +42,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="adult-care" element={<AdultCare />} />
               <Route path="children-care" element={<ChildrenCare />} />
+              <Route path="caregivers" element={<Caregivers />} />
 
 
 

@@ -20,26 +20,26 @@ const GlobalTopNav = () => {
 
   useEffect(() => {
     const showBtns = () => {
-      if(location.pathname.includes("home-care/")){
+      if (location.pathname.includes("home-care/")) {
         setShowNavBtns(true);
-      }else{
+      } else {
         setShowNavBtns(false);
 
       }
     }
 
     showBtns();
-    
+
   }, [location]);
 
 
 
   const showAppName = () => {
 
-    if(location.pathname.includes("home-care")){
+    if (location.pathname.includes("home-care")) {
       return "Home care"
     }
-    if(location.pathname.includes("pharma")){
+    if (location.pathname.includes("pharma")) {
       return "Pharma"
     }
 
@@ -56,15 +56,17 @@ const GlobalTopNav = () => {
         showNavBtns ?
           <div className="_care-logo-btns container-care display-f justify-space-between align-center">
             <Link to="/rhomboid/home-care" className="home-btn bg-ash font-norm font-weight-medium justify-space-between align-center"
-              onClick={() => navigate("")}
-            >              
+
+            >
               <House />
               {showAppName()}
             </Link>
 
-            <Logo />
+            <Link to="/">
+              <Logo />
+            </Link>
 
-            <div 
+            <div
               className="home-btn bg-ash font-norm font-weight-medium justify-space-between align-center"
               onClick={() => navigate(-1)}
             >
@@ -74,11 +76,13 @@ const GlobalTopNav = () => {
 
 
           </div>
-        :
-        <Logo />
+          :
+          <Link to="/">
+            <Logo />
+          </Link>
 
       }
-      
+
     </div>
   )
 }

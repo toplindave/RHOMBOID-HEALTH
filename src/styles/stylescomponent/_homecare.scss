@@ -24,6 +24,8 @@
     }
   }
 }
+
+
 .__care-nav {
   align-items: center;
   z-index: 10;
@@ -92,27 +94,38 @@
         align-items: center;
         gap: 5px;
 
-        svg {
-          width: 15px;
-          height: 15px;
-          fill: map-get($primarycolors, greenish);
-          @include sm {
-            width: 10px;
-            height: 10px;
-          }
-          @include md {
-            width: 9px;
-            height: 9px;
-          }
-          @include lg {
-            width: 11px;
-            height: 11px;
-          }
-          @include xl {
-            width: 12px;
-            height: 12px;
-          }
+      }
+    }
+
+    .h-account-link{ 
+      
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+      svg {
+        width: 15px;
+        height: 15px;
+        fill: map-get($primarycolors, greenish);
+        @include sm {
+          width: 10px;
+          height: 10px;
         }
+        @include md {
+          width: 9px;
+          height: 9px;
+        }
+        @include lg {
+          width: 11px;
+          height: 11px;
+        }
+        @include xl {
+          width: 12px;
+          height: 12px;
+        }
+        
+      }
+      &:hover {
+        color: #0e5342;
       }
     }
   }
