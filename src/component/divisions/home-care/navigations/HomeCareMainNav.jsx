@@ -1,10 +1,12 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import "../../../../styles/index.scss";
 import { ReactComponent as UserLight } from "../../../globals/icons/userLight.svg";
 import { ReactComponent as Location } from "../../../globals/icons/locationDotRegular.svg";
 import { Link } from 'react-router-dom';
 import CareNavDropDown from './navdropdown/CareNavDropDown';
 import NavContext from '../../../../context/NavContext';
+import useGeolocation from '../../../../hooks/useGeolocation';
+import DataContext from '../../../../context/DataContext';
 
 
 
@@ -15,9 +17,47 @@ const HomeCareMainNav = () => {
   const { showNavDropDown, setShowNavDropDown } = useContext(NavContext);
 
 
-  // useEffect(() => {
-  //   console.log(showNavDropDown);
-  // }, [showNavDropDown])
+  const { currentCity, currentState } = useContext(DataContext);
+
+  const linkRef = useRef();
+
+
+  useEffect(() => {
+    function handleClickOutside(e){
+
+      if(showNavDropDown && (e.target.toString() !== linkRef.current.toString())){
+        setShowNavDropDown(false);
+      }
+      
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+
+    }
+
+
+  }, [showNavDropDown]);
+
+
+  const handleDropdown = () => {
+   
+    if(showNavDropDown){
+      setShowNavDropDown(false);
+    }else{
+      setShowNavDropDown(true);
+
+    }
+  
+
+  }
+
+
+  // console.log(showNavDropDown);
+
+
   return (
     
     <>
@@ -27,7 +67,7 @@ const HomeCareMainNav = () => {
         <div className="__care-nav-location display-f justify-space-between  ">
           <p className=" display-f justify-space-between text-greenish">
             <Location />
-            Ikeja, Lagos
+            {!currentCity ? "fetching current location ..." : `${currentCity}, ${currentState}`}
           </p>
         </div>
 
@@ -35,15 +75,22 @@ const HomeCareMainNav = () => {
           <Link to="/rhomboid/home-care/adult-care" className="font-md text-normalblack">Adult care</Link>
           <Link to="/rhomboid/home-care/children-care" className=" font-md text-normalblack">Children care</Link>
           <div 
-            className="h-account-link font-md display-f justify-space-between text-greenish"
-            onClick={() => setShowNavDropDown(!showNavDropDown)}
+            className="h-account-link"
           >
-            <UserLight /> Account
+            <span
+              className="font-md display-f justify-space-between text-greenish"
+              onClick={handleDropdown}
+              ref={linkRef}
+            >
+              <UserLight /> Account
+
+            </span>
+            <CareNavDropDown />
+
           </div>
         </ul>
 
       </div>
-      <CareNavDropDown />
 
       
       

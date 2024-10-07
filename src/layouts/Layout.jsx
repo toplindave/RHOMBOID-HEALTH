@@ -13,8 +13,6 @@ const Layout = () => {
 
         const pathName = location.pathname;
 
-        console.log(pathName);
-
         if(pathName === "/"){
             setBgColor("#337364");
         }

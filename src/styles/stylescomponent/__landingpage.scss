@@ -66,6 +66,20 @@
   ul {
     font-size: 16px;
     width: fit-content;
+    a {
+      // cursor: pointer;
+      &:hover {
+        color: #0e5342;
+      }
+      // &:last-child {
+      //   // background: palegreen;
+      //   // width: 25%;
+      //   align-items: center;
+      //   gap: 5px;
+
+      // }
+    }
+
     @include sm {
       // background: teal;
       // width: 50%;
@@ -86,21 +100,40 @@
       width: 30%;
       display: none;
     }
-    li {
 
-      &:last-child {
-        width: fit-content;
-      
-        svg {
-          width: 20px;
-          height: 20px;
-          margin-left: 5px;
+    .m-about-link{ 
+      position: relative;
+      align-items: center;
+      // gap: 5px;
+      cursor: pointer;
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        fill: map-get($primarycolors, greenish);
+        @include sm {
+          width: 10px;
+          height: 10px;
         }
-
+        @include md {
+          width: 9px;
+          height: 9px;
+        }
+        @include lg {
+          width: 11px;
+          height: 11px;
+        }
+        @include xl {
+          width: 12px;
+          height: 12px;
+        }
         
-
+      }
+      &:hover {
+        color: #0e5342;
       }
     }
+
   }
 }
 .__overlay {

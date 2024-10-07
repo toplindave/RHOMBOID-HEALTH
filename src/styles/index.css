@@ -72,6 +72,13 @@ svg {
   }
 }
 
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
 .justify-flex-start {
   justify-content: flex-start;
 }
@@ -1096,7 +1103,7 @@ svg {
   width: 75%;
 }
 
-.__navigation {
+/* .__navigation {
   z-index: 10;
   position: sticky;
   top: 0px;
@@ -1104,7 +1111,7 @@ svg {
 .__navigation ul {
   font-size: 16px;
   width: 20%;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__navigation ul {
     display: none;
@@ -1142,7 +1149,7 @@ svg {
 }
 
 .__section1 .__heroo {
-  background-image: url(../../component/globals/icons/centogene.webp);
+  background-image: url(../component//globals/icons/centogene.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 8%;
@@ -2066,7 +2073,7 @@ svg {
   z-index: 6;
   background: #e3e5e0;
   width: 48%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   border-radius: 0px 10px 10px 0px;
 }
 .__care-section-1 .__sub-section-1 .__sub-right img {
@@ -2351,16 +2358,16 @@ svg {
   outline: none;
   background: none;
   padding: 2%;
-  font-size: 12px;
+  /* font-size: 12px; */
   font-weight: 500;
   color: #192f32;
 }
 .search-container-with-icon .search-input-box-with-icon input::-moz-placeholder {
   opacity: 0.9;
 }
-.search-container-with-icon .search-input-box-with-icon input::placeholder {
+/* .search-container-with-icon .search-input-box-with-icon input::placeholder {
   opacity: 0.9;
-}
+} */
 
 .__rating-card {
   padding: 4% 15% 4% 4%;

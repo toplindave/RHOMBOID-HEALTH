@@ -12,7 +12,9 @@ import FaqDropDown from "../../../../component/FaqDropDown/FaqDropDown";
 import RatingCards from "../../../../data/ratingcard/RatingCards";
 import RatingCard from "../../../../component/ratingCard/RatingCard";
 import "../../../../styles/index.scss";
-import { useState } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
+import { searchData } from "../../../../utils/homecare/searchData";
+import DataContext from "../../../../context/DataContext";
 
 
 
@@ -21,6 +23,17 @@ import { useState } from "react";
 const Home = () => {
 
 
+  const homeRef = useRef();
+
+  const { currentCity } = useContext(DataContext);
+
+  const [showAdult, setShowAdult] = useState(false);
+  const [showLocation, setShowLocation] = useState(false);
+
+
+  const [typeOfCare, setTypeOfCare] = useState(null);
+  const [location, setLocation] = useState(null);
+ 
 
   const [review, setReview] = useState(0);
 
@@ -39,13 +52,50 @@ const Home = () => {
     }
   }
 
+  const handleAdult = () => {
+    setShowAdult(true);
+    setShowLocation(false);
+  }
+  const handleLocation = () => {
+    setShowAdult(false);
+    setShowLocation(true);
+  }
 
+
+
+
+
+    function handleClickOutside() {
+
+      if (showAdult || showLocation) {
+        setShowLocation(false);
+
+        setShowAdult(false);
+
+      }
+
+    };
+
+
+  const onChangeCare = (e) => {
+    const value = e.target.textContent;
+    setTypeOfCare(value);
+ 
+  }
+
+  const onChangeLocation = (e) => {
+    const value = e.target.textContent;
+    setLocation(value);
+   
+  }
 
 
 
 
   return (
-    <div>
+    <div
+      onClick={handleClickOutside}
+    >
       <div className="__care-section-1 container-care">
         <div className="__sub-section-1 bg-ash display-f justify-space-between">
           <div className="__sub-left">
@@ -60,11 +110,35 @@ const Home = () => {
             <div className="__floating bg-normalwhite display-f">
               <div className="__floating-input">
                 <p className="font-weight-normal font-md">What brings you here today?</p>
-                <SearchWithIcon img={<SearchIcon />} text={"Adult care"} />
+                <SearchWithIcon
+                  img={<SearchIcon />}
+                  text={"Adult care"}
+                  id={1}
+                  content={searchData[0]}
+                  showContent={showAdult}
+                  setShowContent={setShowAdult}
+                  action={handleAdult}
+                  value={typeOfCare ? typeOfCare : "Adult care"}
+                  onChange = {onChangeCare}
+                   
+                />
+
               </div>
               <div className="__floating-input">
                 <p className="font-weight-normal font-md">Location</p>
-                <SearchWithIcon img={<Location />} text={"Ikeja"} />
+                <SearchWithIcon
+                  img={<Location />}
+                  text={currentCity}
+                  id={2}
+                  content={searchData[1]}
+                  showContent={showLocation}
+                  setShowContent={setShowLocation}
+                  action={handleLocation}
+                  value={location ? location : currentCity ? currentCity : ""}
+                  onChange = {onChangeLocation}
+                 
+                />
+
               </div>
               <button className="bg-brown-green text-normalwhite font-weight-semi font-md">
                 Find Care
@@ -96,6 +170,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+
       <div className="__FAQ container-care display-f">
         <div className="__FAQ-img">
           <img src={Faq} alt="faq" />
