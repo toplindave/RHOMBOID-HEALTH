@@ -33,7 +33,7 @@ const Home = () => {
 
   const [typeOfCare, setTypeOfCare] = useState(null);
   const [location, setLocation] = useState(null);
- 
+
 
   const [review, setReview] = useState(0);
 
@@ -65,28 +65,28 @@ const Home = () => {
 
 
 
-    function handleClickOutside() {
+  function handleClickOutside() {
 
-      if (showAdult || showLocation) {
-        setShowLocation(false);
+    if (showAdult || showLocation) {
+      setShowLocation(false);
 
-        setShowAdult(false);
+      setShowAdult(false);
 
-      }
+    }
 
-    };
+  };
 
 
   const onChangeCare = (e) => {
     const value = e.target.textContent;
     setTypeOfCare(value);
- 
+
   }
 
   const onChangeLocation = (e) => {
     const value = e.target.textContent;
     setLocation(value);
-   
+
   }
 
 
@@ -119,8 +119,8 @@ const Home = () => {
                   setShowContent={setShowAdult}
                   action={handleAdult}
                   value={typeOfCare ? typeOfCare : "Adult care"}
-                  onChange = {onChangeCare}
-                   
+                  onChange={onChangeCare}
+
                 />
 
               </div>
@@ -135,8 +135,8 @@ const Home = () => {
                   setShowContent={setShowLocation}
                   action={handleLocation}
                   value={location ? location : currentCity ? currentCity : ""}
-                  onChange = {onChangeLocation}
-                 
+                  onChange={onChangeLocation}
+
                 />
 
               </div>
