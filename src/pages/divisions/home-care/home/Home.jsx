@@ -1,6 +1,6 @@
 import { ReactComponent as SearchIcon } from "../../../../component/globals/icons/searchSvg.svg";
 import { ReactComponent as ArrowRight } from "../../../../component/globals/icons/angleRightLight.svg";
-import { ReactComponent as ArrowLeft } from "../../../../component/globals/icons/angleLeftLight.svg";
+// import { ReactComponent as ArrowLeft } from "../../../../component/globals/icons/angleLeftLight.svg";
 import { ReactComponent as PlusIcon } from "../../../../component/globals/icons/plus.svg";
 import { ReactComponent as MinusIcon } from "../../../../component/globals/icons/minus.svg";
 import { ReactComponent as Location } from "../../../../component/globals/icons/locationDotRegular.svg";
@@ -15,6 +15,8 @@ import "../../../../styles/index.scss";
 import { useEffect, useState, useRef, useContext } from "react";
 import { searchData } from "../../../../utils/homecare/searchData";
 import DataContext from "../../../../context/DataContext";
+import Paginate from "../../../../component/globals/paginate/Paginate";
+import { reviews } from "../../../../data/reviews";
 
 
 
@@ -216,42 +218,9 @@ const Home = () => {
           <div className="__grid-box" />
           <div className="__grid-box" />
 
-          <div className="__rating-content container-care display-f">
-            <div className="__angle">
-              <ArrowLeft onClick={previousReview} />
-            </div>
-            {review === 0 && (
-              <div className="__rating-content-grid">
-                {RatingCards.map((card, id) => (
-                  <RatingCard key={id} card={card} />
-                ))}
-              </div>
-            )}
-            {review === 1 && (
-              <div className="__rating-content-grid">
-                {RatingCards.map((card, id) => (
-                  <RatingCard key={id} card={card} />
-                ))}
-              </div>
-            )}
-            {review === 2 && (
-              <div className="__rating-content-grid">
-                {RatingCards.map((card, id) => (
-                  <RatingCard key={id} card={card} />
-                ))}
-              </div>
-            )}
-            {review === 3 && (
-              <div className="__rating-content-grid">
-                {RatingCards.map((card, id) => (
-                  <RatingCard key={id} card={card} />
-                ))}
-              </div>
-            )}
-            <div className="__angle">
-              <ArrowRight onClick={nextReview} />
-            </div>
-          </div>
+          <Paginate data={reviews} />
+
+         
         </div>
       </div>
     </div>

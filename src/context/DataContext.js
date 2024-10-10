@@ -1,5 +1,4 @@
 import { createContext, useEffect, useRef, useState } from 'react';
-import useGeolocation from '../hooks/useGeolocation';
 
 
 export const DataContext = createContext({});

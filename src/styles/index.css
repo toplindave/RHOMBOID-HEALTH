@@ -2272,7 +2272,7 @@ svg {
 .__ratings .__rating-bg .__grid-box {
   background: #526354;
 }
-.__ratings .__rating-bg .__rating-content {
+/* .__ratings .__rating-bg .__rating-content {
   justify-content: space-between;
   position: absolute;
   width: 100%;
@@ -2300,7 +2300,7 @@ svg {
   grid-column-gap: 15px;
   grid-row-gap: 20%;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .search-container-with-icon {
   width: 100%;
@@ -2369,11 +2369,6 @@ svg {
   opacity: 0.9;
 } */
 
-.__rating-card {
-  padding: 4% 15% 4% 4%;
-  background: #ffffff;
-  height: 224px;
-}
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__rating-card {
     padding: 6% 15% 4% 6%;
