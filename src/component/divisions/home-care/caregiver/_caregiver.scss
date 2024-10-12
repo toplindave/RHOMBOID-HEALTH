@@ -1,0 +1,166 @@
+.__caregiver-card-container {
+  //   background: teal;
+  //   margin-top: 120px;
+  //   display: none;
+  // @include xl {
+  //   width: 30%;
+  // }
+  // @include lg {
+  //   width: 32%;
+  // }
+  @include md {
+    margin-bottom: 50px;
+  }
+  @include sm {
+    margin-bottom: 50px;
+  }
+  .__type-of-care {
+    width: 40%;
+    padding: 1.5% 3%;
+    @include md {
+      width: 20%;
+    }
+    @include sm {
+      width: 25%;
+    }
+  }
+  .__caregiver-card {
+    // background: floralwhite;
+    padding: 3%;
+    border: 1px solid map-get($primarycolors, primary-5);
+    @include md {
+      padding: 5%;
+    }
+    @include sm {
+      padding: 5%;
+    }
+    .__caregiver-prof-top {
+      // padding: 0px 25%;
+      margin-bottom: 16px;
+      @include md {
+        margin-bottom: 25px;
+      }
+      @include sm {
+        margin-bottom: 25px;
+      }
+      .__caregiver-img {
+        // background: grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        @include md {
+          margin-bottom: 25px;
+        }
+        @include sm {
+          margin-bottom: 25px;
+        }
+        img {
+          border-radius: 50%;
+          width: 120px;
+          height: 120px;
+          @include md {
+            width: 160px;
+            height: 160px;
+          }
+          @include sm {
+            width: 150px;
+            height: 150px;
+          }
+        }
+      }
+      .__caregiver-name {
+        text-align: center;
+        margin-bottom: 5px;
+        @include md {
+          margin-bottom: 15px;
+        }
+        @include sm {
+          margin-bottom: 15px;
+        }
+      }
+      .__caregiver-availability {
+        // padding: 2%;
+        margin-bottom: 12px;
+        // width: 50%;
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .__care-availability-text {
+          padding: 4%;
+          @include md {
+            padding: 2%;
+          }
+          @include sm {
+            padding: 2%;
+          }
+        }
+      }
+      .__caregiver-rating {
+        margin-bottom: 15px;
+        padding: 0px 25%;
+        @include md {
+          width: 100%;
+          padding: 0px 10%;
+          gap: 5px;
+          // padding: 0px;
+          justify-content: center;
+        }
+        @include sm {
+          width: 100%;
+          padding: 0px 10%;
+          gap: 5px;
+          justify-content: center;
+          // padding: 0px;
+        }
+        .__caregiver-stars {
+          display: flex;
+          justify-content: space-between;
+          width: 50%;
+          @include md {
+            width: 15%;
+          }
+          @include sm {
+            width: 30%;
+          }
+          svg {
+            width: 12px;
+            height: 12px;
+            fill: #e65d25;
+          }
+        }
+      }
+    }
+    .__caregiver-prof-bottom {
+      .__caregiver-date-and-time {
+        margin-bottom: 20px;
+        .__caregiver-time {
+          padding: 2% 8%;
+          cursor: pointer;
+          &:hover {
+            background: #0b5241;
+          }
+        }
+      }
+      .__moretimes {
+        text-align: right;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover {
+          color: #e5825b;
+        }
+      }
+      .__caregiver-btn {
+        width: 100%;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        padding: 3%;
+        &:hover {
+          background: #263928;
+        }
+      }
+    }
+  }
+}

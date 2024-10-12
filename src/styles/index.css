@@ -520,6 +520,38 @@ svg {
   color: #a7be86;
 }
 
+.text-light-green {
+  color: #d9ebd9;
+}
+
+.text-hover-light-green:hover {
+  color: #d9ebd9;
+}
+
+.bg-light-green {
+  background-color: #d9ebd9;
+}
+
+.bg-hover-light-green:hover {
+  color: #d9ebd9;
+}
+
+.text-black-green {
+  color: #183030;
+}
+
+.text-hover-black-green:hover {
+  color: #183030;
+}
+
+.bg-black-green {
+  background-color: #183030;
+}
+
+.bg-hover-black-green:hover {
+  color: #183030;
+}
+
 .text-normalwhite {
   color: #ffffff;
 }
@@ -808,6 +840,22 @@ svg {
   color: #ffcfba;
 }
 
+.text-orange {
+  color: #e65d25;
+}
+
+.text-hover-orange:hover {
+  color: #e65d25;
+}
+
+.bg-orange {
+  background-color: #e65d25;
+}
+
+.bg-hover-orange:hover {
+  color: #e65d25;
+}
+
 .btn {
   padding: 2% 2%;
   text-decoration: none;
@@ -1022,7 +1070,8 @@ svg {
   }
 }
 .__hero .__hero-inner {
-  width: 20%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__hero .__hero-inner {
@@ -1044,56 +1093,32 @@ svg {
     width: 30%;
   }
 }
-.__hero .__hero-inner .__hero-account {
-  width: 25%;
+.__hero .__hero-inner a {
+  width: -moz-fit-content;
+  width: fit-content;
 }
-@media screen and (max-width: 480px) and (min-width: 0) {
-  .__hero .__hero-inner .__hero-account {
-    width: 30%;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
-  .__hero .__hero-inner .__hero-account {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 720px) {
-  .__hero .__hero-inner .__hero-account {
-    width: 30%;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-  .__hero .__hero-inner .__hero-account {
-    width: 30%;
-  }
-}
-.__hero .__hero-inner .__hero-account .__hero-account-svg {
-  width: 25%;
-}
-.__hero .__hero-inner .__hero-account .__hero-account-svg svg {
-  width: minmax(12px, 18px);
+.__hero .__hero-inner a svg {
+  width: 12px;
   height: 12px;
+  margin-right: 10px;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
-  .__hero .__hero-inner .__hero-account .__hero-account-svg svg {
+  .__hero .__hero-inner a svg {
     width: 10px;
     height: 10px;
   }
 }
 @media screen and (max-width: 720px) and (min-width: 480px) {
-  .__hero .__hero-inner .__hero-account .__hero-account-svg svg {
+  .__hero .__hero-inner a svg {
     width: 10px;
     height: 10px;
   }
 }
 @media screen and (max-width: 960px) and (min-width: 720px) {
-  .__hero .__hero-inner .__hero-account .__hero-account-svg svg {
+  .__hero .__hero-inner a svg {
     width: 10px;
     height: 10px;
   }
-}
-.__hero .__hero-inner .__hero-account p {
-  width: 75%;
 }
 
 .__navigation {
@@ -1103,7 +1128,8 @@ svg {
 }
 .__navigation ul {
   font-size: 16px;
-  width: 20%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__navigation ul {
@@ -1129,11 +1155,13 @@ svg {
   }
 }
 .__navigation ul li:last-child {
-  width: 25%;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .__navigation ul li:last-child svg {
   width: 20px;
   height: 20px;
+  margin-left: 5px;
 }
 
 .__overlay {
@@ -1723,6 +1751,30 @@ svg {
   }
 }
 
+.small-text {
+  font-size: 0.75rem;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .small-text {
+    font-size: 8px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .small-text {
+    font-size: 9px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .small-text {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .small-text {
+    font-size: 11px;
+  }
+}
+
 .__btn-texts {
   cursor: pointer;
   display: flex;
@@ -1799,6 +1851,40 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
+.__care-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0px;
+  margin-bottom: 10px;
+}
+.__care-logo svg {
+  width: 197px;
+  height: 62px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__care-logo svg {
+    width: 145px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__care-logo svg {
+    width: 155px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__care-logo svg {
+    width: 165px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__care-logo svg {
+    width: 172px;
+    height: 58px;
+  }
+}
 
 .__care-nav {
   align-items: center;
@@ -1871,44 +1957,49 @@ svg {
     width: 35%;
   }
 }
-.__care-nav ul li {
-  cursor: pointer;
-}
-.__care-nav ul li:hover {
+.__care-nav ul a:hover {
   color: #0e5342;
 }
-.__care-nav ul li:last-child {
+.__care-nav ul a:last-child {
   align-items: center;
   gap: 5px;
 }
-.__care-nav ul li:last-child svg {
+.__care-nav ul .h-account-link {
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.__care-nav ul .h-account-link svg {
   width: 15px;
   height: 15px;
   fill: #192f32;
 }
 @media screen and (max-width: 480px) and (min-width: 0) {
-  .__care-nav ul li:last-child svg {
+  .__care-nav ul .h-account-link svg {
     width: 10px;
     height: 10px;
   }
 }
 @media screen and (max-width: 720px) and (min-width: 480px) {
-  .__care-nav ul li:last-child svg {
+  .__care-nav ul .h-account-link svg {
     width: 9px;
     height: 9px;
   }
 }
 @media screen and (max-width: 960px) and (min-width: 720px) {
-  .__care-nav ul li:last-child svg {
+  .__care-nav ul .h-account-link svg {
     width: 11px;
     height: 11px;
   }
 }
 @media screen and (max-width: 1200px) and (min-width: 960px) {
-  .__care-nav ul li:last-child svg {
+  .__care-nav ul .h-account-link svg {
     width: 12px;
     height: 12px;
   }
+}
+.__care-nav ul .h-account-link:hover {
+  color: #0e5342;
 }
 
 .__care-section-1 {
@@ -1990,14 +2081,14 @@ svg {
     width: 80%;
   }
 }
-/* .__care-section-1 .__sub-section-1 .__sub-left  {
+.__care-section-1 .__sub-section-1 .__sub-left .__floating {
   justify-content: space-between;
   align-items: end;
-  padding: 3% 2%;
+  padding: 20px 2%;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   width: 130%;
   margin-bottom: 87px;
-} */
+}
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__care-section-1 .__sub-section-1 .__sub-left .__floating {
     display: block;
@@ -2038,7 +2129,8 @@ svg {
   }
 }
 .__care-section-1 .__sub-section-1 .__sub-left .__floating button {
-  padding: 1% 2%;
+  padding: 10px 20px;
+  height: 45px;
   outline: none;
   border: none;
 }
@@ -2066,7 +2158,7 @@ svg {
   z-index: 6;
   background: #e3e5e0;
   width: 48%;
-  opacity: 0.5;
+  opacity: 0.8;
   border-radius: 0px 10px 10px 0px;
 }
 .__care-section-1 .__sub-section-1 .__sub-right img {
@@ -2218,6 +2310,8 @@ svg {
 }
 .__FAQ .__FAQ-questions .FAQ-dropdown-container .FAQ-drop svg {
   cursor: pointer;
+  fill: #526354;
+  stroke: #526354;
 }
 .__FAQ .__FAQ-questions .FAQ-dropdown-container .FAQ-dropdown {
   border: 1px solid #b4cfa5;
@@ -2309,6 +2403,7 @@ svg {
   }
 }
 .search-container-with-icon .search-input-box-with-icon {
+  height: 45px;
   background: #f1f1f1;
   display: flex;
   justify-content: space-between;
@@ -2351,7 +2446,7 @@ svg {
   outline: none;
   background: none;
   padding: 2%;
-  font-size: 12px;
+  font-size: 14 px;
   font-weight: 500;
   color: #192f32;
 }
@@ -2439,6 +2534,1432 @@ svg {
   .__rating-card .__rating-date {
     font-size: 11px;
   }
+}
+
+.care-navdropdown {
+  width: 200px;
+  background: #E3E5E0;
+  border: 1px solid #B4CFA5;
+  position: fixed;
+  top: 0;
+  right: 3.5%;
+  display: none;
+  z-index: 101;
+}
+
+.__caregivers {
+  display: flex;
+  align-items: start;
+  width: 100%;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers {
+    display: block;
+  }
+}
+.__caregivers .__caregivers-side-bar {
+  width: 28%;
+  padding: 4% 6% 7% 3.5%;
+  position: sticky;
+  top: 50px;
+  background: white;
+  z-index: 9;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregivers .__caregivers-side-bar {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregivers .__caregivers-side-bar {
+    width: 32%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar {
+    background: white;
+    top: 25px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar {
+    top: 10px;
+    width: 100%;
+    background: white;
+  }
+}
+.__caregivers .__caregivers-side-bar h1 {
+  margin-bottom: 54px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar h1 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar h1 {
+    margin-bottom: 25px;
+  }
+}
+.__caregivers .__caregivers-side-bar .__search-input-and-filter-icon {
+  margin-bottom: 20px;
+}
+.__caregivers .__caregivers-side-bar .__search-input-and-filter-icon input {
+  padding: 4%;
+  width: 100%;
+  border: 1px solid #b4cfa5;
+  background: transparent;
+  outline: none;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon input {
+    margin-bottom: 10px;
+    padding: 2%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon input {
+    padding: 2%;
+    margin-bottom: 15px;
+    width: 90%;
+  }
+}
+.__caregivers .__caregivers-side-bar .__search-input-and-filter-icon .__filter-icon-container {
+  display: none;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon .__filter-icon-container {
+    display: block;
+    background: #e3e5e0;
+    height: 100%;
+  }
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon .__filter-icon-container svg {
+    fill: #02130f;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon .__filter-icon-container {
+    display: block;
+    background: #e3e5e0;
+    height: 100%;
+  }
+  .__caregivers .__caregivers-side-bar .__search-input-and-filter-icon .__filter-icon-container svg {
+    fill: #02130f;
+    width: 25px;
+    height: 25px;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort {
+  border-radius: 5px;
+  border: 1px solid #b4cfa5;
+  padding-bottom: 4%;
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort .__filter-and-sort-h4 {
+  border-bottom: 1px solid #b4cfa5;
+  padding: 4%;
+  margin-bottom: 19px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort .__filter-and-sort-h4 {
+    margin-bottom: 10px;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort .__filter-and-sort-h4 {
+    padding: 3%;
+    margin-bottom: 15px;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort .__filter {
+  padding: 4%;
+  background: #f1f1f1;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort .__filter {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort .__filter {
+    padding: 3%;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort .__filter:hover {
+  background: #d8d5d5;
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort .__filter svg {
+  fill: #141e15;
+  stroke: #141e15;
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort-media {
+  border-radius: 5px;
+  border: 1px solid #b4cfa5;
+  padding-bottom: 4%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media {
+    display: none;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter-and-sort-h4 {
+  border-bottom: 1px solid #b4cfa5;
+  padding: 4%;
+  margin-bottom: 19px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter-and-sort-h4 {
+    margin-bottom: 10px;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter-and-sort-h4 {
+    padding: 3%;
+    margin-bottom: 15px;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter {
+  padding: 4%;
+  background: #f1f1f1;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter {
+    padding: 3%;
+  }
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter:hover {
+  background: #d8d5d5;
+}
+.__caregivers .__caregivers-side-bar .__filter-and-sort-media .__filter svg {
+  fill: #141e15;
+  stroke: #141e15;
+}
+.__caregivers .__caregivers-main-content {
+  width: 72%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  position: sticky;
+  top: 50px;
+  bottom: 50px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregivers .__caregivers-main-content {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregivers .__caregivers-main-content {
+    width: 68%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-main-content {
+    width: 100%;
+    padding: 0px 6%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-main-content {
+    width: 100%;
+    padding: 0px 6%;
+  }
+}
+.__caregivers .__caregivers-main-content .__caregivers-main-content-con {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1% 3.5% 15% 3.5%;
+  grid-row-gap: 1%;
+  grid-column-gap: 2%;
+}
+.__caregivers .__caregivers-main-content .__caregivers-main-content-con::-webkit-scrollbar {
+  width: 0px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregivers .__caregivers-main-content .__caregivers-main-content-con {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregivers .__caregivers-main-content .__caregivers-main-content-con {
+    display: block;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregivers .__caregivers-main-content .__caregivers-main-content-con {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container {
+    margin-bottom: 50px;
+  }
+}
+.__caregiver-card-container .__type-of-care {
+  width: 40%;
+  padding: 1.5% 3%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__type-of-care {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__type-of-care {
+    width: 25%;
+  }
+}
+.__caregiver-card-container .__caregiver-card {
+  padding: 3%;
+  border: 1px solid #b4cfa5;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card {
+    padding: 5%;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top {
+  margin-bottom: 16px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top {
+    margin-bottom: 25px;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img {
+    margin-bottom: 25px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img {
+    margin-bottom: 25px;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img img {
+    width: 160px;
+    height: 160px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-img img {
+    width: 150px;
+    height: 150px;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-name {
+  text-align: center;
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-name {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-name {
+    margin-bottom: 15px;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-availability {
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-availability .__care-availability-text {
+  padding: 4%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-availability .__care-availability-text {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-availability .__care-availability-text {
+    padding: 2%;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating {
+  margin-bottom: 15px;
+  padding: 0px 25%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating {
+    width: 100%;
+    padding: 0px 10%;
+    gap: 5px;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating {
+    width: 100%;
+    padding: 0px 10%;
+    gap: 5px;
+    justify-content: center;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating .__caregiver-stars {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating .__caregiver-stars {
+    width: 15%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating .__caregiver-stars {
+    width: 30%;
+  }
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-top .__caregiver-rating .__caregiver-stars svg {
+  width: 12px;
+  height: 12px;
+  fill: #e65d25;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__caregiver-date-and-time {
+  margin-bottom: 20px;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__caregiver-date-and-time .__caregiver-time {
+  padding: 2% 8%;
+  cursor: pointer;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__caregiver-date-and-time .__caregiver-time:hover {
+  background: #0b5241;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__moretimes {
+  text-align: right;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__moretimes:hover {
+  color: #e5825b;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__caregiver-btn {
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 3%;
+}
+.__caregiver-card-container .__caregiver-card .__caregiver-prof-bottom .__caregiver-btn:hover {
+  background: #263928;
+}
+
+.__caregiver-details-container {
+  padding: 3% 12% 5% 12%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container {
+    padding: 3% 4% 5% 4%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container {
+    padding: 3% 4% 5% 4%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container {
+  border: 1px solid #d5e2de;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container {
+  padding: 4% 2% 2% 2%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating {
+  width: 40%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating {
+  width: 50%;
+  margin-top: 8px;
+  margin-bottom: 27px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating {
+    width: 70%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating .__detail-star svg {
+  width: 15px;
+  height: 15px;
+  fill: #e65d25;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating .__detail-star svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-details-name-and-rating .__details-star-rating .__detail-star svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-detail-img-container {
+  width: 180px;
+  height: 180px;
+  background: grey;
+  border-radius: 50%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-detail-img-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__caregiver-detail-img-container {
+    width: 130px;
+    height: 130px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container {
+  margin-top: 12px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container {
+    margin-top: 30px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container .__details-availability-btn-sub-container {
+  width: 20%;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container .__details-availability-btn-sub-container {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container .__details-availability-btn-sub-container {
+    width: 35%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container .__details-availability-btn-sub-container .__details-available-btn {
+  padding: 3% 7%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d9ebd9;
+  background: #d9ebd9;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-top-container .__details-availability-btn-container .__details-availability-btn-sub-container .__details-detail-btn {
+  padding: 3% 7%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d9ebd9;
+  background: none;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section {
+  padding: 1% 2% 5% 2%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__direction-btn svg {
+  width: 30px;
+  height: 30px;
+  fill: #02130f;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__direction-btn svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__direction-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__direction-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 4%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container {
+    width: 95%;
+    grid-column-gap: 0px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container {
+    width: 95%;
+    grid-column-gap: 0px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container {
+    width: 95%;
+    grid-column-gap: 4px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time {
+  text-align: center;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time h4 {
+  margin-bottom: 20px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time ul {
+  padding: 0px 10%;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time ul {
+    padding: 0px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time ul li {
+  background: #d9ebd9;
+  padding: 2% 3%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-date-section .__caregiver-details-date-grid-container .__caregiver-details-available-date-and-time ul li {
+    font-size: 7px;
+    padding: 2% 1%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all {
+  padding: 4% 2%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-about-container {
+  border-bottom: 1px solid #d5e2de;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-about-container h4 {
+  margin-bottom: 15px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-about-container p {
+  margin-bottom: 15px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-credentials-container {
+  padding: 2% 0px;
+  border-bottom: 1px solid #d5e2de;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-credentials-container h4 {
+  margin-bottom: 15px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-credentials-container .__credential-sub {
+  width: 70%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-credentials-container .__credential-sub h5 {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-credentials-container .__credential-sub .__languages {
+  gap: 2px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container {
+  padding: 2% 0px;
+  border-bottom: 1px solid #d5e2de;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container h4 {
+  margin-bottom: 15px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating h5 {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star svg {
+  fill: #e65d25;
+  width: 20px;
+  height: 20px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating .__overall-star-ratingg {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__overall-rating select {
+  width: 100%;
+  background: none;
+  border: 2px solid #d9ebd9;
+  height: 30px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__total-reviewss h5 {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__total-reviewss .__total-review-h2 {
+  text-align: center;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__waiting-time {
+  width: 25%;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-reviews-container .__review-sub .__waiting-time .__waiting-time-sub {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied {
+  border-bottom: 1px solid #d5e2de;
+  padding: 1% 30% 2% 0px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied {
+    padding: 1% 20% 2% 0px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied {
+    padding: 1% 15% 2% 0px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied {
+    padding: 1% 10% 2% 0px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied {
+    padding: 1% 5% 2% 0px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs {
+    width: 75%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-up {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  fill: #285b4c;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-up {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-up {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-up {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-up {
+    width: 10px;
+    height: 10px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-down {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  fill: #e65d25;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-down {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-down {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-down {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-down {
+    width: 10px;
+    height: 10px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-text-satisfied {
+  margin-bottom: 10px;
+  color: #285b4c;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__thumbs-text-unsatisfied {
+  margin-bottom: 10px;
+  color: #e65d25;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__thumbs .__testimony-text {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified {
+  width: 15%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified {
+    width: 20%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified svg {
+  width: 15px;
+  height: 15px;
+  fill: #5b96fc;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__verified p {
+  color: #5b96fc;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified {
+  width: 15%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified {
+    width: 20%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified svg {
+  visibility: hidden;
+  width: 15px;
+  height: 15px;
+  fill: #5b96fc;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__satisfied .__unverified p {
+  color: #5b96fc;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied {
+  border-bottom: 1px solid #d5e2de;
+  padding: 1% 30% 2% 0px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied {
+    padding: 1% 20% 2% 0px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied {
+    padding: 1% 15% 2% 0px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied {
+    padding: 1% 10% 2% 0px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied {
+    padding: 1% 5% 2% 0px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs {
+    width: 75%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 5px;
+  fill: #e65d25;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs svg {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs svg {
+    width: 13px;
+    height: 13px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs svg {
+    width: 10px;
+    height: 10px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs .__thumbs-text {
+  margin-bottom: 10px;
+  color: #e65d25;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__thumbs .__testimony-text {
+  margin-bottom: 10px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified {
+  width: 15%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified {
+    width: 22%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified {
+    width: 20%;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified svg {
+  width: 15px;
+  height: 15px;
+  fill: #5b96fc;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified svg {
+    width: 9px;
+    height: 9px;
+  }
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__caregiver-details-testimony-container .__unsatisfied .__verified p {
+  color: #5b96fc;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__more-review-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__more-review-btn-container .__more-review-btn {
+  border: 1px solid #526354;
+  background: none;
+  padding: 1%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__more-review-btn-container .__more-review-btn {
+    padding: 1.5%;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__more-review-btn-container .__more-review-btn {
+    padding: 1.5%;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__caregiver-details-sub-container .__caregiver-details-about-section-all .__more-review-btn-container .__more-review-btn {
+    padding: 1.5%;
+    border-radius: 5px;
+  }
+}
+.__caregiver-details-container .__details-request-caregiver-container {
+  margin-top: 30px;
+  position: sticky;
+  bottom: 10px;
+}
+.__caregiver-details-container .__details-request-caregiver-container button {
+  outline: none;
+  border: none;
+  padding: 1% 4%;
+  border-radius: 10px;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-details-container .__details-request-caregiver-container button {
+    padding: 1.5% 3%;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-details-container .__details-request-caregiver-container button {
+    padding: 1.5% 3%;
+    border-radius: 5px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-details-container .__details-request-caregiver-container button {
+    padding: 1.5% 3%;
+    border-radius: 5px;
+  }
+}
+
+.__caregiver-profile {
+  padding: 3% 3.5% 30% 3.5%;
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-profile {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile {
+    height: 120vh;
+  }
+}
+.__caregiver-profile h1 {
+  margin-bottom: 60px;
+}
+.__caregiver-profile .__profile-btn-section {
+  background: #d8f0e1;
+  margin-bottom: 50px;
+}
+.__caregiver-profile .__profile-btn-section button {
+  border: 1px solid #b4cfa5;
+  padding: 0.5% 2%;
+  background: transparent;
+  outline: none;
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-btn-section button {
+    padding: 0.5% 1%;
+    font-size: 8px;
+  }
+}
+.__caregiver-profile .__profile-display-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section {
+    display: block;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-display-section {
+    display: block;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container {
+    margin-bottom: 30px;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container h1 {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container h1 {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container h1 {
+    margin-bottom: 10px;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
+  background: #e3e5e0;
+  height: 223px;
+  position: relative;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
+    height: 190px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
+    height: 170px;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
+    height: 150px;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card {
+  gap: 25px;
+  padding: 4% 6%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card {
+    gap: 40px;
+    padding: 3%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card {
+    gap: 40px;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card {
+    gap: 40px;
+    padding: 2%;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card svg {
+  width: 60px;
+  height: 60px;
+  fill: #526354;
+  margin-top: 0px;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details {
+  width: 100%;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details .__first-name {
+  margin-bottom: 10px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details .__first-name p {
+  margin-bottom: 5px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details .__last-name {
+  margin-bottom: 10px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details .__last-name p {
+  margin-bottom: 5px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-card .__profile-display-card-details .__phone-number p {
+  margin-bottom: 5px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-email-address {
+  width: 100%;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-email-address p {
+  margin-bottom: 15px;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__profile-display-primary-address {
+  width: 100%;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container {
+  position: absolute;
+  bottom: 10px;
+  right: 6%;
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container {
+    bottom: 10px;
+    right: 3%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container {
+    bottom: 10px;
+    right: 3%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container {
+    bottom: 10px;
+    right: 2%;
+  }
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container .__edit {
+  margin-top: 20px;
+  align-items: center;
+  cursor: pointer;
+}
+.__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container .__edit svg {
+  width: 12px;
+  height: 12px;
+  fill: #0f7c62;
+}
+
+.__sign-in-section-web {
+  height: 100vh;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__sign-in-section-web {
+    height: 90vh;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__sign-in-section-web {
+    height: 70vh;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__sign-in-section-web {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__sign-in-section-web {
+    height: 80vh;
+  }
+}
+.__sign-in-section-web .__sign-in-container-web {
+  padding: 8% 5% 4% 5%;
+  width: 50%;
+  height: 100%;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__sign-in-section-web .__sign-in-container-web {
+    width: 60%;
+    padding: 20% 5%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__sign-in-section-web .__sign-in-container-web {
+    width: 70%;
+    padding: 15% 3%;
+  }
+}
+@media screen and (max-width: 720px) and (min-width: 480px) {
+  .__sign-in-section-web .__sign-in-container-web {
+    width: 85%;
+    padding: 15% 3%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 0) {
+  .__sign-in-section-web .__sign-in-container-web {
+    width: 90%;
+    padding: 15% 3%;
+  }
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web {
+  border: 1px solid #e3e5e0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+  .__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web {
+    height: 70%;
+  }
+}
+@media screen and (max-width: 960px) and (min-width: 720px) {
+  .__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web {
+    height: 70%;
+  }
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web h2 {
+  border-bottom: 1px solid #e3e5e0;
+  padding: 2% 5%;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web .__sign-in-form-web {
+  padding: 8% 5%;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web .__sign-in-form-web p {
+  margin-bottom: 15px;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web .__sign-in-form-web input {
+  border: 1px solid #e3e5e0;
+  width: 100%;
+  padding: 2.5%;
+  margin-bottom: 35px;
+  background: none;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-In-sub-container-web .__sign-in-form-web button {
+  margin-top: 30px;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 2%;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-in-sign-up-container {
+  width: 100%;
+}
+.__sign-in-section-web .__sign-in-container-web .__sign-in-sign-up-container button {
+  width: 80%;
+  outline: none;
+  border: none;
+  padding: 2%;
 }
 
 .p-0 {

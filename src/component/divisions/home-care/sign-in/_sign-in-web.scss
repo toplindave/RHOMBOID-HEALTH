@@ -1,0 +1,82 @@
+.__sign-in-section-web {
+  height: 100vh;
+  @include xl {
+    height: 90vh;
+  }
+  @include lg {
+    height: 70vh;
+  }
+  @include md {
+    height: 80vh;
+  }
+  @include sm {
+    height: 80vh;
+  }
+  .__sign-in-container-web {
+    padding: 8% 5% 4% 5%;
+    width: 50%;
+    height: 100%;
+    @include xl {
+      width: 60%;
+      padding: 20% 5%;
+    }
+    @include lg {
+      width: 70%;
+      padding: 15% 3%;
+    }
+    @include md {
+      width: 85%;
+      padding: 15% 3%;
+    }
+    @include sm {
+      width: 90%;
+      padding: 15% 3%;
+    }
+    .__sign-In-sub-container-web {
+      //   background: teal;
+      //   height: 90%;
+      border: 1px solid #e3e5e0;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      @include xl {
+        height: 70%;
+      }
+      @include lg {
+        height: 70%;
+      }
+      h2 {
+        border-bottom: 1px solid #e3e5e0;
+        padding: 2% 5%;
+      }
+      .__sign-in-form-web {
+        padding: 8% 5%;
+        p {
+          margin-bottom: 15px;
+        }
+        input {
+          border: 1px solid #e3e5e0;
+          width: 100%;
+          padding: 2.5%;
+          margin-bottom: 35px;
+          background: none;
+        }
+        button {
+          margin-top: 30px;
+          width: 100%;
+          outline: none;
+          border: none;
+          padding: 2%;
+        }
+      }
+    }
+    .__sign-in-sign-up-container {
+      width: 100%;
+      button {
+        width: 80%;
+        outline: none;
+        border: none;
+        padding: 2%;
+      }
+    }
+  }
+}

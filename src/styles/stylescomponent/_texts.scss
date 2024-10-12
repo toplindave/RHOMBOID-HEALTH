@@ -137,3 +137,18 @@
     font-size: 30px;
   }
 }
+.small-text {
+  font-size: $font-size-sm; // 12px
+  @include sm {
+    font-size: 8px;
+  }
+  @include md {
+    font-size: 9px;
+  }
+  @include lg {
+    font-size: 10px;
+  }
+  @include xl {
+    font-size: 11px;
+  }
+}
