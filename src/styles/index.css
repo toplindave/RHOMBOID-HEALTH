@@ -1545,6 +1545,7 @@ svg {
 .p-text {
   font-size: 1rem;
 }
+
 @media screen and (max-width: 480px) and (min-width: 0) {
   .p-text {
     font-size: 10px;
@@ -1730,7 +1731,7 @@ svg {
   }
 }
 
-.__btn-texts {
+/* .__btn-texts {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1744,7 +1745,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__btn-texts .__arrow-bg {
     width: 20px;
@@ -1769,11 +1770,13 @@ svg {
     height: 27px;
   }
 }
+/* 
 .__btn-texts .__arrow-bg svg {
   transform: rotate(-45deg);
   fill: white;
   width: 17px;
-}
+} */
+
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__btn-texts .__arrow-bg svg {
     width: 10px;

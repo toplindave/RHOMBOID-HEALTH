@@ -10,6 +10,7 @@ import { ReactComponent as QRCode } from "../../../component/globals/icons/qrcod
 import AdultCare from "../../../component/globals/icons/adultcare.png";
 import ChildrenCare from "../../../component/globals/icons/childrenCare.jpg";
 import ButtonWithText from "../../../component/globals/buttons/buttonWithText/ButtonWithText";
+import RhomboidBtn from "../../../component/globals/buttons/RhomboidBtn";
 // import TopNav from "../../../component/company/nav/TopNav";
 // import MainNav from "../../../component/company/nav/MainNav";
 
@@ -33,7 +34,9 @@ function LandingPage() {
                 <br /> better outcomes
               </span>
             </h1>
-            <ButtonWithText text={"Get started"} />
+            <RhomboidBtn
+              text = {"Get started"}
+            />
           </div>
         </div>
       </section>
