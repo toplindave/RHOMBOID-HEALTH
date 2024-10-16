@@ -13,7 +13,10 @@
   }
   .__hero-inner {
     width: fit-content;
-   
+    
+    .search-btn{
+      cursor: pointer;
+    }
     @include sm {
       width: 50%;
     }
@@ -67,7 +70,7 @@
     font-size: 16px;
     width: fit-content;
     a {
-      // cursor: pointer;
+     
       &:hover {
         color: #0e5342;
       }
@@ -102,15 +105,17 @@
     }
 
     .m-about-link{ 
+      width: fit-content;
       position: relative;
-      align-items: center;
-      // gap: 5px;
+     
       cursor: pointer;
+      
       svg {
         width: 20px;
         height: 20px;
         margin-left: 5px;
         fill: map-get($primarycolors, greenish);
+        z-index: -1;
         @include sm {
           width: 10px;
           height: 10px;
@@ -154,6 +159,11 @@
         text-align: left;
         // background-color: tan;
       }
+
+      .get-started-btn{
+        font-size: 20px;
+        letter-spacing: 2px;
+      }
     }
   }
 }
@@ -180,6 +190,7 @@
 
     ._home-care-card {
       width: 42%;
+      position: relative;
       @include sm {
         width: 100%;
         margin-bottom: 40px;
@@ -214,9 +225,15 @@
       p {
         margin-bottom: 20px;
       }
-      .__home-care-card-btn {
-        width: 30%;
+      // .__home-care-card-btn {
+      //   width: 30%;
+      //   border: 1px solid red;
+      // }
+      .learn-more-btn{
+        font-size: 16px;
+        letter-spacing: 2px;
       }
+
     }
   }
 }
@@ -247,6 +264,9 @@
   p {
     margin-bottom: 15px;
   }
+
+
+
   ul {
     // display: flex;
     // justify-content: space-between;

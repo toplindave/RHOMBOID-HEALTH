@@ -17,7 +17,7 @@ const HomeCareMainNav = () => {
   const { showNavDropDown, setShowNavDropDown } = useContext(NavContext);
 
 
-  const { currentCity, currentState } = useContext(DataContext);
+  const { currentCity, currentState, regionPending } = useContext(DataContext);
 
   const linkRef = useRef();
 
@@ -67,7 +67,7 @@ const HomeCareMainNav = () => {
         <div className="__care-nav-location display-f justify-space-between  ">
           <p className=" display-f justify-space-between text-greenish">
             <Location />
-            {!currentCity ? "fetching current location ..." : `${currentCity}, ${currentState}`}
+            {!regionPending ? "fetching current location ..." : `${currentCity}, ${currentState}`}
           </p>
         </div>
 

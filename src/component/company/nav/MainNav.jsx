@@ -13,13 +13,18 @@ const MainNav = () => {
 
 
   const linkRef = useRef();
+  const svgRef = useRef();
 
 
   useEffect(() => {
     function handleClickOutside(e){
 
+      // console.log(linkRef.current);
+      // console.log(e.target);
+
       if(openNav && (e.target.toString() !== linkRef.current.toString())){
         setOpenNav(false);
+       
       }
       
     };
@@ -35,7 +40,7 @@ const MainNav = () => {
   }, [openNav]);
 
 
-  const handleDropdown = () => {
+  const handleDropdown = (e) => {
    
     if(openNav){
       setOpenNav(false);
@@ -65,14 +70,14 @@ const MainNav = () => {
 
         <Link to="" className="ml-4 font-md text-normalblack">Referral</Link>
 
-        <div className="m-about-link">
+        <div className="m-about-link ml-4">
           <span
-            className="font-md display-f justify-space-between align-center ml-4 text-greenish"
+            className="font-md display-f justify-space-between align-center text-greenish"
             onClick={handleDropdown}
             ref={linkRef}
           >
-            About <ArrownDown />
-
+            About <ArrownDown ref={svgRef} />
+            
 
           </span>
           <MainNavDropDown openNav={openNav} />

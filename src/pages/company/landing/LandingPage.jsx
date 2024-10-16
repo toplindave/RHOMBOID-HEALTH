@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/index.scss";
-// import "./landingpage.scss";
-
 import { ReactComponent as ListIcon } from "../../../component/globals/icons/listIcon.svg";
 import { ReactComponent as Download } from "../../../component/globals/icons/downloadSharpSolid.svg";
 import { ReactComponent as QRCode } from "../../../component/globals/icons/qrcodeSolid.svg";
-
-// import { ReactComponent as ArrowRight } from "./icons/arrowRight.svg";
 import AdultCare from "../../../component/globals/icons/adultcare.png";
 import ChildrenCare from "../../../component/globals/icons/childrenCare.jpg";
 import ButtonWithText from "../../../component/globals/buttons/buttonWithText/ButtonWithText";
 import RhomboidBtn from "../../../component/globals/buttons/RhomboidBtn";
-// import TopNav from "../../../component/company/nav/TopNav";
-// import MainNav from "../../../component/company/nav/MainNav";
 
 function LandingPage() {
+
+  const [hoverStarted, setHoverStarted] = useState(false);
+  const [hoverLearnMore1, setHoverLearnMore1] = useState(false);
+  const [hoverLearnMore2, setHoverLearnMore2] = useState(false);
+
+
+
+
+
   return (
     <div>
       {/* <TopNav />
@@ -35,7 +38,10 @@ function LandingPage() {
               </span>
             </h1>
             <RhomboidBtn
-              text = {"Get started"}
+              text = "Get started"
+              cName="get-started-btn"
+              // hover = {hoverStarted}
+              // setHover = {setHoverStarted}
             />
           </div>
         </div>
@@ -59,7 +65,12 @@ function LandingPage() {
               personalized, one-on-one care, enhancing safety and independence
               and allowing for a continuum of care.
             </p>
-            <ButtonWithText text={" Learn more"} />
+            <RhomboidBtn 
+              text="Learn more" 
+              cName="learn-more-btn"
+              // hover = {hoverLearnMore1}
+              // setHover = {setHoverLearnMore1}
+            />
           </div>
           <div className="_home-care-card">
             <div className="__home-care-card-img">
@@ -72,7 +83,14 @@ function LandingPage() {
               development and overall well-being, allowing them to thrive at
               home while providing peace of mind to their families.
             </p>
-            <ButtonWithText text={" Learn more"} />
+            <RhomboidBtn 
+              text="Learn more" 
+              cName="learn-more-btn"
+
+              // hover = {hoverLearnMore2}
+              // setHover = {setHoverLearnMore2}
+
+            />
           </div>
         </div>
       </section>
@@ -85,8 +103,28 @@ function LandingPage() {
           Choosing home care doesn't have to be overwhelming with our
           fully-trained, private carers by your side.
         </h4>
-        <h3 className="h3-text font-weight-semi">Our aim:</h3>
+
+        {/* <div className="opts-con">
+          <div className="opt-1">
+
+          </div>
+
+
+          <div className="opt-1">
+
+          </div>
+
+        </div> */}
+
+        <div className="titles display-f justify-space-between mt-2 just mb-2">
+          <div className="title-1"></div>
+          <div className="title-2 h3-text font-weight-semi">Our aim:</div>
+        </div>
+
+
         <p className="p-text">You may consider seeking home care,</p>
+
+
         <ul>
           <li>
             <ListIcon />
@@ -137,6 +175,8 @@ function LandingPage() {
             </p>
           </li>
         </ul>
+
+
       </section>
 
       <section className="__section4 container pt-4 bg-normalwhite">
