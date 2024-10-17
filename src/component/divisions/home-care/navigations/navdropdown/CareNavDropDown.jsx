@@ -21,7 +21,7 @@ const CareNavDropDown = () => {
 
       tl.current.to(hNavRef.current, {
           display: "flex",
-          top: "40px",
+          top: "20vh",
           
       });
 
