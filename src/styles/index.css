@@ -72,6 +72,13 @@ svg {
   }
 }
 
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
 .justify-flex-start {
   justify-content: flex-start;
 }
@@ -1121,16 +1128,15 @@ svg {
   }
 }
 
-.__navigation {
+/* .__navigation {
   z-index: 10;
   position: sticky;
   top: 0px;
 }
 .__navigation ul {
   font-size: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
-}
+  width: 20%;
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__navigation ul {
     display: none;
@@ -1170,7 +1176,7 @@ svg {
 }
 
 .__section1 .__heroo {
-  background-image: url(../../component/globals/icons/centogene.webp);
+  background-image: url(../component//globals/icons/centogene.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 8%;
@@ -1566,6 +1572,7 @@ svg {
 .p-text {
   font-size: 1rem;
 }
+
 @media screen and (max-width: 480px) and (min-width: 0) {
   .p-text {
     font-size: 10px;
@@ -1751,31 +1758,7 @@ svg {
   }
 }
 
-.small-text {
-  font-size: 0.75rem;
-}
-@media screen and (max-width: 480px) and (min-width: 0) {
-  .small-text {
-    font-size: 8px;
-  }
-}
-@media screen and (max-width: 720px) and (min-width: 480px) {
-  .small-text {
-    font-size: 9px;
-  }
-}
-@media screen and (max-width: 960px) and (min-width: 720px) {
-  .small-text {
-    font-size: 10px;
-  }
-}
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-  .small-text {
-    font-size: 11px;
-  }
-}
-
-.__btn-texts {
+/* .__btn-texts {
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -1789,7 +1772,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__btn-texts .__arrow-bg {
     width: 20px;
@@ -1814,11 +1797,13 @@ svg {
     height: 27px;
   }
 }
+/* 
 .__btn-texts .__arrow-bg svg {
   transform: rotate(-45deg);
   fill: white;
   width: 17px;
-}
+} */
+
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__btn-texts .__arrow-bg svg {
     width: 10px;
@@ -2158,7 +2143,7 @@ svg {
   z-index: 6;
   background: #e3e5e0;
   width: 48%;
-  opacity: 0.8;
+  /* opacity: 0.5; */
   border-radius: 0px 10px 10px 0px;
 }
 .__care-section-1 .__sub-section-1 .__sub-right img {
@@ -2359,7 +2344,7 @@ svg {
 .__ratings .__rating-bg .__grid-box {
   background: #526354;
 }
-.__ratings .__rating-bg .__rating-content {
+/* .__ratings .__rating-bg .__rating-content {
   justify-content: space-between;
   position: absolute;
   width: 100%;
@@ -2387,7 +2372,7 @@ svg {
   grid-column-gap: 15px;
   grid-row-gap: 20%;
   grid-template-columns: repeat(2, 1fr);
-}
+} */
 
 .search-container-with-icon {
   width: 100%;
@@ -2446,22 +2431,17 @@ svg {
   outline: none;
   background: none;
   padding: 2%;
-  font-size: 14 px;
+  /* font-size: 12px; */
   font-weight: 500;
   color: #192f32;
 }
 .search-container-with-icon .search-input-box-with-icon input::-moz-placeholder {
   opacity: 0.9;
 }
-.search-container-with-icon .search-input-box-with-icon input::placeholder {
+/* .search-container-with-icon .search-input-box-with-icon input::placeholder {
   opacity: 0.9;
-}
+} */
 
-.__rating-card {
-  padding: 4% 15% 4% 4%;
-  background: #ffffff;
-  height: 224px;
-}
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__rating-card {
     padding: 6% 15% 4% 6%;

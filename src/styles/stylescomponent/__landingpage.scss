@@ -13,7 +13,10 @@
   }
   .__hero-inner {
     width: fit-content;
-   
+    
+    .search-btn{
+      cursor: pointer;
+    }
     @include sm {
       width: 50%;
     }
@@ -66,6 +69,20 @@
   ul {
     font-size: 16px;
     width: fit-content;
+    a {
+     
+      &:hover {
+        color: #0e5342;
+      }
+      // &:last-child {
+      //   // background: palegreen;
+      //   // width: 25%;
+      //   align-items: center;
+      //   gap: 5px;
+
+      // }
+    }
+
     @include sm {
       // background: teal;
       // width: 50%;
@@ -86,21 +103,42 @@
       width: 30%;
       display: none;
     }
-    li {
 
-      &:last-child {
-        width: fit-content;
+    .m-about-link{ 
+      width: fit-content;
+      position: relative;
+     
+      cursor: pointer;
       
-        svg {
-          width: 20px;
-          height: 20px;
-          margin-left: 5px;
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        fill: map-get($primarycolors, greenish);
+        z-index: -1;
+        @include sm {
+          width: 10px;
+          height: 10px;
         }
-
+        @include md {
+          width: 9px;
+          height: 9px;
+        }
+        @include lg {
+          width: 11px;
+          height: 11px;
+        }
+        @include xl {
+          width: 12px;
+          height: 12px;
+        }
         
-
+      }
+      &:hover {
+        color: #0e5342;
       }
     }
+
   }
 }
 .__overlay {
@@ -120,6 +158,11 @@
         width: 50%;
         text-align: left;
         // background-color: tan;
+      }
+
+      .get-started-btn{
+        font-size: 20px;
+        letter-spacing: 2px;
       }
     }
   }
@@ -147,6 +190,7 @@
 
     ._home-care-card {
       width: 42%;
+      position: relative;
       @include sm {
         width: 100%;
         margin-bottom: 40px;
@@ -181,9 +225,15 @@
       p {
         margin-bottom: 20px;
       }
-      .__home-care-card-btn {
-        width: 30%;
+      // .__home-care-card-btn {
+      //   width: 30%;
+      //   border: 1px solid red;
+      // }
+      .learn-more-btn{
+        font-size: 16px;
+        letter-spacing: 2px;
       }
+
     }
   }
 }
@@ -214,6 +264,9 @@
   p {
     margin-bottom: 15px;
   }
+
+
+
   ul {
     // display: flex;
     // justify-content: space-between;
@@ -308,6 +361,7 @@
   padding-bottom: 12%;
   position: relative;
   overflow: hidden;
+  margin-top: 150px;
 
   .__footer-logo {
     // width: 26%;

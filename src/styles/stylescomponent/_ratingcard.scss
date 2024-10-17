@@ -1,7 +1,9 @@
 .__rating-card {
-  padding: 4% 15% 4% 4%;
+  width: 45%;
+  padding: 20px 15px;
   background: #ffffff;
-  height: 224px;
+  height: fit-content;
+  margin: 0 5px 0 5px;
   @include sm {
     padding: 6% 15% 4% 6%;
   }
@@ -23,6 +25,7 @@
       width: 12px;
       height: 12px;
       fill: #ef8c68;
+      
     }
   }
   .__rating-text {
