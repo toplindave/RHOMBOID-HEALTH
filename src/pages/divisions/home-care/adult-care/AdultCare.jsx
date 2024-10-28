@@ -2,7 +2,7 @@ import React from 'react'
 
 const AdultCare = () => {
   return (
-    <div>AdultCare</div>
+    <div>Working on it</div>
   )
 }
 

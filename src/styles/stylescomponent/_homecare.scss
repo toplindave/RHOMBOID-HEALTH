@@ -30,6 +30,7 @@
   z-index: 10;
   position: sticky;
   top: 0px;
+
   .__care-nav-location {
     cursor: pointer;
     &:hover {
@@ -91,16 +92,19 @@
     }
 
     .h-account-link{ 
-      width: fit-content;
+  
       position: relative;
+      cursor: pointer;
+
 
       span{
         align-items: center;
         gap: 5px;
-        cursor: pointer;
+        // cursor: pointer;
         svg {
           width: 15px;
           height: 15px;
+          margin-right: 5px;
           fill: map-get($primarycolors, greenish);
           z-index: -1;
           @include sm {
@@ -238,7 +242,7 @@
             }
           }
         }
-        button {
+        a{
           padding: 10px 20px;
           height: 45px;
           outline: none;

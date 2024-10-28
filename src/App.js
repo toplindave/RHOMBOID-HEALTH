@@ -11,8 +11,24 @@ import AdultCare from "./pages/divisions/home-care/adult-care/AdultCare";
 import ChildrenCare from "./pages/divisions/home-care/children-care/ChildrenCare";
 import Caregivers from "./pages/divisions/home-care/caregivers/Caregivers";
 import CaregiverDetails from "./component/divisions/home-care/caregiver-details/CaregiverDetails";
-import Profile from "./component/divisions/home-care/profile/Profile";
+import Profile from "./pages/divisions/home-care/profile/Profile";
 import SignIn from "./component/divisions/home-care/sign-in/SignIn";
+import Referrals from "./pages/company/referrals/Referrals";
+import AboutUs from "./pages/company/about/AboutUs";
+import Offerings from "./pages/company/offerings/Offerings";
+import HowRhomboidWorks from "./pages/company/rhomboid-work/HowRhomboidWorks";
+import Inbox from "./pages/divisions/home-care/inbox/Inbox";
+import Payment from "./pages/divisions/home-care/payment/Payment";
+import Settings from "./pages/divisions/home-care/settings/Settings";
+import ReferAFriend from "./pages/divisions/home-care/refer-a-friend/ReferAFriend";
+import FindCare from "./pages/divisions/home-care/find-care/FindCare";
+import FindCareConfirmation from "./pages/divisions/home-care/find-care/FindCareConfirmation";
+
+
+
+
+
+
 
 function App() {
 
@@ -29,8 +45,12 @@ function App() {
           <Route element={<Layout />}>
             {/* company routes */}
 
-            <Route element={<CompanyLayout />}>
-              <Route path="/" element={<LandingPage />} />
+            <Route path="/" element={<CompanyLayout />}>
+              <Route index element={<LandingPage />} />
+              <Route path="referrals" element={<Referrals />} />
+              <Route path="about-us" element={<AboutUs />} />
+              <Route path="offerings" element={<Offerings />} />
+              <Route path="how-rhomboid-works" element={<HowRhomboidWorks />} />
             </Route>
 
             {/* home care routes */}
@@ -39,11 +59,30 @@ function App() {
               <Route index element={<Home />} />
               <Route path="adult-care" element={<AdultCare />} />
               <Route path="children-care" element={<ChildrenCare />} />
-              <Route path="caregivers" element={<Caregivers />} />
+              <Route path="inbox" element={<Inbox />} />
+              <Route path="payment" element={<Payment />} />
+
+              <Route path="find-care" element={<FindCare />} />
+               
+
+            
               <Route
-                path="caregivers/:careGiverId"
-                element={<CaregiverDetails />}
+                path="find-care/:value1/:value2/:value3/confirmation"
+                element={<FindCareConfirmation />}
               />
+
+
+              <Route path="settings-and-preferences" element={<Settings />} />
+              <Route path="refer-a-friend" element={<ReferAFriend />} />
+
+              <Route path="caregivers" element={<Caregivers />}>
+                <Route
+                  path=":careGiverId"
+                  element={<CaregiverDetails />}
+                />
+              
+              </Route>
+              
               <Route path="profile" element={<Profile />} />
               <Route path="sign-in-web" element={<SignIn />} />
             </Route>

@@ -20,8 +20,9 @@ const CareNavDropDown = () => {
       tl.current = gsap.timeline({ paused: true });
 
       tl.current.to(hNavRef.current, {
-          display: "flex",
-          top: "20vh",
+
+        display: "flex",
+        top: "40px",
           
       });
 

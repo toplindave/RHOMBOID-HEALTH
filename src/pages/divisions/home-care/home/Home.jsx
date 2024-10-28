@@ -17,6 +17,7 @@ import { searchData } from "../../../../utils/homecare/searchData";
 import DataContext from "../../../../context/DataContext";
 import Paginate from "../../../../component/globals/paginate/Paginate";
 import { reviews } from "../../../../data/reviews";
+import { Link } from "react-router-dom";
 
 
 
@@ -142,9 +143,12 @@ const Home = () => {
                 />
 
               </div>
-              <button className="bg-brown-green text-normalwhite font-weight-semi font-md">
+              <Link 
+                className="bg-brown-green text-normalwhite font-weight-semi font-md"
+                to="/rhomboid/home-care/find-care"
+              >
                 Find Care
-              </button>
+              </Link>
             </div>
 
 

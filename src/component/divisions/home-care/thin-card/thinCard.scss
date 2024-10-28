@@ -1,0 +1,95 @@
+.thin-card{
+    border: 1px solid #B4CFA5;
+    border-radius: 10px;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+
+
+    .thin-card-title{
+        width: 40vw;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .thin-card-elements{
+        border-top: 1px solid #B4CFA5;
+        padding: 30px 20px;
+
+        .thin-card-element{
+            width: 100%;
+            background: #F1F1F1;
+            text-align: center;
+            padding: 10px 20px;
+            z-index: 2;           
+            cursor: pointer;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+
+
+            
+            &:hover{
+                background: #d0cfcf;
+            }
+
+            .main-text{
+                font-size: 16px;
+                font-weight: 500;               
+            }
+
+
+            .sub-text{
+                font-size: 14px;
+                margin-top: 5px;               
+            }
+
+
+
+        }
+
+
+        .thin-card-element.element-selected{
+            background: #d0cfcf;
+
+        }
+
+
+    }
+
+    .thin-card-btns{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 20px;
+
+        .prev-btn{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 50px;
+            font-size: 16px;
+            background: #F1F1F1;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+
+        .next-btn{
+            width: fit-content;
+            height: fit-content;
+            padding: 10px 50px;
+            font-size: 16px;
+            background: #A7BE86;
+            font-weight: 600;
+            cursor: pointer;
+
+        }
+
+    }
+
+
+
+
+
+}

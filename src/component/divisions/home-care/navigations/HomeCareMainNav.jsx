@@ -21,6 +21,7 @@ const HomeCareMainNav = () => {
 
 
   useEffect(() => {
+    
     function handleClickOutside(e){
 
       if(showNavDropDown && (e.target.toString() !== linkRef.current.toString())){
@@ -40,6 +41,8 @@ const HomeCareMainNav = () => {
   }, [showNavDropDown]);
 
 
+
+  
   const handleDropdown = () => {
    
     if(showNavDropDown){
@@ -52,17 +55,25 @@ const HomeCareMainNav = () => {
 
   }
 
+  // const spanSTy = {
+  //   position: "absolute",
+  //   top: "50px",
+  //   right: "0",
+  //   width: "50vw",
+  //   height: "50vh",
+  //   border: "1px solid red"
+  // }
 
   // console.log(showNavDropDown);
 
 
   return (
-    <>
+    
       <div className=" __care-nav container-care bg-ash font-weight-semi normal-font-text display-f justify-space-between  pt-2 pb-2">
         <div className="__care-nav-location display-f justify-space-between  ">
           <p className=" display-f justify-space-between text-greenish">
             <Location />
-            {!regionPending ? "fetching current location ..." : `${currentCity}, ${currentState}`}
+            {regionPending && !currentCity ? "fetching current location ..." : `${currentCity}, ${currentState}`}
           </p>
         </div>
 
@@ -80,15 +91,18 @@ const HomeCareMainNav = () => {
               <UserLight /> Account
 
             </span>
+
+            {/* <div style={spanSTy} >
+              rrrrr
+            </div> */}
             <CareNavDropDown />
+            
 
           </div>
         </ul>
       </div>
 
-      
-      
-    </>
+   
   );
 };
 

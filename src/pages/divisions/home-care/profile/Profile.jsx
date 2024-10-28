@@ -28,6 +28,8 @@ function Profile() {
           Data privacy
         </button>
       </div>
+
+
       <div className="__profile-display-section ">
         <div className="__profile-display-card-container">
           <h1 className=" p-text font-weight-semi text-greenish">
@@ -116,6 +118,8 @@ function Profile() {
           </div>
         </div>
       </div>
+
+      
     </div>
   );
 }

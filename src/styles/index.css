@@ -5,6 +5,7 @@
 
 body {
   font-family: "Montserrat";
+  background: #fff;
 }
 
 ul {
@@ -1836,16 +1837,6 @@ svg {
   transition: all 0.3s ease-in-out;
 }
 
-.__care-logo {
-  display: flex;
-  justify-content: center;
-  padding: 1% 0px;
-  margin-bottom: 10px;
-}
-.__care-logo svg {
-  width: 197px;
-  height: 62px;
-}
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__care-logo svg {
     width: 145px;
@@ -1871,7 +1862,7 @@ svg {
   }
 }
 
-.__care-nav {
+/* .__care-nav {
   align-items: center;
   z-index: 10;
   position: sticky;
@@ -1894,7 +1885,7 @@ svg {
   width: 15px;
   height: 15px;
   fill: #192f32;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__care-nav .__care-nav-location p svg {
     width: 10px;
@@ -1942,7 +1933,7 @@ svg {
     width: 35%;
   }
 }
-.__care-nav ul a:hover {
+/* .__care-nav ul a:hover {
   color: #0e5342;
 }
 .__care-nav ul a:last-child {
@@ -1958,7 +1949,7 @@ svg {
   width: 15px;
   height: 15px;
   fill: #192f32;
-}
+} */
 @media screen and (max-width: 480px) and (min-width: 0) {
   .__care-nav ul .h-account-link svg {
     width: 10px;
@@ -2515,7 +2506,7 @@ svg {
     font-size: 11px;
   }
 }
-
+/* 
 .care-navdropdown {
   width: 200px;
   background: #E3E5E0;
@@ -2525,7 +2516,7 @@ svg {
   right: 3.5%;
   display: none;
   z-index: 101;
-}
+} */
 
 .__caregivers {
   display: flex;

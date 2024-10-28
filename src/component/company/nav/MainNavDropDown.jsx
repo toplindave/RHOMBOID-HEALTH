@@ -13,7 +13,7 @@ const MainNavDropDown = (props) => {
   const { openNav } = props;
 
 
-  const hNavRef = useRef();
+  const navRef = useRef();
    
 
   const tl = useRef();
@@ -22,7 +22,7 @@ const MainNavDropDown = (props) => {
 
       tl.current = gsap.timeline({ paused: true });
 
-      tl.current.to(hNavRef.current, {
+      tl.current.to(navRef.current, {
           display: "flex",
           top: "8vh",
           
@@ -39,7 +39,7 @@ const MainNavDropDown = (props) => {
 
 
   return (
-    <div className='main-navdropdown' ref={hNavRef}>
+    <div className='main-navdropdown' ref={navRef}>
       <ul className="drop-el-1 display-f flex-column">
 
         {
