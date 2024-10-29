@@ -2,7 +2,9 @@ import React from 'react'
 
 const AdultCare = () => {
   return (
-    <div>Working on it</div>
+    <div className="__care-section-1 container-care">
+      Working on it
+    </div>
   )
 }
 

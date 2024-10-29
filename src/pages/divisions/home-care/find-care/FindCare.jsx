@@ -8,7 +8,6 @@ import { useNavigate } from 'react-router-dom';
 const FindCare = () => {
 
     const innerStyle = {
-        border: "1px solid red",
         marginTop: "40px"
     }
 
@@ -150,7 +149,7 @@ const FindCare = () => {
         }
     }
 
-    
+
 
   return (
     <div className="__care-section-1 container-care" style={innerStyle}>
