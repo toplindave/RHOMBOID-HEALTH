@@ -72,8 +72,8 @@ function App() {
               />
 
 
-              <Route path="settings-and-preferences" element={<Settings />} />
-              <Route path="refer-a-friend" element={<ReferAFriend />} />
+              <Route path="settings-&-preferences" element={<Settings />} />
+              <Route path="referal" element={<ReferAFriend />} />
 
               <Route path="caregivers" element={<Caregivers />}>
                 <Route

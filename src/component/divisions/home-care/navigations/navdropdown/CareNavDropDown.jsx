@@ -42,13 +42,13 @@ const CareNavDropDown = () => {
     <div className='care-navdropdown' ref={hNavRef}>
         <div className="drop-el-1 display-f flex-column">
             <Link to="/rhomboid/home-care/profile">Profile</Link>
-            <Link>Inbox</Link>
-            <Link>Payment</Link>
-            <Link>Settings and preferences</Link>
+            <Link to="/rhomboid/home-care/inbox">Inbox</Link>
+            <Link to="/rhomboid/home-care/payment">Payment</Link>
+            <Link to="/rhomboid/home-care/settings-&-preferences">Settings and preferences</Link>
         </div>
         <div className="drop-el-2 mt-4 display-f flex-column">
-            <Link>Refer a friend</Link>
-            <Link>Sign out</Link>
+            <Link to="/rhomboid/home-care/referal">Refer a friend</Link>
+            <Link to="/rhomboid/home-care/logout">Sign out</Link>
             
         </div>
       
