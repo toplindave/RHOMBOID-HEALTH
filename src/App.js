@@ -51,6 +51,8 @@ function App() {
               <Route path="about-us" element={<AboutUs />} />
               <Route path="offerings" element={<Offerings />} />
               <Route path="how-rhomboid-works" element={<HowRhomboidWorks />} />
+              <Route path="account/sign-in" element={<SignIn />} />
+
             </Route>
 
             {/* home care routes */}
@@ -84,7 +86,6 @@ function App() {
               </Route>
               
               <Route path="profile" element={<Profile />} />
-              <Route path="sign-in-web" element={<SignIn />} />
             </Route>
           </Route>
         </Routes>
