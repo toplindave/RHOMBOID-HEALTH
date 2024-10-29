@@ -1,0 +1,228 @@
+.__caregivers {
+  // padding-bottom: 15%;
+  display: flex;
+  align-items: start;
+
+  width: 100%;
+  @include sm {
+    // font-size: 10px;
+    display: block;
+  }
+  @include md {
+    display: block;
+  }
+  .__caregivers-side-bar {
+    width: 28%;
+    padding: 4% 6% 7% 3.5%;
+    position: sticky;
+    top: 50px;
+    background: white;
+    z-index: 9;
+    @include xl {
+      width: 30%;
+    }
+    @include lg {
+      width: 32%;
+    }
+    @include md {
+      background: white;
+      top: 25px;
+      width: 100%;
+    }
+    @include sm {
+      top: 10px;
+      width: 100%;
+      background: white;
+    }
+    h1 {
+      margin-bottom: 54px;
+      @include sm {
+        margin-bottom: 20px;
+      }
+      @include md {
+        margin-bottom: 25px;
+      }
+    }
+    .__search-input-and-filter-icon {
+      // background: palegreen;
+
+      margin-bottom: 20px;
+      input {
+        padding: 4%;
+
+        width: 100%;
+        border: 1px solid map-get($primarycolors, primary-5);
+        background: transparent;
+        outline: none;
+        text-transform: capitalize;
+        @include sm {
+          margin-bottom: 10px;
+          padding: 2%;
+          width: 90%;
+        }
+        @include md {
+          padding: 2%;
+          margin-bottom: 15px;
+          width: 90%;
+        }
+      }
+      .__filter-icon-container {
+        display: none;
+        @include md {
+          display: block;
+          background: map-get($primarycolors, ash);
+          height: 100%;
+          svg {
+            fill: map-get($blackcolors, normalblack);
+            width: 30px;
+            height: 30px;
+          }
+        }
+        @include sm {
+          display: block;
+          background: map-get($primarycolors, ash);
+          height: 100%;
+          svg {
+            fill: map-get($blackcolors, normalblack);
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+    .__filter-and-sort {
+      // background: thistle;
+      border-radius: 5px;
+      border: 1px solid map-get($primarycolors, primary-5);
+      padding-bottom: 4%;
+      .__filter-and-sort-h4 {
+        border-bottom: 1px solid map-get($primarycolors, primary-5);
+
+        padding: 4%;
+
+        margin-bottom: 19px;
+        @include sm {
+          margin-bottom: 10px;
+          padding: 2%;
+        }
+        @include md {
+          padding: 3%;
+          margin-bottom: 15px;
+        }
+      }
+      .__filter {
+        padding: 4%;
+
+        background: map-get($blackcolors, light-black);
+        margin-bottom: 5px;
+        cursor: pointer;
+        @include sm {
+          padding: 2%;
+        }
+        @include md {
+          padding: 3%;
+        }
+        &:hover {
+          background: #d8d5d5;
+        }
+        svg {
+          fill: map-get($blackcolors, black-5);
+          stroke: map-get($blackcolors, black-5);
+        }
+      }
+    }
+    .__filter-and-sort-media {
+      // background: thistle;
+      border-radius: 5px;
+      border: 1px solid map-get($primarycolors, primary-5);
+      padding-bottom: 4%;
+      @include md {
+        display: none;
+      }
+      @include sm {
+        display: none;
+      }
+      .__filter-and-sort-h4 {
+        border-bottom: 1px solid map-get($primarycolors, primary-5);
+
+        padding: 4%;
+
+        margin-bottom: 19px;
+        @include sm {
+          margin-bottom: 10px;
+          padding: 2%;
+        }
+        @include md {
+          padding: 3%;
+          margin-bottom: 15px;
+        }
+      }
+      .__filter {
+        padding: 4%;
+
+        background: map-get($blackcolors, light-black);
+        margin-bottom: 5px;
+        cursor: pointer;
+        @include sm {
+          padding: 2%;
+        }
+        @include md {
+          padding: 3%;
+        }
+        &:hover {
+          background: #d8d5d5;
+        }
+        svg {
+          fill: map-get($blackcolors, black-5);
+          stroke: map-get($blackcolors, black-5);
+        }
+      }
+    }
+  }
+  .__caregivers-main-content {
+    width: 72%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    position: sticky;
+    top: 50px;
+    bottom: 50px;
+    @include xl {
+      width: 70%;
+    }
+    @include lg {
+      width: 68%;
+    }
+    @include md {
+      width: 100%;
+      padding: 0px 6%;
+      // background: green;
+    }
+
+    @include sm {
+      width: 100%;
+      // background: thistle;
+      padding: 0px 6%;
+    }
+    .__caregivers-main-content-con {
+      overflow-y: scroll;
+      display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      padding: 1% 3.5% 15% 3.5%;
+      grid-row-gap: 1%;
+      grid-column-gap: 2%;
+      &::-webkit-scrollbar {
+        width: 0px;
+      }
+      @include sm {
+        display: block;
+      }
+      @include md {
+        display: block;
+      }
+      @include lg {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

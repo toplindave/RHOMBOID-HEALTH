@@ -1,5 +1,5 @@
 .big-text {
-  font-size: 64px;
+  font-size: 72px;
   @include sm {
     font-size: 20px;
   }
@@ -44,18 +44,18 @@
   }
 }
 .h3-text {
-  font-size: 18px;
+  font-size: 20px;
   @include sm {
-    font-size: 10px;
-  }
-  @include md {
     font-size: 12px;
   }
-  @include lg {
+  @include md {
     font-size: 14px;
   }
-  @include xl {
+  @include lg {
     font-size: 16px;
+  }
+  @include xl {
+    font-size: 18px;
   }
 }
 
@@ -77,15 +77,78 @@
 .normal-font-text {
   font-size: $normal-font-size; // 14px
   @include sm {
+    font-size: 7px;
+  }
+  @include md {
+    font-size: 9px;
+  }
+  @include lg {
+    font-size: 11px;
+  }
+  @include xl {
+    font-size: 12px;
+  }
+}
+.letter-spacing-24 {
+  line-height: 24px;
+  letter-spacing: 0.34px;
+}
+.letter-spacing-32 {
+  line-height: 32px;
+  letter-spacing: 0.34px;
+}
+.care-header {
+  font-size: 46px;
+  line-height: 66px;
+  letter-spacing: 0.92px;
+  @include sm {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+  }
+  @include md {
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.6px;
+  }
+  @include lg {
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.7px;
+  }
+  @include xl {
+    font-size: 38px;
+    line-height: 58px;
+    letter-spacing: 0.92px;
+  }
+}
+.faq-header {
+  font-size: 36px;
+  @include sm {
+    font-size: 20px;
+  }
+  @include md {
+    font-size: 24px;
+  }
+  @include lg {
+    font-size: 28px;
+  }
+  @include xl {
+    font-size: 30px;
+  }
+}
+.small-text {
+  font-size: $font-size-sm; // 12px
+  @include sm {
     font-size: 8px;
   }
   @include md {
-    font-size: 10px;
+    font-size: 9px;
   }
   @include lg {
-    font-size: 12px;
+    font-size: 10px;
   }
   @include xl {
-    font-size: 13px;
+    font-size: 11px;
   }
 }

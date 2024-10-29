@@ -1,0 +1,537 @@
+.__care-logo {
+  display: flex;
+  justify-content: center;
+  padding: 1% 0px;
+  margin-bottom: 10px;
+  svg {
+    width: 197px;
+    height: 62px;
+    @include sm {
+      width: 145px;
+      height: 35px;
+    }
+    @include md {
+      width: 155px;
+      height: 40px;
+    }
+    @include lg {
+      width: 165px;
+      height: 45px;
+    }
+    @include xl {
+      width: 172px;
+      height: 58px;
+    }
+  }
+}
+
+.__care-nav {
+  align-items: center;
+  z-index: 10;
+  position: sticky;
+  top: 0px;
+
+  .__care-nav-location {
+    cursor: pointer;
+    &:hover {
+      p {
+        color: #35767e;
+        svg {
+          fill: #35767e;
+        }
+      }
+    }
+    p {
+      align-items: center;
+      gap: 5px;
+
+      svg {
+        width: 15px;
+        height: 15px;
+        fill: map-get($primarycolors, greenish);
+        
+        @include sm {
+          width: 10px;
+          height: 10px;
+        }
+        @include md {
+          width: 10px;
+          height: 10px;
+        }
+        @include lg {
+          width: 12px;
+          height: 12px;
+        }
+        @include xl {
+          width: 13px;
+          height: 13px;
+        }
+      }
+    }
+  }
+  ul {
+    width: 30%;
+    @include sm {
+      display: none;
+    }
+    @include md {
+      width: 45%;
+    }
+    @include lg {
+      width: 35%;
+    }
+    @include xl {
+      width: 35%;
+    }
+    a {
+   
+      &:hover {
+        color: #0e5342;
+      }
+
+    }
+
+    .h-account-link{ 
+  
+      position: relative;
+      cursor: pointer;
+
+
+      span{
+        align-items: center;
+        gap: 5px;
+        // cursor: pointer;
+        svg {
+          width: 15px;
+          height: 15px;
+          margin-right: 5px;
+          fill: map-get($primarycolors, greenish);
+          z-index: -1;
+          @include sm {
+            width: 10px;
+            height: 10px;
+          }
+          @include md {
+            width: 9px;
+            height: 9px;
+          }
+          @include lg {
+            width: 11px;
+            height: 11px;
+          }
+          @include xl {
+            width: 12px;
+            height: 12px;
+          }
+          
+        }
+        &:hover {
+          color: #0e5342;
+        }
+
+      }
+      
+     
+    }
+  }
+}
+.__care-section-1 {
+  padding-top: 52px;
+  padding-bottom: 50px;
+  .__sub-section-1 {
+    // align-items: stretch;
+    border-radius: 10px;
+    .__sub-left {
+      width: 50%;
+      padding: 64px 3.5% 0px 2.5%;
+      z-index: 9;
+      @include sm {
+        padding: 14px 3.5% 0px 2.5%;
+      }
+      @include md {
+        padding: 20px 3.5% 0px 2.5%;
+      }
+      //   @include lg {
+      //         padding: 64px 3.5% 0px 2.5%;
+
+      //   }
+      //   @include xl {
+      //       padding: 64px 3.5% 0px 2.5%;
+
+      //   }
+
+      h1 {
+        margin-bottom: 80px;
+
+        @include sm {
+          margin-bottom: 40px;
+        }
+        @include md {
+          margin-bottom: 50px;
+        }
+        @include lg {
+          margin-bottom: 60px;
+        }
+        @include xl {
+          margin-bottom: 70px;
+        }
+      }
+      p {
+        line-height: 24px;
+        letter-spacing: 0.03px;
+        // background: teal;
+        width: 75%;
+        margin-bottom: 30px;
+        @include sm {
+          margin-bottom: 10px;
+          line-height: 18px;
+          width: 95%;
+        }
+        @include md {
+          margin-bottom: 15px;
+          line-height: 19px;
+          width: 90%;
+        }
+        @include lg {
+          margin-bottom: 20px;
+          line-height: 21px;
+          width: 85%;
+        }
+        @include xl {
+          margin-bottom: 25px;
+          line-height: 23px;
+          width: 80%;
+        }
+      }
+
+      .__floating {
+        justify-content: space-between;
+        align-items: end;
+        padding: 20px 2%;
+        box-shadow: 0px 3px 6px #00000029;
+        width: 130%;
+
+        margin-bottom: 87px;
+        @include sm {
+          display: block;
+          margin-bottom: 20px;
+        }
+        @include md {
+          display: block;
+          margin-bottom: 20px;
+        }
+
+        .__floating-input {
+          width: 40%;
+
+          @include sm {
+            width: 100%;
+          }
+          @include md {
+            width: 100%;
+          }
+
+          p {
+            width: 100%;
+            margin-bottom: 20px;
+            @include sm {
+              margin-bottom: 0px;
+            }
+            @include md {
+              margin-bottom: 8px;
+            }
+          }
+        }
+        a{
+          padding: 10px 20px;
+          height: 45px;
+          outline: none;
+          border: none;
+          //   height: 100%;
+          @include sm {
+            padding: 1% 2%;
+          }
+          @include md {
+            padding: 2% 2%;
+          }
+          @include lg {
+            padding: 2% 2%;
+          }
+          @include xl {
+            padding: 1.4% 2%;
+          }
+        }
+      }
+    }
+    .__sub-right {
+      //   background: palegreen;
+      z-index: 6;
+      background: map-get($primarycolors, ash);
+      width: 48%;
+      //   height: 800px;
+      opacity: 0.8;
+
+      border-radius: 0px 10px 10px 0px;
+      //   @include sm {
+      //     height: 400px;
+      //   }
+      //   @include md {
+      //     height: 400px;
+      //   }
+      //   @include lg {
+      //     height: 450px;
+      //   }
+      img {
+        border-radius: 0px 10px 10px 0px;
+        height: 100%;
+        width: 100%;
+        // opacity: 0.4;
+        // display: none;
+      }
+    }
+  }
+}
+
+.__care-service-section {
+  //   background: palegreen;
+  padding: 0px 18% 3% 18%;
+  @include sm {
+    padding: 0px 10% 3% 10%;
+    margin-bottom: 25px;
+  }
+  @include md {
+    padding: 0px 13% 3% 13%;
+    margin-bottom: 20px;
+  }
+  .__care-service-section-top-con {
+    border: 1px solid #b4cfa5;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    padding: 1% 2%;
+    p {
+      font-weight: 500;
+    }
+  }
+  .__care-service-section-bottom-con {
+    border: 1px solid #b4cfa5;
+    border-radius: 0px 0px 10px 10px;
+    padding: 2% 2% 3% 2%;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      width: 30%;
+      padding: 8% 0px;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+      &:hover {
+        background: #9caeb2;
+      }
+      &:nth-child(2) {
+        &:hover {
+          background: #798d5e;
+        }
+      }
+      &:nth-child(3) {
+        &:hover {
+          background: #d5a997;
+        }
+      }
+      svg {
+        width: 12px;
+        height: 12px;
+        @include sm {
+          width: 7px;
+          height: 7px;
+        }
+        @include md {
+          width: 8px;
+          height: 8px;
+        }
+        @include lg {
+          width: 9px;
+          height: 9px;
+        }
+        @include xl {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    }
+  }
+}
+.__FAQ {
+  justify-content: space-between;
+  padding-bottom: 10%;
+  .__FAQ-img {
+    width: 35%;
+    height: 480px;
+    background: palegreen;
+    @include sm {
+      display: none;
+    }
+    @include md {
+      display: none;
+    }
+    img {
+      //   opacity: 0.1;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .__FAQ-questions {
+    width: 60%;
+    @include sm {
+      width: 100%;
+    }
+    @include md {
+      width: 100%;
+    }
+    h1 {
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 34px;
+    }
+    .FAQ-dropdown-container {
+      width: 100%;
+      margin-bottom: 10px;
+      .FAQ-drop {
+        // display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px;
+        padding: 1.5% 2%;
+        border: 1px solid map-get($primarycolors, primary-5);
+        // margin-bottom: 10px;
+        cursor: pointer;
+        &:hover {
+          background: #d7d7d7;
+          transition: 0.5s ease-in-out;
+        }
+
+        p {
+          //   background: teal;
+          margin-bottom: 0px;
+        }
+        svg {
+          cursor: pointer;
+          fill: #526354;
+          stroke: #526354;
+        }
+      }
+      .FAQ-dropdown {
+        border: 1px solid map-get($primarycolors, primary-5);
+        padding: 1.5% 2%;
+        // margin-bottom: 5px;
+        p {
+          margin-bottom: 0px;
+        }
+      }
+    }
+    .FAQ-sub-con {
+      margin-top: 40px;
+      h3 {
+        margin-bottom: 10px;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+      button {
+        outline: none;
+        border: none;
+        padding: 1.5% 3%;
+        &:hover {
+          background: #425044;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.__ratings {
+  margin-bottom: 100px;
+  .__rating-top {
+    padding: 1%;
+    h3 {
+      text-align: center;
+    }
+  }
+  .__rating-bg {
+    position: relative;
+    // height: 80vh;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+
+    .__grid-box {
+      background: #526354;
+    }
+
+    .review-tracking{
+      width: fit-content;
+      height: fit-content;
+      padding: 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+
+    }
+
+    .__rating-content {
+      justify-content: space-between;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 0px 3.8%;
+ 
+      inset: 0px;
+
+      .__angle {
+        width: 8%;
+       
+        display: flex;
+        align-items: center;
+
+        svg {
+          width: 100%;
+          height: 120px;
+          fill: #b4cfa5;
+          cursor: pointer;
+          &:hover {
+            fill: #7f9872;
+          }
+        }
+      }
+      //   .__second-angle {
+      //     svg {
+      //       fill: red;
+      //     }
+      //   }
+      .__rating-content-grid {
+        
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        // padding: 20px 0px;
+
+
+
+      }
+
+
+
+    }
+  }
+}

@@ -1,0 +1,184 @@
+.__caregiver-profile {
+  padding: 3% 3.5% 30% 3.5%;
+  height: 100vh;
+  @include xl {
+    height: 90vh;
+  }
+  @include sm {
+    height: 120vh;
+  }
+  h1 {
+    margin-bottom: 60px;
+  }
+  .__profile-btn-section {
+    background: #d8f0e1;
+    margin-bottom: 50px;
+
+    button {
+      border: 1px solid map-get($primarycolors, primary-5);
+
+      padding: 0.5% 2%;
+      background: transparent;
+      outline: none;
+
+      @include sm {
+        padding: 0.5% 1%;
+        // display: block;
+        font-size: 8px;
+      }
+    }
+  }
+  .__profile-display-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    // background: thistle;
+    @include lg {
+      // gap: 10px;
+      display: block;
+    }
+    @include md {
+      display: block;
+    }
+    @include sm {
+      display: block;
+    }
+
+    .__profile-display-card-container {
+      @include lg {
+        margin-bottom: 30px;
+      }
+      @include md {
+        margin-bottom: 30px;
+      }
+      @include sm {
+        margin-bottom: 30px;
+      }
+      h1 {
+        margin-bottom: 20px;
+        @include md {
+          margin-bottom: 10px;
+        }
+        @include sm {
+          margin-bottom: 10px;
+        }
+      }
+      .__profile-display-card-sub-container {
+        background: #e3e5e0;
+        // height: 75%;
+        height: 223px;
+        position: relative;
+        @include xl {
+          height: 190px;
+        }
+        @include lg {
+          height: 190px;
+        }
+        @include md {
+          height: 170px;
+        }
+        @include sm {
+          height: 150px;
+        }
+
+        .__profile-display-card {
+          gap: 25px;
+          padding: 4% 6%;
+          @include lg {
+            gap: 40px;
+            padding: 3%;
+          }
+          @include md {
+            gap: 40px;
+            padding: 2%;
+          }
+          @include sm {
+            gap: 40px;
+            padding: 2%;
+          }
+          svg {
+            width: 60px;
+            height: 60px;
+            fill: #526354;
+            margin-top: 0px;
+            @include lg {
+              width: 70px;
+              height: 70px;
+            }
+            @include md {
+              width: 70px;
+              height: 70px;
+            }
+          }
+          .__profile-display-card-details {
+            width: 100%;
+            .__first-name {
+              p {
+                margin-bottom: 5px;
+              }
+              margin-bottom: 10px;
+            }
+            .__last-name {
+              p {
+                margin-bottom: 5px;
+              }
+              margin-bottom: 10px;
+            }
+            .__phone-number {
+              p {
+                margin-bottom: 5px;
+              }
+            }
+          }
+        }
+        .__profile-display-email-address {
+          width: 100%;
+
+          p {
+            margin-bottom: 15px;
+          }
+        }
+        .__profile-display-primary-address {
+          width: 100%;
+        }
+        .__edit-container {
+          // display: flex;
+          // justify-content: right;
+          position: absolute;
+          bottom: 10px;
+          right: 6%;
+          @include lg {
+            bottom: 10px;
+            right: 3%;
+          }
+          @include md {
+            bottom: 10px;
+            right: 3%;
+          }
+          @include md {
+            bottom: 10px;
+            right: 2%;
+          }
+          .__edit {
+            margin-top: 20px;
+            align-items: center;
+            //   background: gray;
+            // width: 50%;
+            @include xl {
+              // width: 70%;
+            }
+            @include lg {
+              // width: 80%;
+            }
+            cursor: pointer;
+            svg {
+              width: 12px;
+              height: 12px;
+              fill: #0f7c62;
+            }
+          }
+        }
+      }
+    }
+  }
+}

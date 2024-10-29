@@ -1,0 +1,59 @@
+.care-navdropdown{
+    width: 20vw;
+    background: #E3E5E0;
+    border: 1px solid #B4CFA5;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    display: none;
+    z-index: 9;
+    padding: 0 0 10px 0;
+
+    flex-direction: column;
+ 
+
+    .drop-el-1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        
+        a{
+            width: 100%;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 30px;
+            &:hover{
+                background: #F1F1F1;
+            }
+            
+        }
+    }
+    .drop-el-2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+     
+        a{
+            width: 100%;
+
+            font-size: 16px;
+            font-weight: 500;
+            padding: 15px 30px;
+            &:hover{
+                background: #F1F1F1;
+            }
+
+            &:nth-child(1){
+                color: #0F7C62;
+            }
+            &:nth-child(2){
+                color: #E65D25;
+            }
+        }
+    }
+
+}
+
+

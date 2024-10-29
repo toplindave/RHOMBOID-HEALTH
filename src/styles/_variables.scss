@@ -6,14 +6,19 @@
 // $info: #f6c31c !default;
 
 // color palette
+
 $primarycolors: (
   "primary": #337364,
   "primary-1": #4b9181,
   "primary-2": #80c2b2,
   "primary-3": #effff9,
   "primary-4": #f4fdfa,
+  "primary-5": #b4cfa5,
   "primary-disabled": #d5e2de,
   "search-input-text": #0d2237,
+  "ash": #e3e5e0,
+  "greenish": #192f32,
+  "green": #0f7c62,
 );
 $secondarycolors: (
   "secondary": #ef8c68,
@@ -21,14 +26,22 @@ $secondarycolors: (
   "secondary-2": #fbdbcf,
   "secondary-3": #f5ece8,
 );
+
 $blackcolors: (
   "normalblack": #02130f,
   "black-1": #092922,
   "black-2": #285b4c,
   "black-3": #72998d,
   "black-4": #f5f5f5,
+  "black-5": #141e15,
+  "light-black": #f1f1f1,
   "blue": #132a50,
+  "brown-green": #526354,
+  "deep-green": #a7be86,
+  "light-green": #d9ebd9,
+  "black-green": #183030,
 );
+
 $whitecolors: (
   "normalwhite": #ffffff,
   "white-1": #accdc2,
@@ -36,6 +49,7 @@ $whitecolors: (
   "white-3": #d5e2de,
   "white-4": #f4f6fd,
   "grey": #677294,
+  "blueish": #eaf6f8,
 );
 $successcolors: (
   "success": #01913a,
@@ -50,6 +64,8 @@ $infocolors: (
   "info-2": #e01010,
   "info-3": #e95758,
   "info-4": #feeaeb,
+  "peach": #ffcfba,
+  "orange": #e65d25,
 );
 
 // spacing
@@ -68,7 +84,7 @@ $base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1) !default;
 $base-font-size: 1rem !default; //16px
 $normal-font-size: $base-font-size * 0.875 !default; //14px
 $font-size-sm: $base-font-size * 0.75 !default; // 12px
-$font-size-lg: $base-font-size * 1.5 !default; //24px
+$font-size-lg: $base-font-size * 1.75 !default; //28px
 $font-size-xl: $base-font-size * 2 !default; // 32px
 $font-size-xxl: $base-font-size * 3 !default; // 48px
 

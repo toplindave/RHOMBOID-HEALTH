@@ -1,0 +1,545 @@
+.__caregiver-details-container {
+  padding: 3% 12% 5% 12%;
+  @include md {
+    padding: 3% 4% 5% 4%;
+  }
+  @include sm {
+    padding: 3% 4% 5% 4%;
+  }
+  .__caregiver-details-sub-container {
+    border: 1px solid map-get($whitecolors, white-3);
+    .__caregiver-details-top-container {
+      padding: 4% 2% 2% 2%;
+      .__caregiver-details-name-and-rating {
+        // background: grey;
+        width: 40%;
+        .__details-star-rating {
+          // background: tan;
+          width: 50%;
+          margin-top: 8px;
+          margin-bottom: 27px;
+          @include xl {
+            width: 70%;
+          }
+          @include lg {
+            width: 70%;
+          }
+          @include md {
+            width: 70%;
+          }
+          @include sm {
+            width: 70%;
+          }
+          .__detail-star {
+            svg {
+              width: 15px;
+              height: 15px;
+              fill: #e65d25;
+              @include md {
+                width: 12px;
+                height: 12px;
+              }
+              @include sm {
+                width: 9px;
+                height: 9px;
+              }
+            }
+          }
+        }
+      }
+      .__caregiver-detail-img-container {
+        width: 180px;
+        height: 180px;
+        background: grey;
+        border-radius: 50%;
+        @include md {
+          width: 150px;
+          height: 150px;
+        }
+        @include sm {
+          width: 130px;
+          height: 130px;
+        }
+      }
+      .__details-availability-btn-container {
+        //   background: grey;
+        margin-top: 12px;
+        @include md {
+          margin-top: 30px;
+        }
+        @include sm {
+          margin-top: 30px;
+        }
+        .__details-availability-btn-sub-container {
+          width: 20%;
+          @include md {
+            width: 30%;
+          }
+          @include sm {
+            width: 35%;
+          }
+          // background: tan;
+          .__details-available-btn {
+            padding: 3% 7%;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid map-get($blackcolors, light-green);
+            background: map-get($blackcolors, light-green);
+          }
+          .__details-detail-btn {
+            padding: 3% 7%;
+            border-radius: 5px;
+            outline: none;
+            border: 1px solid map-get($blackcolors, light-green);
+            background: none;
+          }
+        }
+      }
+    }
+    .__caregiver-details-date-section {
+      padding: 1% 2% 5% 2%;
+
+      .__direction-btn {
+        // width: 5%;
+        svg {
+          width: 30px;
+          height: 30px;
+          fill: map-get($blackcolors, normalblack);
+          @include lg {
+            width: 25px;
+            height: 25px;
+          }
+          @include md {
+            width: 20px;
+            height: 20px;
+          }
+          @include sm {
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      .__caregiver-details-date-grid-container {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 4%;
+        @include lg {
+          width: 95%;
+          grid-column-gap: 0px;
+        }
+        @include md {
+          width: 95%;
+          grid-column-gap: 0px;
+        }
+        @include sm {
+          width: 95%;
+          grid-column-gap: 4px;
+        }
+        .__caregiver-details-available-date-and-time {
+          //   background: teal;
+          text-align: center;
+          h4 {
+            margin-bottom: 20px;
+          }
+          ul {
+            padding: 0px 10%;
+            @include sm {
+              padding: 0px;
+            }
+            li {
+              background: map-get($blackcolors, light-green);
+              padding: 2% 3%;
+              margin-bottom: 10px;
+              border-radius: 10px;
+              @include sm {
+                font-size: 7px;
+                padding: 2% 1%;
+              }
+            }
+          }
+        }
+      }
+    }
+    .__caregiver-details-about-section-all {
+      padding: 4% 2%;
+      .__caregiver-details-about-container {
+        // background: tan;
+        border-bottom: 1px solid map-get($whitecolors, white-3);
+        h4 {
+          margin-bottom: 15px;
+        }
+        p {
+          margin-bottom: 15px;
+        }
+      }
+      .__caregiver-details-credentials-container {
+        // background: tan;
+        padding: 2% 0px;
+        border-bottom: 1px solid map-get($whitecolors, white-3);
+        h4 {
+          margin-bottom: 15px;
+        }
+        .__credential-sub {
+          width: 70%;
+          h5 {
+            margin-bottom: 10px;
+          }
+          .__languages {
+            gap: 2px;
+          }
+        }
+      }
+      .__caregiver-details-reviews-container {
+        // background: tan;
+        padding: 2% 0px;
+        border-bottom: 1px solid map-get($whitecolors, white-3);
+        h4 {
+          margin-bottom: 15px;
+        }
+        .__review-sub {
+          // margin-bottom: 30px;
+          .__overall-rating {
+            // background: palegoldenrod;
+            h5 {
+              margin-bottom: 10px;
+            }
+            .__overall-star {
+              // background: teal;
+              margin-bottom: 10px;
+              @include sm {
+                // width: 80%;
+              }
+
+              svg {
+                fill: #e65d25;
+                width: 20px;
+                height: 20px;
+                @include xl {
+                  width: 18px;
+                  height: 18px;
+                }
+                @include lg {
+                  width: 15px;
+                  height: 15px;
+                }
+                @include md {
+                  width: 15px;
+                  height: 15px;
+                }
+                @include sm {
+                  width: 12px;
+                  height: 12px;
+                }
+              }
+            }
+            .__overall-star-ratingg {
+              text-align: center;
+              margin-bottom: 40px;
+            }
+            select {
+              // display: none;
+              width: 100%;
+              background: none;
+              border: 2px solid map-get($blackcolors, light-green);
+              height: 30px;
+              // padding: 2%;
+            }
+          }
+          .__total-reviewss {
+            h5 {
+              margin-bottom: 10px;
+            }
+            .__total-review-h2 {
+              text-align: center;
+            }
+          }
+          .__waiting-time {
+            // background: teal;
+            width: 25%;
+            .__waiting-time-sub {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+      .__caregiver-details-testimony-container {
+        // background: tan;
+        .__satisfied {
+          // background: thistle;
+          border-bottom: 1px solid map-get($whitecolors, white-3);
+          padding: 1% 30% 2% 0px;
+          @include xl {
+            padding: 1% 20% 2% 0px;
+          }
+          @include lg {
+            padding: 1% 15% 2% 0px;
+          }
+          @include md {
+            padding: 1% 10% 2% 0px;
+          }
+          @include sm {
+            padding: 1% 5% 2% 0px;
+          }
+          .__thumbs {
+            @include lg {
+              width: 75%;
+            }
+            @include md {
+              width: 75%;
+            }
+            @include sm {
+              width: 75%;
+            }
+            .__thumbs-up {
+              width: 20px;
+              height: 20px;
+              margin-bottom: 5px;
+              fill: map-get($blackcolors, black-2);
+              @include xl {
+                width: 18px;
+                height: 18px;
+              }
+              @include lg {
+                width: 15px;
+                height: 15px;
+              }
+              @include md {
+                width: 13px;
+                height: 13px;
+              }
+              @include sm {
+                width: 10px;
+                height: 10px;
+              }
+            }
+            .__thumbs-down {
+              width: 20px;
+              height: 20px;
+              margin-bottom: 5px;
+              fill: #e65d25;
+              @include xl {
+                width: 18px;
+                height: 18px;
+              }
+              @include lg {
+                width: 15px;
+                height: 15px;
+              }
+              @include md {
+                width: 13px;
+                height: 13px;
+              }
+              @include sm {
+                width: 10px;
+                height: 10px;
+              }
+            }
+            .__thumbs-text-satisfied {
+              margin-bottom: 10px;
+              color: map-get($blackcolors, black-2);
+            }
+            .__thumbs-text-unsatisfied {
+              margin-bottom: 10px;
+              color: #e65d25;
+            }
+            .__testimony-text {
+              margin-bottom: 10px;
+              // width: 50%;
+            }
+          }
+          .__verified {
+            width: 15%;
+            @include lg {
+              width: 22%;
+            }
+            @include md {
+              width: 22%;
+            }
+            @include sm {
+              width: 20%;
+            }
+            svg {
+              width: 15px;
+              height: 15px;
+              fill: #5b96fc;
+              @include md {
+                width: 12px;
+                height: 12px;
+              }
+              @include sm {
+                width: 9px;
+                height: 9px;
+              }
+            }
+            p {
+              color: #5b96fc;
+            }
+          }
+          .__unverified {
+            width: 15%;
+            @include lg {
+              width: 22%;
+            }
+            @include md {
+              width: 22%;
+            }
+            @include sm {
+              width: 20%;
+            }
+            svg {
+              visibility: hidden;
+              width: 15px;
+              height: 15px;
+              fill: #5b96fc;
+              @include md {
+                width: 12px;
+                height: 12px;
+              }
+              @include sm {
+                width: 9px;
+                height: 9px;
+              }
+            }
+            p {
+              color: #5b96fc;
+            }
+          }
+        }
+        .__unsatisfied {
+          // background: teal;
+          border-bottom: 1px solid map-get($whitecolors, white-3);
+          padding: 1% 30% 2% 0px;
+          @include xl {
+            padding: 1% 20% 2% 0px;
+          }
+          @include lg {
+            padding: 1% 15% 2% 0px;
+          }
+          @include md {
+            padding: 1% 10% 2% 0px;
+          }
+          @include sm {
+            padding: 1% 5% 2% 0px;
+          }
+          .__thumbs {
+            @include lg {
+              width: 75%;
+            }
+            @include md {
+              width: 75%;
+            }
+            @include sm {
+              width: 75%;
+            }
+            svg {
+              width: 20px;
+              height: 20px;
+              margin-bottom: 5px;
+              fill: #e65d25;
+              @include xl {
+                width: 18px;
+                height: 18px;
+              }
+              @include lg {
+                width: 15px;
+                height: 15px;
+              }
+              @include md {
+                width: 13px;
+                height: 13px;
+              }
+              @include sm {
+                width: 10px;
+                height: 10px;
+              }
+            }
+            .__thumbs-text {
+              margin-bottom: 10px;
+              color: #e65d25;
+            }
+            .__testimony-text {
+              margin-bottom: 10px;
+            }
+          }
+          .__verified {
+            width: 15%;
+            @include lg {
+              width: 22%;
+            }
+            @include md {
+              width: 22%;
+            }
+            @include sm {
+              width: 20%;
+            }
+            svg {
+              width: 15px;
+              height: 15px;
+              fill: #5b96fc;
+              @include md {
+                width: 12px;
+                height: 12px;
+              }
+              @include sm {
+                width: 9px;
+                height: 9px;
+              }
+            }
+            p {
+              color: #5b96fc;
+            }
+          }
+        }
+      }
+      .__more-review-btn-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        .__more-review-btn {
+          border: 1px solid map-get($blackcolors, brown-green);
+          // color: map-get($blackcolors, light-green);
+          background: none;
+          padding: 1%;
+          border-radius: 10px;
+          @include lg {
+            padding: 1.5%;
+            border-radius: 5px;
+          }
+          @include md {
+            padding: 1.5%;
+            border-radius: 5px;
+          }
+          @include sm {
+            padding: 1.5%;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  .__details-request-caregiver-container {
+    margin-top: 30px;
+    position: sticky;
+    bottom: 10px;
+    button {
+      outline: none;
+      border: none;
+      padding: 1% 4%;
+      border-radius: 10px;
+      @include lg {
+        padding: 1.5% 3%;
+        border-radius: 5px;
+      }
+      @include md {
+        padding: 1.5% 3%;
+        border-radius: 5px;
+      }
+      @include sm {
+        padding: 1.5% 3%;
+        border-radius: 5px;
+      }
+    }
+  }
+}

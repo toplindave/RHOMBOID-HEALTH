@@ -19,6 +19,18 @@
 @import "stylescomponent/_landingpage";
 @import "stylescomponent/texts";
 @import "stylescomponent/buttonWithText";
+@import "stylescomponent/homecare";
+@import "stylescomponent/searchwithicon";
+@import "stylescomponent/ratingcard";
+@import "stylescomponent/careNavDropDown";
+@import "../pages/divisions/home-care/caregivers/caregivers";
+@import "../component/divisions/home-care/caregiver/caregiver";
+@import "../component/divisions/home-care/thin-card/thinCard";
+@import "../component/divisions/home-care/caregiver-details/caregiver-details";
+@import "../pages/divisions/home-care/profile/profile";
+@import "../pages/divisions/home-care/find-care/findCare";
+@import "../component/divisions/home-care/sign-in/sign-in-web";
+@import "stylescomponent/searchSlide";
 
 // @import 'component/navbar';
 // @import 'component/badge';

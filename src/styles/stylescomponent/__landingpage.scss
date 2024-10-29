@@ -12,7 +12,11 @@
     }
   }
   .__hero-inner {
-    width: 20%;
+    width: fit-content;
+    
+    .search-btn{
+      cursor: pointer;
+    }
     @include sm {
       width: 50%;
     }
@@ -28,45 +32,33 @@
       // border: 1px solid darkcyan;
       width: 30%;
     }
-    .__hero-account {
-      width: 25%;
-      // background: slateblue;
-      @include sm {
-        width: 30%;
-      }
-      @include md {
-        width: 40%;
-      }
-      @include lg {
-        width: 30%;
-      }
-      @include xl {
-        width: 30%;
-      }
-      .__hero-account-svg {
-        width: 25%;
-        // background: teal;
-        svg {
-          width: minmax(12px, 18px);
-          height: 12px;
-          @include sm {
-            width: 10px;
-            height: 10px;
-          }
-          @include md {
-            width: 10px;
-            height: 10px;
-          }
-          @include lg {
-            width: 10px;
-            height: 10px;
-          }
+
+    a{
+      width: fit-content;
+           
+      svg {
+        width: 12px;
+        height: 12px;
+        margin-right: 10px;
+        @include sm {
+          width: 10px;
+          height: 10px;
+        }
+        @include md {
+          width: 10px;
+          height: 10px;
+        }
+        @include lg {
+          width: 10px;
+          height: 10px;
         }
       }
-      p {
-        width: 75%;
-      }
+
     }
+
+    
+    
+    
   }
 }
 .__navigation {
@@ -76,37 +68,77 @@
   top: 0px;
   ul {
     font-size: 16px;
-    width: 20%;
+    width: fit-content;
+    a {
+     
+      &:hover {
+        color: #0e5342;
+      }
+      // &:last-child {
+      //   // background: palegreen;
+      //   // width: 25%;
+      //   align-items: center;
+      //   gap: 5px;
+
+      // }
+    }
+
     @include sm {
-      background: teal;
+      // background: teal;
       // width: 50%;
       display: none;
     }
     @include md {
-      background: plum;
+      // background: plum;
       width: 45%;
       display: none;
     }
     @include lg {
       width: 35%;
-      background: tomato;
+      // background: tomato;
       display: none;
     }
     @include xl {
-      background: blueviolet;
+      // background: blueviolet;
       width: 30%;
       display: none;
     }
-    li {
-      &:last-child {
-        width: 25%;
-        // background: tan;
-        svg {
-          width: 20px;
-          height: 20px;
+
+    .m-about-link{ 
+      width: fit-content;
+      position: relative;
+     
+      cursor: pointer;
+      
+      svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+        fill: map-get($primarycolors, greenish);
+        z-index: -1;
+        @include sm {
+          width: 10px;
+          height: 10px;
         }
+        @include md {
+          width: 9px;
+          height: 9px;
+        }
+        @include lg {
+          width: 11px;
+          height: 11px;
+        }
+        @include xl {
+          width: 12px;
+          height: 12px;
+        }
+        
+      }
+      &:hover {
+        color: #0e5342;
       }
     }
+
   }
 }
 .__overlay {
@@ -126,6 +158,11 @@
         width: 50%;
         text-align: left;
         // background-color: tan;
+      }
+
+      .get-started-btn{
+        font-size: 20px;
+        letter-spacing: 2px;
       }
     }
   }
@@ -153,6 +190,7 @@
 
     ._home-care-card {
       width: 42%;
+      position: relative;
       @include sm {
         width: 100%;
         margin-bottom: 40px;
@@ -187,9 +225,15 @@
       p {
         margin-bottom: 20px;
       }
-      .__home-care-card-btn {
-        width: 30%;
+      // .__home-care-card-btn {
+      //   width: 30%;
+      //   border: 1px solid red;
+      // }
+      .learn-more-btn{
+        font-size: 16px;
+        letter-spacing: 2px;
       }
+
     }
   }
 }
@@ -220,6 +264,9 @@
   p {
     margin-bottom: 15px;
   }
+
+
+
   ul {
     // display: flex;
     // justify-content: space-between;
@@ -314,6 +361,7 @@
   padding-bottom: 12%;
   position: relative;
   overflow: hidden;
+  margin-top: 150px;
 
   .__footer-logo {
     // width: 26%;

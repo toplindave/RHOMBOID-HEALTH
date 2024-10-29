@@ -1,0 +1,62 @@
+.__rating-card {
+  width: 45%;
+  padding: 20px 15px;
+  background: #ffffff;
+  height: fit-content;
+  margin: 0 5px 0 5px;
+  @include sm {
+    padding: 6% 15% 4% 6%;
+  }
+  @include md {
+    padding: 6% 15% 4% 6%;
+  }
+  .__rating-stars {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 15px;
+    @include sm {
+      margin-bottom: 8px;
+    }
+    @include md {
+      margin-bottom: 10px;
+    }
+    svg {
+      width: 12px;
+      height: 12px;
+      fill: #ef8c68;
+      
+    }
+  }
+  .__rating-text {
+    margin-bottom: 18px;
+    line-height: 24px;
+    @include sm {
+      font-size: 8px;
+      margin-bottom: 10px;
+      line-height: 10px;
+    }
+    @include md {
+      font-size: 9px;
+      margin-bottom: 12px;
+      line-height: 15px;
+    }
+  }
+  .__rating-date {
+    font-size: 12px;
+    @include sm {
+      font-size: 8px;
+    }
+    @include md {
+      font-size: 9px;
+      // margin-bottom: 12px;
+      line-height: 15px;
+    }
+    @include lg {
+      font-size: 10px;
+    }
+    @include xl {
+      font-size: 11px;
+    }
+  }
+}
