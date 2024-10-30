@@ -5,6 +5,8 @@ export const DataContext = createContext({});
 
 export const DataProvider = ({ children }) => {
 
+
+    const [user, setUser] = useState(null);
     const [currentCity, setCurrentCity] = useState("");
     const [currentLocation, setCurrentLocation] = useState("");
     const [currentState, setCurrentState] = useState("");
@@ -23,7 +25,8 @@ export const DataProvider = ({ children }) => {
             currentCity, setCurrentCity,
             currentLocation, setCurrentLocation,
             currentState, setCurrentState,
-            regionPending, setRegionPending
+            regionPending, setRegionPending,
+            user, setUser
 
         }}
         >

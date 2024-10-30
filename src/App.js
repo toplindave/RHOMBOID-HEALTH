@@ -29,7 +29,6 @@ import FindCareConfirmation from "./pages/divisions/home-care/find-care/FindCare
 
 
 
-
 function App() {
 
 
@@ -51,7 +50,6 @@ function App() {
               <Route path="about-us" element={<AboutUs />} />
               <Route path="offerings" element={<Offerings />} />
               <Route path="how-rhomboid-works" element={<HowRhomboidWorks />} />
-              <Route path="account/sign-in" element={<SignIn />} />
 
             </Route>
 
@@ -86,6 +84,8 @@ function App() {
               </Route>
               
               <Route path="profile" element={<Profile />} />
+              <Route path="/rhomboid/home-care/account/sign-in" element={<SignIn />} />
+
             </Route>
           </Route>
         </Routes>
