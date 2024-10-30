@@ -15,19 +15,19 @@ const HomeCareMainNav = () => {
   const { showNavDropDown, setShowNavDropDown } = useContext(NavContext);
 
 
-  const { currentCity, currentState, regionPending } = useContext(DataContext);
+  const { currentCity, currentState, regionPending, user } = useContext(DataContext);
 
   const linkRef = useRef();
 
 
   useEffect(() => {
-    
-    function handleClickOutside(e){
 
-      if(showNavDropDown && (e.target.toString() !== linkRef.current.toString())){
+    function handleClickOutside(e) {
+
+      if (showNavDropDown && (e.target.toString() !== linkRef.current.toString())) {
         setShowNavDropDown(false);
       }
-      
+
     };
 
     document.addEventListener('mousedown', handleClickOutside);
@@ -42,16 +42,16 @@ const HomeCareMainNav = () => {
 
 
 
-  
+
   const handleDropdown = () => {
-   
-    if(showNavDropDown){
+
+    if (showNavDropDown) {
       setShowNavDropDown(false);
-    }else{
+    } else {
       setShowNavDropDown(true);
 
     }
-  
+
 
   }
 
@@ -68,19 +68,23 @@ const HomeCareMainNav = () => {
 
 
   return (
-    
-      <div className=" __care-nav container-care bg-ash font-weight-semi normal-font-text display-f justify-space-between  pt-2 pb-2">
-        <div className="__care-nav-location display-f justify-space-between  ">
-          <p className=" display-f justify-space-between text-greenish">
-            <Location />
-            {regionPending && !currentCity ? "fetching current location ..." : `${currentCity}, ${currentState}`}
-          </p>
-        </div>
 
-        <ul className="display-f justify-space-between ">
-          <Link to="/rhomboid/home-care/adult-care" className="font-md text-normalblack">Adult care</Link>
-          <Link to="/rhomboid/home-care/children-care" className=" font-md text-normalblack">Children care</Link>
-          <div 
+    <div className=" __care-nav container-care bg-ash font-weight-semi normal-font-text display-f justify-space-between  pt-2 pb-2">
+      <div className="__care-nav-location display-f justify-space-between  ">
+        <p className=" display-f justify-space-between text-greenish">
+          <Location />
+          {regionPending && !currentCity ? "fetching current location ..." : `${currentCity}, ${currentState}`}
+        </p>
+      </div>
+
+      <ul className="display-f justify-space-between ">
+        <Link to="/rhomboid/home-care/adult-care" className="font-md text-normalblack">Adult care</Link>
+        <Link to="/rhomboid/home-care/children-care" className=" font-md text-normalblack">Children care</Link>
+        {!user ?
+          <Link to="/rhomboid/home-care/account/sign-in" className=" font-md text-normalblack">Account</Link>
+          :
+
+          <div
             className="h-account-link"
           >
             <span
@@ -96,13 +100,15 @@ const HomeCareMainNav = () => {
               rrrrr
             </div> */}
             <CareNavDropDown />
-            
+
 
           </div>
-        </ul>
-      </div>
 
-   
+        }
+      </ul>
+    </div>
+
+
   );
 };
 
