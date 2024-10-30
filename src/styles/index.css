@@ -3657,12 +3657,7 @@ svg {
     font-size: 8px;
   }
 }
-.__caregiver-profile .__profile-display-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-}
+
 @media screen and (max-width: 960px) and (min-width: 720px) {
   .__caregiver-profile .__profile-display-section {
     display: block;

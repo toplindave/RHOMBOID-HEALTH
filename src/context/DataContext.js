@@ -6,7 +6,7 @@ export const DataContext = createContext({});
 export const DataProvider = ({ children }) => {
 
 
-    const [user, setUser] = useState(null);
+    const [user, setUser] = useState("Stout");
     const [currentCity, setCurrentCity] = useState("");
     const [currentLocation, setCurrentLocation] = useState("");
     const [currentState, setCurrentState] = useState("");
