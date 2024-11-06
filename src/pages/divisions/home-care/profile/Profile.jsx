@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import "../../../../styles/index.scss";
 
 import PersonalInfoTab from "../../../../component/divisions/home-care/profile-tabs/personal-information/PersonalInfoTab";
+import WalletTab from "../../../../component/divisions/home-care/profile-tabs/wallet/WalletTab";
+import SecurityTab from "../../../../component/divisions/home-care/profile-tabs/security/SecurityTab";
+import AddressesTab from "../../../../component/divisions/home-care/profile-tabs/addresses/AddressesTab";
+import PrivacyTab from "../../../../component/divisions/home-care/profile-tabs/privacy/PrivacyTab";
 
 function Profile() {
 
 
-  const innerStyle = {
-    border: "1px solid green"
-  }
 
   const [btnState, setBtnState] = useState(1);
 
@@ -91,8 +92,31 @@ function Profile() {
 
 
 
-      <div className="__profile-display-section" style={innerStyle}>
-        <PersonalInfoTab />
+      <div className="__profile-display-section">
+        <PersonalInfoTab 
+          setBtnClass = {setBtnClass}
+        />
+
+        <WalletTab 
+          setBtnClass = {setBtnClass}
+
+        />
+
+        <SecurityTab 
+          setBtnClass = {setBtnClass}
+
+        />
+
+        <AddressesTab 
+          setBtnClass = {setBtnClass}
+
+        />
+
+        <PrivacyTab
+          setBtnClass = {setBtnClass}
+
+        />
+
 
 
       </div>

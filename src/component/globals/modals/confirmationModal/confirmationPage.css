@@ -1,0 +1,156 @@
+
+
+.confirmation-background{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(26, 39, 42, 0.6);
+    
+}
+
+.confirmation-container{
+    width: 45%;
+    height: fit-content;
+    z-index: 35;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 0px 6px #1DAE8C;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.confirmation-header{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+
+.confirmation-title{
+    font-size: 1em;
+    font-weight: 600;
+    color: #1DAE8C;
+}
+
+.confirmation-return{
+    font-size: 0.875em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.error-modal-container{
+    width: 45%;
+    height: fit-content;
+    z-index: 35;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 0px 6px #ae1d1d;
+    padding: 20px 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.confirmation-page{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.con-icon{
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+
+}
+
+.con-icons{
+    font-size: 2em;
+}
+
+.con-success-icon{
+    color: #1DAE8C;
+}
+
+.con-error-icon{
+    color: #ae1d1d;
+}
+
+.con-body{
+    font-size: 0.875em;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.err-msg{
+    color: #ae1d1d;
+
+}
+
+.success-msg{
+    color: #1DAE8C;
+
+}
+
+.con-btn{
+    width: 100%;
+    height: 60px;
+    margin: 30px 0px;
+
+}
+
+.con-btn-flex{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    margin: 30px 0px;
+
+}
+
+.con-btns{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 8px 30px;
+    margin: auto;
+    transition: all 0.7s ease-in-out;
+    font-weight: 500;
+    font-size: 0.875em;
+    cursor: pointer;
+
+}
+
+.con-error-btn{
+    border: 1px solid #ae1d1d;
+    color: #ae1d1d;
+}
+
+.con-error-btn:hover{
+    background: #ae1d1d;
+    color: #fff;
+}
+
+.con-success-btn{
+    border: 1px solid #1DAE8C;
+    color: #1DAE8C;
+
+}
+
+.con-success-btn:hover{
+    background: #1DAE8C;
+    color: #fff;
+
+}
+
+
+
+
+
+/* media queries */
+

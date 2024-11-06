@@ -1,0 +1,309 @@
+
+.inp-control{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    position: relative;
+    /* display: flex; */
+}
+
+
+.inp-lbl{
+    font-size: 0.75em;
+    font-weight: 600;
+
+}
+
+.lbl-error{
+    color: #dd1c1c;
+
+}
+
+
+.input{
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 1em;
+    outline: none;
+    border: .5px solid #09203F;
+
+}
+
+/* input:focus{
+    outline: 1px solid #0b9e50;
+
+} */
+
+.input.inp-error{
+    border: 1px solid #dd1c1c;
+}
+
+.inp-error-msg{
+    font-size: 0.75em;
+    font-weight: 500;
+    color: #dd1c1c;
+    /* display: none; */
+    margin-top: 5px;
+}
+
+
+
+.password-toggle{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    right: 15px;
+    z-index: 50;
+   
+}
+
+.haslbl{
+    top: 35px;
+
+}
+
+.nolbl{
+    top: 15px;
+    
+}
+
+.password-icon{
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.iconLight{
+    color: #fff;
+}
+
+.iconDark{
+    color: #000;
+}
+
+.password-cons{
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    position: relative;
+    top: -15px;
+    /* z-index: -5; */
+
+}
+
+.pwd-cons{
+    display: block;
+    width: 45%;
+    font-size: 0.75em;
+    margin-bottom: 10px;
+    font-weight: 500;
+    /* opacity: 0.5; */
+    color: #dd1c1c;
+}
+
+.passed{
+    color: rgb(71, 164, 71);
+    opacity: 1;
+}
+
+.error-container{
+    width: 100%;
+    height: 6vh;
+    background: #F4F4F4;
+    z-index: 500;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+/* .auth-error{
+    width: fit-content;
+    height: fit-content;
+    background: #f7d6d6;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.875em;
+    font-weight: 500;
+    color: #dd1c1c;
+    margin-bottom: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1290px) and (min-width: 1020px){
+
+   .form-container{
+    width: 40%;
+   }
+
+}
+
+@media (max-width: 1024px) and (min-width: 840px){
+
+   .form-container{
+    width: 48%;
+   }
+
+}
+
+@media (max-width: 1000px) and (min-width: 0px){
+
+   .inp-control{
+    margin-top: 10px;
+   }
+
+}
+
+@media (max-width: 840px) and (min-width: 720px){
+
+   .form-container{
+    width: 55%;
+   }
+
+}
+
+@media (max-width: 720px) and (min-width: 580px){
+
+   .form-container{
+    width: 70%;
+   }
+
+}
+
+@media (max-width: 580px) and (min-width: 480px){
+
+   .form-container{
+    width: 80%;
+   }
+
+   .act-title{
+        font-size: 1.75em;
+
+    }
+
+}
+
+@media (max-width: 480px) and (min-width: 380px){
+
+   .form-container{
+    width: 100%;
+   }
+
+   .frm-title{
+    font-size: 1.875em;
+   }
+
+
+
+   .act-title{
+        font-size: 1.75em;
+    
+    }
+
+}
+
+@media (max-width: 380px) and (min-width: 0px){
+
+    input{
+        font-size: 0.875em;
+    }
+    .account-section{
+        width: 100%;
+        
+    }
+
+   .form-container{
+    width: 100%;
+    padding: 30px 15px;
+   }
+
+   .frm-title{
+    font-size: 1.75em;
+   }
+
+   .inp-error-msg{
+    font-size: 3.5vw;
+   }
+
+}
+
+
+@media (max-width: 620px) and (min-width: 0px){
+
+    .account-slide, .cart-slide{
+        
+        width: 100%;
+        
+       
+    }
+
+}
+
+
+
+@media (max-width: 1120px) and (min-width: 0px){
+
+    .no-act-link{
+        width: 100%;
+    }
+
+} 
+
+
+@media (max-width: 1120px) and (min-width: 0px){
+
+    .no-act-link{
+        width: 100%;
+    }
+
+} 
+
+@media (max-width: 840px) and (min-width: 0px){
+
+  
+   
+   .m-account-el{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+   }
+
+
+     
+
+  }
+
+
+
+@media (max-width: 375px) and (min-width: 0px){
+
+    .no-act-link{
+        padding: 10px;
+        font-size: 0.775em;
+        width: 100%;
+    }
+
+} 
+
+
+

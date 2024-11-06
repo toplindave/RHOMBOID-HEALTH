@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 const CareNavDropDown = () => {
 
 
-  const { showNavDropDown, setShowNavDropDown } = useContext(NavContext);
+  const { showCareDropDown, setShowNavDropDown } = useContext(NavContext);
 
   const hNavRef = useRef();
    
@@ -31,9 +31,9 @@ const CareNavDropDown = () => {
 
   useEffect(() => {       
       
-      showNavDropDown ? tl.current.play() : tl.current.reverse()
+      showCareDropDown ? tl.current.play() : tl.current.reverse()
  
-  }, [showNavDropDown]);
+  }, [showCareDropDown]);
 
 
 
@@ -41,16 +41,10 @@ const CareNavDropDown = () => {
   return (
     <div className='care-navdropdown' ref={hNavRef}>
         <div className="drop-el-1 display-f flex-column">
-            <Link to="/rhomboid/home-care/profile">Profile</Link>
-            <Link to="/rhomboid/home-care/inbox">Inbox</Link>
-            <Link to="/rhomboid/home-care/payment">Payment</Link>
-            <Link to="/rhomboid/home-care/settings-&-preferences">Settings and preferences</Link>
+            <Link to="/rhomboid/home-care/children-care/nannies">Nannies</Link>
+            <Link to="/rhomboid/home-care/children-care/babysitters">Babysitters</Link>
         </div>
-        <div className="drop-el-2 mt-4 display-f flex-column">
-            <Link to="/rhomboid/home-care/referal">Refer a friend</Link>
-            <Link to="/rhomboid/home-care/logout">Sign out</Link>
-            
-        </div>
+
       
     </div>
   );

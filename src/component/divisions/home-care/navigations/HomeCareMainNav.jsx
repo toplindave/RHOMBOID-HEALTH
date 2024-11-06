@@ -7,17 +7,19 @@ import CareNavDropDown from './navdropdown/CareNavDropDown';
 import NavContext from '../../../../context/NavContext';
 import useGeolocation from '../../../../hooks/useGeolocation';
 import DataContext from '../../../../context/DataContext';
+import AccountNavDropDown from './navdropdown/AccountNavDropDown';
 
 
 
 
 const HomeCareMainNav = () => {
-  const { showNavDropDown, setShowNavDropDown } = useContext(NavContext);
+  const { showNavDropDown, setShowNavDropDown, showCareDropDown, setShowCareDropDown } = useContext(NavContext);
 
 
   const { currentCity, currentState, regionPending, user } = useContext(DataContext);
 
   const linkRef = useRef();
+  const cLinkRef = useRef();
 
 
   useEffect(() => {
@@ -42,12 +44,35 @@ const HomeCareMainNav = () => {
 
 
 
+  useEffect(() => {
 
-  const handleDropdown = () => {
+    function handleClickOutside(e) {
+
+      if (showCareDropDown && (e.target.toString() !== cLinkRef.current.toString())) {
+        setShowCareDropDown(false);
+      }
+
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+
+    }
+
+
+  }, [showCareDropDown]);
+
+
+
+
+  const handleAccountDropdown = () => {
 
     if (showNavDropDown) {
       setShowNavDropDown(false);
     } else {
+      setShowCareDropDown(false);
       setShowNavDropDown(true);
 
     }
@@ -55,21 +80,28 @@ const HomeCareMainNav = () => {
 
   }
 
-  // const spanSTy = {
-  //   position: "absolute",
-  //   top: "50px",
-  //   right: "0",
-  //   width: "50vw",
-  //   height: "50vh",
-  //   border: "1px solid red"
-  // }
 
-  // console.log(showNavDropDown);
+  const handleCareDropdown = () => {
+
+    if (showCareDropDown) {
+      setShowCareDropDown(false);
+    } else {
+      setShowNavDropDown(false);
+      setShowCareDropDown(true);
+
+    }
+
+
+  }
+
 
 
   return (
 
     <div className=" __care-nav container-care bg-ash font-weight-semi normal-font-text display-f justify-space-between  pt-2 pb-2">
+
+      
+
       <div className="__care-nav-location display-f justify-space-between  ">
         <p className=" display-f justify-space-between text-greenish">
           <Location />
@@ -79,7 +111,23 @@ const HomeCareMainNav = () => {
 
       <ul className="display-f justify-space-between ">
         <Link to="/rhomboid/home-care/adult-care" className="font-md text-normalblack">Adult care</Link>
-        <Link to="/rhomboid/home-care/children-care" className=" font-md text-normalblack">Children care</Link>
+
+        <div className="h-account-link font-md text-normalblack">
+          <span
+            className="font-md display-f justify-space-between text-greenish"
+            onClick={handleCareDropdown}
+            ref={cLinkRef}
+          >
+            Children care
+
+          </span>
+
+          <CareNavDropDown />
+
+        </div>
+
+
+
         {!user ?
           <Link to="/rhomboid/home-care/account/sign-in" className=" font-md text-normalblack">Account</Link>
           :
@@ -89,7 +137,7 @@ const HomeCareMainNav = () => {
           >
             <span
               className="font-md display-f justify-space-between text-greenish"
-              onClick={handleDropdown}
+              onClick={handleAccountDropdown}
               ref={linkRef}
             >
               <UserLight /> Account
@@ -99,13 +147,15 @@ const HomeCareMainNav = () => {
             {/* <div style={spanSTy} >
               rrrrr
             </div> */}
-            <CareNavDropDown />
+            <AccountNavDropDown />
 
 
           </div>
 
         }
       </ul>
+
+
     </div>
 
 

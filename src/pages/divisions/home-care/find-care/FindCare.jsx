@@ -1,7 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import ThinCard from '../../../../component/divisions/home-care/thin-card/ThinCard';
 import { findCareOptions } from '../../../../utils/homecare/findCareData';
 import { useNavigate } from 'react-router-dom';
+import ProgressBar from '../../../../component/globals/progress-indicator/ProgressBar';
+import DataContext from '../../../../context/DataContext';
 
 
 
@@ -13,12 +15,17 @@ const FindCare = () => {
 
     const navigate = useNavigate();
 
+    const {progress, setProgress} = useContext(DataContext);
+
 
     const [option, setOption] = useState(1);
     const [optionData, setOptionData] = useState(null);
     const [optionData1, setOptionData1] = useState(null);
     const [optionData2, setOptionData2] = useState(null);
     const [optionData3, setOptionData3] = useState(null);
+
+
+
 
     const [values, setValues] = useState({
         value1: "",
@@ -134,18 +141,25 @@ const FindCare = () => {
             return;
         } else {
             setOption(option - 1);
+            setProgress((prev) => (prev < 100 ? prev - (100/numberOfOptions) : 0));
+
         }
     }
+
+
 
     const handleNext = () => {
         if (option === numberOfOptions) {
             // console.log(values)
             // return;
             navigate(`/rhomboid/home-care/find-care/${values.value1}/${values.value2}/${values.value3}/confirmation`);
+            setProgress(100);
 
 
         } else {
             setOption(option + 1);
+
+            setProgress((prev) => (prev < 100 ? prev + (100/numberOfOptions) : 0));
         }
     }
 
@@ -153,6 +167,11 @@ const FindCare = () => {
 
   return (
     <div className="__care-section-1 container-care" style={innerStyle}>
+
+        <ProgressBar 
+            value={progress}
+        />
+
         <div className="find-sections">
 
             {
@@ -173,6 +192,7 @@ const FindCare = () => {
             }
            
         </div>
+
     </div>
   )
 }

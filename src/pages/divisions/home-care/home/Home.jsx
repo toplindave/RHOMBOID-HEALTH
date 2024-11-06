@@ -210,6 +210,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      
       <div className="__ratings bg-ash">
         <div className="__rating-top">
           <h3 className="h3-text font-weight-semi text-brown-green">

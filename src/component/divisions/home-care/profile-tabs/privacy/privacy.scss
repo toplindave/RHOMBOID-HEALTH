@@ -1,0 +1,27 @@
+.info-display-section-5 {
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 20px 30px 50px 30px;
+    background: #F1F1F1;
+
+    // background: thistle;
+    @include lg {
+        // gap: 10px;
+        display: block;
+    }
+
+    @include md {
+        display: block;
+    }
+
+    @include sm {
+        display: block;
+    }
+
+}
+
+.info-display-section-5.active-tab{
+    display: grid;
+}

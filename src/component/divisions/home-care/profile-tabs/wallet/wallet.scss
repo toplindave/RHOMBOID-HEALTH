@@ -1,0 +1,310 @@
+.info-display-section-2 {
+    width: 100%;
+    display: none;
+
+    padding: 15px 20px 50px 20px;
+    background: #F1F1F1;
+
+    // background: thistle;
+    @include lg {
+        // gap: 10px;
+        display: block;
+    }
+
+    @include md {
+        display: block;
+    }
+
+    @include sm {
+        display: block;
+    }
+
+
+    .wallet-title {
+        width: 100%;
+        
+
+        .how-to-make-payment {
+            background: #D9EBD9;
+
+            &:hover {
+                background: #A7BE86;
+
+            }
+        }
+    }
+
+    .wallet-body {
+        width: 100%;
+        margin-top: 40px;
+
+
+        .wallet-body-1 {
+            width: 43%;
+
+            .balance-card {
+                width: 93%;
+
+                background: linear-gradient(0deg, rgba(180, 207, 165, 1) 0%, rgba(241, 241, 241, 1) 90%);
+                padding: 20px 30px;
+                border-radius: 10px;
+
+                .balance-p{
+                    opacity: 0.6;
+                }
+
+                .balance-value{
+                    font-size: 36px;
+                    margin-top: 15px;
+                }
+
+                .balance-card-footer{
+                    width: 100%;
+                    margin-top: 50px;
+               
+
+                    .add-money{
+                        font-size: 16px;
+                        font-weight: 500;
+                        background: #526354;
+
+                        color: #fff;                        
+                    }
+
+                    .default-opt-con{
+                        // border: 1px solid purple;
+                        .default-opt{
+                            display: block;
+                            width: 10vw;
+                            font-size: 14px;
+                            font-weight: 500;
+                            opacity: 0.7;
+                        }
+
+                        .opt-check{
+                            display: block;
+                            width: 35px;
+                            height: 20px;
+                            border-radius: 10px;
+                            background: #aab0a4;
+                            padding: 2px;
+                            position: relative;
+                            cursor: pointer;
+                            transition: all ease-in-out 0.7s;
+
+                            .opt-check-indicator{
+                                width: 16px;
+                                height: 16px;
+                                background: #eaefeb;
+                                display: block;
+                                border-radius: 50%;
+                                position: absolute;
+                                left: 2px;
+                                transition: all ease-in-out 0.7s;
+
+                            }
+
+                            .opt-check-indicator.checked{
+                                background: #fff;
+                                left: 16px;
+    
+                            }
+
+                        }
+
+                        .opt-check.checked{
+                            background: #0F7C62;
+                          
+                        }
+
+                      
+
+                    }
+
+
+                }
+
+
+
+            }
+
+
+            .transaction-card{
+                border: 1px solid #B4CFA5;
+                border-radius: 10px;
+                margin: auto;
+                width: 100%;
+                height: fit-content;
+                background: #E3e5e0;
+                margin-top: 40px;
+            
+            
+                .transaction-card-title{
+                    width: 100%;
+                    padding: 10px 20px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    text-align: center;
+                }
+            
+                .transaction-card-elements{
+                    border-top: 1px solid #B4CFA5;
+                    padding: 30px 20px;
+
+
+                    .transaction-card-element{
+                        width: 100%;
+                        padding: 10px 15px;
+                        margin-bottom: 15px;
+                        border: 0.5px solid #A7BE86;
+
+                        .el-icon-con{
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                            background: #939D94;
+
+                            svg{
+                                fill: #526354;
+                                width: 25px;
+                            }
+                        }
+
+                        .el-texts{
+                           
+                            width: 60%;
+
+                            .el-texts-2{
+                                margin-top: 6px;
+                            }
+                        }
+
+                        .el-amt{
+                            width: 20%;
+                            display: flex;
+                            justify-content: left;
+                            
+                        }
+
+
+                    }
+            
+                }
+            }
+
+        }
+
+
+
+
+
+        .wallet-body-2 {
+            width: 55%;
+            background: #D8F0E1;
+            padding: 20px 25px 50px 25px;
+            border-radius: 10px;
+
+            .amt-due{
+                width: fit-content;
+                margin-top: 40px;
+
+                .amt-due-txt{
+                    margin-left: 30px;
+                }
+                
+            }
+
+            .make-payment{
+                background: #B4CFA5;
+                margin-top: 30px;
+
+                &:hover{
+                    opacity: 0.7;
+                }
+
+            }
+
+            .divider{
+                width: 100%;
+                margin-top: 50px;
+
+                span{
+                    width: 46%;
+                    // height: 1px;
+                    border: 1px solid #B4CFA5;
+                }
+
+            }
+
+
+            .payment-opts-con{
+                width: 100%;
+                background: #D9EBD9;
+                padding: 20px 25px 30px 25px;
+                margin-top: 30px;
+
+                .opts-title{
+                    width: 100%;
+            
+                }
+
+
+                .opts-links-con{
+                    display: block;
+                    width: 100%;
+                    margin-top: 20px;
+            
+
+                    a{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 15px;
+                        margin-bottom: 15px;
+                        border: 0.5px solid #B4CFA5;
+                        background: #B4CFA5;
+
+                        &:hover{
+                            opacity: 0.7;
+                        }
+
+                        .link-el-1{
+                           
+                            width: 80%;
+
+                            .el-texts-2{
+                                margin-top: 10px;
+                            }
+                        }
+
+             
+
+
+                    }
+
+
+                }
+
+              
+
+
+            }
+
+
+
+
+        }
+
+
+    }
+
+}
+
+.info-display-section-2.active-tab {
+    display: flex;
+    flex-direction: column;
+}

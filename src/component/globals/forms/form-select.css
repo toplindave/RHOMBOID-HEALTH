@@ -1,0 +1,98 @@
+:root {
+	--green: #b2ff55;
+	--white: #ffffff;
+	--margin: 10px;
+	--font: 'Montserrat', sans-serif;  
+
+}
+
+.dropdown-container{
+  /* display: none; */
+  width: 100%;
+  height: fit-content;
+  padding: 10px 0;
+  font-family: var(--font);
+  color: #917B42;
+  position: relative;
+
+}
+
+.dropdown-input{
+  width: 100%;
+  height: 45px;
+  padding: 10px 10px;
+  border: .5px solid #321729;
+  cursor: pointer;
+  position: relative;
+  color: #321729;
+  font-weight: 500;
+
+}
+
+.dropdown-input.inp-error{
+  border: 1px solid #DD1C1C;
+
+}
+
+.dropdown-placeholder{
+  font-size: 0.875em;
+  opacity: 0.5;
+  color: #321729;
+}
+
+
+.dropdown-icon{
+  font-size: 2em;
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  color: #321729;
+
+
+}
+
+.dropdown-options{
+  display: none;
+  background: #fff;
+}
+
+
+.dropdown-options.open{
+  display: block;
+  position: absolute;
+  top: -45vh;
+  left: 0;
+  width: 100%;
+  height: 45vh;
+  padding: 10px 0;
+  box-shadow: 0px 3px 6px #917B42;
+  overflow-y: scroll;
+  
+}
+
+.dropdown-options.open::-webkit-scrollbar{
+    width: 7px;
+}
+.dropdown-options.open::-webkit-scrollbar-thumb{
+    background: transparent;
+    border-radius: 10px;
+}
+
+
+.option.open{
+  background: transparent;
+  color: #321729;
+  width: 100%;
+  height: fit-content;
+  font-size: 0.75em;
+  font-family: var(--font);
+  padding: 10px;
+  /* margin-bottom: 2px; */
+}
+
+.option.open:hover{
+  background: #917B42;
+  color: #FFFFFF;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}

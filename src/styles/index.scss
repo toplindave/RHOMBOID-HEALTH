@@ -30,7 +30,13 @@
 @import "../pages/divisions/home-care/profile/profile";
 @import "../pages/divisions/home-care/find-care/findCare";
 @import "../component/divisions/home-care/sign-in/sign-in-web";
+@import "../component/globals/contact-section//contact-section.scss";
 @import "../component/divisions/home-care/profile-tabs/personal-information/personal-info.scss";
+@import "../component/divisions/home-care/profile-tabs/addresses/addresses.scss";
+@import "../component/divisions/home-care/profile-tabs/wallet/wallet.scss";
+@import "../component/divisions/home-care/profile-tabs/security/security.scss";
+@import "../component/divisions/home-care/profile-tabs/privacy/privacy.scss";
+@import "../component/divisions/home-care/profile-tabs/profile-display-card/profile-display-card.scss";
 @import "stylescomponent/searchSlide";
 
 // @import 'component/navbar';

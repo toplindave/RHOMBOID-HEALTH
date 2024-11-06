@@ -1,0 +1,32 @@
+.info-display-section-4 {
+    width: 100%;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 20px 30px 50px 30px;
+    background: #F1F1F1;
+
+    // background: thistle;
+    @include lg {
+        // gap: 10px;
+        display: block;
+    }
+
+    @include md {
+        display: block;
+    }
+
+    @include sm {
+        display: block;
+    }
+
+    .address-elements{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+}
+
+.info-display-section-4.active-tab{
+    display: block;
+}

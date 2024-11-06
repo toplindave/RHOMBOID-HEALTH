@@ -17,6 +17,8 @@ const Layout = () => {
     
     const openKey = process.env.REACT_APP_OPEN_CAGE_ID;
 
+
+
     // get location
     useEffect(() => {
 
@@ -72,14 +74,15 @@ const Layout = () => {
             navigator.permissions
                 .query({ name: "geolocation" })
                 .then((result) => {
-
+                   
                     if (result.state === "granted") {
                         navigator.geolocation.getCurrentPosition(success, errors, options);
                     } else if (result.state === "prompt") {
                         navigator.geolocation.getCurrentPosition(success, errors, options);
 
                     } else if (result.state === "denied") {
-
+                        setCurrentCity("Ikeja");
+                        setCurrentState("Lagos");
                     }
 
 
@@ -118,6 +121,7 @@ const Layout = () => {
 
 
     }, [location])
+
 
 
     

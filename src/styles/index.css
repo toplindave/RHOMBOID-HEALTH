@@ -1350,7 +1350,7 @@ svg {
 }
 
 .__section4 {
-  padding-bottom: 6%;
+  padding-bottom: 4%;
 }
 .__section4 h1 {
   margin-bottom: 48px;
@@ -2315,9 +2315,6 @@ svg {
   transition: 0.3s ease-in-out;
 }
 
-.__ratings {
-  margin-bottom: 60px;
-}
 .__ratings .__rating-top {
   padding: 1%;
 }
@@ -3624,10 +3621,10 @@ svg {
   }
 }
 
-.__caregiver-profile {
+/* .__caregiver-profile {
   padding: 3% 3.5% 30% 3.5%;
   height: 100vh;
-}
+} */
 @media screen and (max-width: 1200px) and (min-width: 960px) {
   .__caregiver-profile {
     height: 90vh;
@@ -3703,7 +3700,6 @@ svg {
 }
 .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container {
   background: #e3e5e0;
-  height: 223px;
   position: relative;
 }
 @media screen and (max-width: 1200px) and (min-width: 960px) {
@@ -3795,7 +3791,7 @@ svg {
 }
 .__caregiver-profile .__profile-display-section .__profile-display-card-container .__profile-display-card-sub-container .__edit-container {
   position: absolute;
-  bottom: 10px;
+  /* bottom: 10px; */
   right: 6%;
 }
 @media screen and (max-width: 960px) and (min-width: 720px) {

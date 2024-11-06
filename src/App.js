@@ -23,6 +23,8 @@ import Settings from "./pages/divisions/home-care/settings/Settings";
 import ReferAFriend from "./pages/divisions/home-care/refer-a-friend/ReferAFriend";
 import FindCare from "./pages/divisions/home-care/find-care/FindCare";
 import FindCareConfirmation from "./pages/divisions/home-care/find-care/FindCareConfirmation";
+import Nannies from "./pages/divisions/home-care/children-care/nannies/Nannies";
+import BabySitters from "./pages/divisions/home-care/children-care/babysitters/BabySitters";
 
 
 
@@ -58,7 +60,8 @@ function App() {
             <Route path="/rhomboid/home-care" element={<HomeCareLayout />}>
               <Route index element={<Home />} />
               <Route path="adult-care" element={<AdultCare />} />
-              <Route path="children-care" element={<ChildrenCare />} />
+              <Route path="children-care/nannies" element={<Nannies />} />
+              <Route path="children-care/babysitters" element={<BabySitters />} />
               <Route path="inbox" element={<Inbox />} />
               <Route path="payment" element={<Payment />} />
 
