@@ -8,7 +8,7 @@ import CompanyLayout from "./layouts/CompanyLayout";
 import HomeCareLayout from "./layouts/HomeCareLayout";
 import Home from "./pages/divisions/home-care/home/Home";
 import AdultCare from "./pages/divisions/home-care/adult-care/AdultCare";
-import ChildrenCare from "./pages/divisions/home-care/children-care/ChildrenCare";
+// import ChildrenCare from "./pages/divisions/home-care/children-care/ChildrenCare";
 import Caregivers from "./pages/divisions/home-care/caregivers/Caregivers";
 import CaregiverDetails from "./component/divisions/home-care/caregiver-details/CaregiverDetails";
 import Profile from "./pages/divisions/home-care/profile/Profile";
@@ -33,13 +33,6 @@ import { HomeCareProvider } from "./context/HomeCareContext";
 
 
 function App() {
-
-
-  
-
-
-
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -53,7 +46,6 @@ function App() {
               <Route path="about-us" element={<AboutUs />} />
               <Route path="offerings" element={<Offerings />} />
               <Route path="how-rhomboid-works" element={<HowRhomboidWorks />} />
-
             </Route>
             {/* home care routes */}
 

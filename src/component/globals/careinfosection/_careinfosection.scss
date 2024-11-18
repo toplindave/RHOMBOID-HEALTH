@@ -1,0 +1,48 @@
+.__care-info-section {
+  //   background: teal;
+  display: flex;
+  padding: 2% 0px;
+  gap: 60px;
+  @include md {
+    padding: 5% 0px;
+    display: block;
+  }
+  @include sm {
+    padding: 5% 0px;
+    display: block;
+  }
+  .__care-info-section-left {
+    width: 50%;
+    @include md {
+      width: 100%;
+    }
+    @include sm {
+      width: 100%;
+    }
+    h3 {
+      margin-bottom: 130px;
+      @include md {
+        margin-bottom: 80px;
+      }
+      @include sm {
+        margin-bottom: 80px;
+      }
+    }
+  }
+  .__care-info-section-right {
+    width: 50%;
+    height: 482px;
+    background: silver;
+    @include md {
+      width: 100%;
+      margin-top: 40px;
+    }
+    @include sm {
+      width: 100%;
+      margin-top: 40px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}

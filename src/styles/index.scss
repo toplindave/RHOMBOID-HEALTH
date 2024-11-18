@@ -12,7 +12,7 @@
 
 // components( button, card, navbar)
 // @import 'component/card';
-@import "stylescomponent/button";
+// @import "stylescomponent/button";
 // @import "stylescomponent/forminput";
 // @import "stylescomponent/searchinput";
 @import "stylescomponent/container";
@@ -40,9 +40,11 @@
 @import "../component/divisions/home-care/profile-tabs/privacy/privacy.scss";
 @import "../component/divisions/home-care/profile-tabs/profile-display-card/profile-display-card.scss";
 @import "stylescomponent/searchSlide";
-
+@import "../pages/divisions/home-care/find-care/findCare";
+@import "../pages/divisions/home-care/children-care/nannies/nannies";
+@import "../pages/divisions/home-care/children-care/babysitters/babysitters";
 // @import 'component/navbar';
 // @import 'component/badge';
+//   utilities ( margin, paddind, opacity)
 
-// utilities ( margin, paddind, opacity)
 @import "utilities";

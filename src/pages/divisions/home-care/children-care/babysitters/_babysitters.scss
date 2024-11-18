@@ -1,0 +1,147 @@
+.__baby-sitting-benefit {
+  background: #526354;
+  padding: 2% 3.5% 7% 3.5%;
+  .__baby-sitting-benefit-h1 {
+    text-align: center;
+    margin-bottom: 54px;
+  }
+  .__babysitting-benefit-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2%;
+    row-gap: 31px;
+
+    @include lg {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include md {
+      // background: thistle;
+      display: block;
+    }
+    @include sm {
+      display: block;
+    }
+
+    .__babysitting-benefit-grid-card {
+      background: #fff;
+      border: 1px solid white;
+
+      height: 265px;
+      position: relative;
+      @include md {
+        height: 200px;
+        margin-bottom: 30px;
+      }
+      @include sm {
+        margin-bottom: 30px;
+        height: 200px;
+      }
+
+      .__babysitting-benefit-grid-top {
+        padding: 2%;
+        background: #526354;
+        h2 {
+          text-align: center;
+        }
+      }
+      .__babysitting-benefit-grid-middle {
+        padding: 4% 17%;
+        // background: white;
+        p {
+          text-align: center;
+          line-height: 24px;
+        }
+      }
+      .__babysitting-benefit-grid-end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        // background: yellowgreen;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        // align-self: baseline;
+        .__babysitting-benefit-grid-circle {
+          border: 2px solid orangered;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background: transparent;
+          @include md {
+            width: 35px;
+            height: 35px;
+          }
+          @include sm {
+            width: 35px;
+            height: 35px;
+          }
+          svg {
+            width: 25px;
+            height: 25px;
+            fill: orangered;
+            @include md {
+              width: 20px;
+              height: 20px;
+            }
+            @include sm {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.__ways-babysitting-can-benefit-section {
+  padding: 3% 16%;
+  @include md {
+    padding: 3% 6%;
+  }
+  @include sm {
+    padding: 3% 6%;
+  }
+  .__ways-babysitting-can-benefit-h1 {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .__ways-babysitting-can-benefit-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12%;
+    row-gap: 100px;
+    @include md {
+      display: block;
+    }
+    @include sm {
+      display: block;
+    }
+    .__ways-babysitting-can-benefit-grid-card {
+      background: linear-gradient(91deg, #ffffff, #e3e5e0);
+      box-shadow: 0px 3px 6px #e3e5e0;
+      padding: 4%;
+      @include md {
+        margin-bottom: 30px;
+      }
+      @include sm {
+        margin-bottom: 30px;
+      }
+      h2 {
+        margin-bottom: 15px;
+      }
+      p {
+        width: 80%;
+        line-height: 24px;
+        @include md {
+          width: 100%;
+          line-height: 20px;
+        }
+        @include sm {
+          width: 100%;
+          line-height: 20px;
+        }
+      }
+    }
+  }
+}

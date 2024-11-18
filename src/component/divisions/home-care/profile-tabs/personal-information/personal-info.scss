@@ -1,127 +1,134 @@
 .info-display-section-1 {
-    width: 100%;
-    display: none;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    padding: 20px 30px 50px 30px;
-    background: #F1F1F1;
+  width: 100%;
+  //   display: none;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  padding: 20px 30px 50px 30px;
+  background: #f1f1f1;
 
-    // background: thistle;
+  // background: thistle;
+  @include lg {
+    // gap: 10px;
+    display: block;
+  }
+
+  @include md {
+    display: block;
+  }
+
+  @include sm {
+    display: block;
+  }
+
+  .__profile-display-card-container {
     @include lg {
-        // gap: 10px;
-        display: block;
+      margin-bottom: 30px;
     }
 
     @include md {
-        display: block;
+      margin-bottom: 30px;
     }
 
     @include sm {
-        display: block;
+      margin-bottom: 30px;
     }
 
-    .__profile-display-card-container {
+    h1 {
+      margin-bottom: 20px;
+
+      @include md {
+        margin-bottom: 10px;
+      }
+
+      @include sm {
+        margin-bottom: 10px;
+      }
+    }
+
+    .__profile-display-card-sub-container {
+      background: #e3e5e0;
+      // height: 75%;
+      height: 250px;
+      position: relative;
+
+      @include xl {
+        height: 190px;
+      }
+
+      @include lg {
+        height: 190px;
+      }
+
+      @include md {
+        height: 170px;
+      }
+
+      @include sm {
+        height: 150px;
+      }
+
+      .__profile-display-card {
+        gap: 25px;
+        padding: 4% 6%;
+
         @include lg {
-            margin-bottom: 30px;
+          gap: 40px;
+          padding: 3%;
         }
 
         @include md {
-            margin-bottom: 30px;
+          gap: 40px;
+          padding: 2%;
         }
 
         @include sm {
-            margin-bottom: 30px;
+          gap: 40px;
+          padding: 2%;
         }
 
-        h1 {
-            margin-bottom: 20px;
+        svg {
+          width: 60px;
+          height: 60px;
+          fill: #526354;
+          margin-top: 0px;
 
-            @include md {
-                margin-bottom: 10px;
-            }
+          @include lg {
+            width: 70px;
+            height: 70px;
+          }
 
-            @include sm {
-                margin-bottom: 10px;
-            }
+          @include md {
+            width: 70px;
+            height: 70px;
+          }
         }
 
-        .__profile-display-card-sub-container {
-            background: #e3e5e0;
-            // height: 75%;
-            height: 250px;
-            position: relative;
+        .__profile-display-card-details {
+          width: 100%;
 
-            @include xl {
-                height: 190px;
+          .__first-name {
+            p {
+              margin-bottom: 5px;
             }
 
-            @include lg {
-                height: 190px;
+            margin-bottom: 10px;
+          }
+
+          .__last-name {
+            p {
+              margin-bottom: 5px;
             }
 
-            @include md {
-                height: 170px;
+            margin-bottom: 10px;
+          }
+
+          .__phone-number {
+            p {
+              margin-bottom: 5px;
             }
-
-            @include sm {
-                height: 150px;
-            }
-
-            .__profile-display-card {
-                gap: 25px;
-                padding: 4% 6%;
-
-                @include lg {
-                    gap: 40px;
-                    padding: 3%;
-                }
-
-                @include md {
-                    gap: 40px;
-                    padding: 2%;
-                }
-
-                @include sm {
-                    gap: 40px;
-                    padding: 2%;
-                }
-
-                svg {
-                    width: 60px;
-                    height: 60px;
-                    fill: #526354;
-                    margin-top: 0px;
-
-                    @include lg {
-                        width: 70px;
-                        height: 70px;
-                    }
-
-                    @include md {
-                        width: 70px;
-                        height: 70px;
-                    }
-                }
-
-                .__profile-display-card-details {
-                    width: 100%;
-
-                    .__first-name {
-                        p {
-                            margin-bottom: 5px;
-                        }
-
-                        margin-bottom: 10px;
-                    }
-
-                    .__last-name {
-                        p {
-                            margin-bottom: 5px;
-                        }
-
-                        margin-bottom: 10px;
-                    }
-
+          }
+        }
+      }
                     .__phone-number {
                         p {
                             margin-bottom: 5px;
@@ -147,8 +154,8 @@
                 }
             }
 
-            .__profile-display-email-address {
-                width: 100%;
+      .__profile-display-email-address {
+        width: 100%;
 
                 p {
                     margin-bottom: 15px;
