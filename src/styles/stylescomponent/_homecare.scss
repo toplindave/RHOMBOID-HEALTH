@@ -25,116 +25,124 @@
   }
 }
 
-.__care-nav {
-  align-items: center;
-  z-index: 10;
-  position: sticky;
-  top: 0px;
+.main-care-nav{
 
-  .__care-nav-location {
-    cursor: pointer;
-    &:hover {
-      p {
-        color: #35767e;
-        svg {
-          fill: #35767e;
-        }
-      }
-    }
-    p {
-      align-items: center;
-      gap: 5px;
+    align-items: center;
+    z-index: 10;
+    position: sticky;
+    top: 0px;
 
-      svg {
-        width: 15px;
-        height: 15px;
-        fill: map-get($primarycolors, greenish);
-        
-        @include sm {
-          width: 10px;
-          height: 10px;
-        }
-        @include md {
-          width: 10px;
-          height: 10px;
-        }
-        @include lg {
-          width: 12px;
-          height: 12px;
-        }
-        @include xl {
-          width: 13px;
-          height: 13px;
-        }
-      }
-    }
-  }
-  ul {
-    width: 30%;
-    @include sm {
-      display: none;
-    }
-    @include md {
-      width: 45%;
-    }
-    @include lg {
-      width: 35%;
-    }
-    @include xl {
-      width: 35%;
-    }
-    a {
-   
-      &:hover {
-        color: #0e5342;
-      }
-
-    }
-
-    .h-account-link{ 
+  .__care-nav {
+    
   
-      position: relative;
+    .__care-nav-location {
       cursor: pointer;
-
-
-      span{
+      &:hover {
+        p {
+          color: #35767e;
+          svg {
+            fill: #35767e;
+          }
+        }
+      }
+      p {
         align-items: center;
         gap: 5px;
-        // cursor: pointer;
+  
         svg {
           width: 15px;
           height: 15px;
-          margin-right: 5px;
           fill: map-get($primarycolors, greenish);
-          z-index: -1;
+          
           @include sm {
             width: 10px;
             height: 10px;
           }
           @include md {
-            width: 9px;
-            height: 9px;
+            width: 10px;
+            height: 10px;
           }
           @include lg {
-            width: 11px;
-            height: 11px;
-          }
-          @include xl {
             width: 12px;
             height: 12px;
           }
-          
+          @include xl {
+            width: 13px;
+            height: 13px;
+          }
         }
+      }
+    }
+    ul {
+      width: 30%;
+      @include sm {
+        display: none;
+      }
+      @include md {
+        width: 45%;
+      }
+      @include lg {
+        width: 35%;
+      }
+      @include xl {
+        width: 35%;
+      }
+      a {
+     
         &:hover {
           color: #0e5342;
         }
-
+  
       }
-      
-     
+  
+      .h-account-link{ 
+    
+        position: relative;
+        cursor: pointer;
+  
+  
+        span{
+          align-items: center;
+          gap: 5px;
+          // cursor: pointer;
+          svg {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            fill: map-get($primarycolors, greenish);
+            z-index: -1;
+            @include sm {
+              width: 10px;
+              height: 10px;
+            }
+            @include md {
+              width: 9px;
+              height: 9px;
+            }
+            @include lg {
+              width: 11px;
+              height: 11px;
+            }
+            @include xl {
+              width: 12px;
+              height: 12px;
+            }
+            
+          }
+          &:hover {
+            color: #0e5342;
+          }
+  
+        }
+        
+       
+      }
     }
   }
+
 }
+
+
 .__care-section-1 {
   padding-top: 52px;
   padding-bottom: 50px;

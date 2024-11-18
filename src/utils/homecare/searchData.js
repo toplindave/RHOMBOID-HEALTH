@@ -8,7 +8,7 @@ export const searchData = [
             },
             {
                 id: 2,
-                name: "Children care"
+                name: "Nannies"
             },
             {
                 id: 3,

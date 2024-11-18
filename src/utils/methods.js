@@ -8,4 +8,17 @@ export const formatDate = (dateString) => {
 
     return str;
 
-}
+};
+
+
+
+export function hasJustEmptyKey(obj, i) {
+  
+    if (obj.hasOwnProperty(i)) {
+      return true;
+    }else{
+      return false;
+  
+    }
+  
+  }

@@ -2,8 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { ReactComponent as CircleCheckMark } from "../../../../component/globals/icons/circle-check-regular.svg";
 import CaregiverData from "../../../../data/Caregiverdata.json";
 import { useContext, useEffect } from "react";
-import DataContext from "../../../../context/DataContext";
-import ProgressBar from "../../../../component/globals/progress-indicator/ProgressBar";
+import HomeCareContext from "../../../../context/HomeCareContext";
 
 
 
@@ -11,23 +10,39 @@ import ProgressBar from "../../../../component/globals/progress-indicator/Progre
 const FindCareConfirmation = () => {
 
 
-    const {progress} = useContext(DataContext);
-
+    const { id } = useParams();
 
     const innerStyle = {
         marginTop: "40px"
     }
 
-    // const {value1, value2, value3} = useParams();
+    const {adultCardValues, nannyCardValues, babysitterCardValues} = useContext(HomeCareContext);
+
+    useEffect(() => {
+
+        let values;
+
+        if(id.toLowerCase() === "adult-care"){
+            values = adultCardValues;
+        }
+        if(id.toLowerCase() === "nannies"){
+            values = nannyCardValues;
+        }
+        if(id.toLowerCase() === "babysitting"){
+            values = babysitterCardValues;
+        }
+
+
+
+        console.log(id, values);
+
+    }, [id, adultCardValues, nannyCardValues, babysitterCardValues])
 
 
 
     return (
         <div className="__care-section-1 container-care" style={innerStyle}>
 
-            <ProgressBar
-                value={progress}
-            />
             <div className="find-sections">
 
                 <div className="find-c-con">

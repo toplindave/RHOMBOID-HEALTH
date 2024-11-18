@@ -4,11 +4,14 @@ import { ReactComponent as Envelope } from "../../../../../component/globals/ico
 import { ReactComponent as Location } from "../../../../../component/globals/icons/locationDotRegular.svg";
 import { ReactComponent as AngleRight } from "../../../../../component/globals/icons/angleRightLight.svg";
 import EditPersonalInfo from "../../../../globals/modals/EditPersonalInfo";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Modal from "../../../../globals/modals/Modal";
 import EditEmail from "../../../../globals/modals/EditEmail";
 import ChangePasswordModal from "../../../../globals/modals/ChangePasswordModal";
 import CreateAddressModal from "../../../../globals/modals/CreateAddressModal";
+import DataContext from "../../../../../context/DataContext";
+import { addresses } from "../../../../../utils/addressData";
+import AddressProfileCard from "../profile-display-card/AddressProfileCard";
 
 
 
@@ -20,9 +23,12 @@ const PersonalInfoTab = (props) => {
     const { setBtnClass } = props;
 
 
+
+
     const [openInfo, setOpenInfo] = useState(false);
     const [openAdr, setOpenAdr] = useState(false);
     const [openEmail, setOpenEmail] = useState(false);
+    const [openDesc, setOpenDesc] = useState(false);
 
     const handleInfoClick = () => {
         setOpenInfo(false);
@@ -37,7 +43,14 @@ const PersonalInfoTab = (props) => {
     const handleEmailClick = () => {
         setOpenEmail(false);
     }
+    const handleDescClick = () => {
+        setOpenDesc(false);
+    }
 
+
+    const primaryAddress = addresses.find(a => a.primary);
+
+    // console.log(primaryAddress);
 
 
 
@@ -70,6 +83,15 @@ const PersonalInfoTab = (props) => {
                     modalBody={<CreateAddressModal closeModal={handleAdrClick} />}
                     modalType="form"
                     closeModal={handleAdrClick}
+
+                />
+            }
+            {
+                openDesc &&
+                <Modal
+                    modalBody={<span>{primaryAddress.description}</span>}
+                    modalType=""
+                    closeModal={handleDescClick}
 
                 />
             }
@@ -157,30 +179,90 @@ const PersonalInfoTab = (props) => {
                     <h1 className="h3-text font-weight-semi text-greenish">
                         Primary Address
                     </h1>
-                    <div className="__profile-display-card-sub-container">
-                        <div className="__profile-display-card display-f">
-                            <Location />
-                            <div className="__profile-display-primary-address">
-                                <p className="p-text text-greenish">
-                                    You have no saved addresses
-                                </p>
+
+                    {
+                        !primaryAddress ?
+                            <div className="__profile-display-card-sub-container">
+                                <div className="__profile-display-card display-f">
+                                    <Location />
+                                    <div className="__profile-display-primary-address">
+                                        <p className="p-text text-greenish">
+                                            You have no saved addresses
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="__edit-container">
+                                    <div
+                                        className="__edit display-f justify-space-between align-center"
+                                        onClick={() => setOpenAdr(true)}
+                                    >
+                                        <p className="normal-font-text font-weight-medium text-green mr-1">Add a primary address</p>
+                                        <AngleRight />
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="__edit-container">
-                            <div
-                                className="__edit display-f justify-space-between align-center"
-                                onClick={() => setOpenAdr(true)}
-                            >
-                                <p className="normal-font-text font-weight-medium text-green mr-1">Add a primary address</p>
-                                <AngleRight />
+
+                            :
+                            <div className="__profile-display-card-sub-container">
+
+                                <div className="__profile-display-card display-f">
+                                    <Location />
+                                    <div className="__profile-display-card-details">
+                                        <div className="lbl">
+                                            <p className="lbl-1 p-text text-greenish">Street:</p>
+                                            <p className="lbl-2 p-text font-weight-medium text-green">
+                                                {primaryAddress.street}
+                                            </p>
+                                        </div>
+                                        <div className="lbl">
+                                            <p className="lbl-1 p-text text-greenish">City:</p>
+                                            <p className="lbl-2 p-text font-weight-medium text-green">
+                                                {primaryAddress.city}
+
+                                            </p>
+                                        </div>
+                                        <div className="lbl">
+                                            <p className="lbl-1 p-text text-greenish">
+                                                State:
+                                            </p>
+                                            <p className="lbl-2 p-text font-weight-medium text-green">
+                                                {primaryAddress.state}
+
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div className="edit-container">
+                                    <div className="adr-desc"
+                                        onClick={() => setOpenDesc(true)}
+                                    >
+                                        Additional description
+                                    </div>
+
+                                    <div
+                                        className="edit display-f justify-space-between align-center"
+                                        onClick={() => setOpenAdr(true)}
+
+                                    >
+                                        <p className="normal-font-text font-weight-medium text-green mr-1">
+                                            Edit address
+                                        </p>
+                                        <AngleRight />
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-                    </div>
+
+                    }
+
+
+
+
                 </div>
 
-
             </div>
-
         </>
     )
 }

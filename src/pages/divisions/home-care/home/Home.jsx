@@ -18,6 +18,7 @@ import DataContext from "../../../../context/DataContext";
 import Paginate from "../../../../component/globals/paginate/Paginate";
 import { reviews } from "../../../../data/reviews";
 import { Link } from "react-router-dom";
+import HomeCareContext from "../../../../context/HomeCareContext";
 
 
 
@@ -30,6 +31,8 @@ const Home = () => {
 
   const { currentCity } = useContext(DataContext);
 
+  const { setSelectedLocation } = useContext(HomeCareContext);
+
   const [showAdult, setShowAdult] = useState(false);
   const [showLocation, setShowLocation] = useState(false);
 
@@ -38,22 +41,6 @@ const Home = () => {
   const [location, setLocation] = useState(null);
 
 
-  const [review, setReview] = useState(0);
-
-  function nextReview() {
-    if (review === 3) {
-      setReview(0);
-    } else {
-      setReview((prev) => prev + 1);
-    }
-  }
-  function previousReview() {
-    if (review === 0) {
-      setReview(3);
-    } else {
-      setReview((prev) => prev - 1);
-    }
-  }
 
   const handleAdult = () => {
     setShowAdult(true);
@@ -88,8 +75,26 @@ const Home = () => {
 
   const onChangeLocation = (e) => {
     const value = e.target.textContent;
+
     setLocation(value);
 
+    setSelectedLocation(value);
+
+  }
+
+
+  const setLink = (value) => {
+
+
+    if(value){
+      if(value.toLowerCase() === "adult care"){
+        return "adult-care";
+      }
+      return value.toLowerCase();
+
+    }
+    return "adult-care";
+    
   }
 
 
@@ -145,7 +150,7 @@ const Home = () => {
               </div>
               <Link 
                 className="bg-brown-green text-normalwhite font-weight-semi font-md"
-                to="/rhomboid/home-care/find-care"
+                to={`/rhomboid/home-care/find-care/${setLink(typeOfCare)}`}
               >
                 Find Care
               </Link>

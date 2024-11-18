@@ -127,6 +127,23 @@
                             margin-bottom: 5px;
                         }
                     }
+
+
+                    .lbl{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+    
+                        .lbl-1{
+                            width: 20%;
+    
+                        }
+    
+                        .lbl-2{
+                            width: 78%;
+    
+                        }
+                    }
                 }
             }
 
@@ -185,6 +202,40 @@
                         height: 12px;
                         fill: #0f7c62;
                     }
+                }
+            }
+
+
+            .edit-container{
+                width: 100%;
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+                padding: 0 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+    
+                .adr-desc{
+                    background: #B4CFA5;
+                    width: fit-content;
+                    padding: 5px 10px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+    
+                .edit{
+                    width: fit-content;
+                    cursor: pointer;
+    
+    
+                    svg {
+                        width: 15px;
+                        height: 15px;
+                        fill: #0f7c62;
+                    }
+    
                 }
             }
         }

@@ -1,9 +1,12 @@
 import { createContext, useEffect, useRef, useState } from 'react';
+import StoreManager from '../utils/StoreManager';
+
 
 
 export const DataContext = createContext({});
 
 export const DataProvider = ({ children }) => {
+
 
 
     const [user, setUser] = useState("Stout");
@@ -15,38 +18,28 @@ export const DataProvider = ({ children }) => {
     const [currentState, setCurrentState] = useState("");
     const [regionPending, setRegionPending] = useState(true);
 
+    // const [addressess, setAddresses] = useState(null);
 
 
-    
-    //confirmation
-    const [confirmation, setConfirmation] = useState(false);
-    const [isNavigate, setIsNavigate] = useState(false);
-    const [navDestination, setNavDestination] = useState("");
-    const [doubleBtn, setDoubleBtn] = useState(false);
+    // useEffect(() => {
+    //     const adrs = JSON.parse(StoreManager.getHomeAddress('addresses'));
 
+    //     if(adrs){
+    //         setAddresses(adrs);
+    //     }else{
+    //         setAddresses([])
+    //     }
 
-    //modals       
-    const [modalOpen, setModalOpen] = useState(false);
-
-    const [message, setMessage] = useState({
-        body: "",
-        type: ""
-    });
-
-
-    const closeModal = () => {
-        setModalOpen(false);
-    }
-
-
-    //indicator
-
-    const [progress, setProgress] = useState(0);
-    
+    // }, [])
 
 
 
 
+   
+
+
+
+ 
 
 
 
@@ -57,14 +50,7 @@ export const DataProvider = ({ children }) => {
             currentState, setCurrentState,
             regionPending, setRegionPending,
             user, setUser,
-            message, setMessage,
-            closeModal,
-            modalOpen, setModalOpen,
-            confirmation, setConfirmation,
-            isNavigate, setIsNavigate,
-            navDestination, setNavDestination,
-            doubleBtn, setDoubleBtn,
-            progress, setProgress
+                    
 
         }}
         >

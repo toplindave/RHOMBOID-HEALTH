@@ -31,8 +31,6 @@ const SessionManager = {
     },
 
 
-
-
 }
 
 export default SessionManager;

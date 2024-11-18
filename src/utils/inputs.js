@@ -137,9 +137,9 @@ export const addAddressInputs = [
 
      {
 
-          label: "Address Line 1",
-          name: "addressLine1",
-          placeholder: "Address Line 1",
+          label: "Street",
+          name: "street",
+          placeholder: "Street",
           isPassword: false,
           isNum: false,
           validate: true,
@@ -147,28 +147,7 @@ export const addAddressInputs = [
 
 
      },
-     {
-          label: "Address Line 2 (Optional)",
-          name: "addressLine2",
-          placeholder: "Address Line 2",
-          isPassword: false,
-          isNum: false,
-          validate: false,
-          errorMessage: "",
-
-
-     },
-     {
-          label: "Zip Code",
-          name: "postalCode",
-          placeholder: "Zip Code",
-          isPassword: false,
-          isNum: true,
-          validate: true,
-          errorMessage: "Please enter your 5-digit zip code",
-
-
-     },
+   
      {
           label: "City",
           name: "city",
@@ -180,7 +159,6 @@ export const addAddressInputs = [
 
 
      },
-
 
 
 
@@ -314,189 +292,153 @@ export const PersonalInfoInputs = [
 export const states = [
 
      {
-          name: "Alabama",
-          abbrev: "AL"
+          name: "Abuja",
+          abbrev: "FC"
      },
      {
-          name: "Alaska",
-          abbrev: "AK"
+          name: "Abia",
+          abbrev: "AB"
      },
      {
-          name: "Arizona",
-          abbrev: "AZ"
+          name: "Adamawa",
+          abbrev: "AD"
      },
      {
-          name: "California",
-          abbrev: "CA"
+          name: "Akwa Ibom",
+          abbrev: "Ak"
      },
      {
-          name: "Colorado",
-          abbrev: "CO"
+          name: "Anambra",
+          abbrev: "AN"
      },
      {
-          name: "Connecticut",
-          abbrev: "CT"
+          name: "bauchi",
+          abbrev: "BA"
      },
      {
-          name: "Delaware",
+          name: "Bayelsa",
+          abbrev: "By"
+     },
+     {
+          name: "Benue",
+          abbrev: "BE"
+     },
+     {
+          name: "Borno",
+          abbrev: "BO"
+     },
+     {
+          name: "Cross River",
+          abbrev: "CR"
+     },
+     {
+          name: "Delta",
           abbrev: "DE"
      },
      {
-          name: "District of Columbia",
-          abbrev: "DC"
-     },
-     {
-          name: "Georgia",
-          abbrev: "GA"
-     },
-     {
-          name: "Hawaii",
-          abbrev: "HI"
-     },
-     {
-          name: "Idaho",
-          abbrev: "ID"
-     },
-     {
-          name: "Illinois",
+          name: "Ebonyi",
           abbrev: "IL"
      },
      {
-          name: "Indiana",
-          abbrev: "IN"
+          name: "Edo",
+          abbrev: "ED"
      },
      {
-          name: "Iowa",
-          abbrev: "IA"
+          name: "Ekiti",
+          abbrev: "EK"
      },
      {
-          name: "Kansas",
-          abbrev: "KS"
+          name: "Enugu",
+          abbrev: "EN"
      },
      {
-          name: "Louisiana",
+          name: "Gombe",
+          abbrev: "GO"
+     },
+     {
+          name: "Imo",
+          abbrev: "IM"
+     },
+     {
+          name: "Jigawa",
+          abbrev: "JI"
+     },
+     {
+          name: "Kaduna",
+          abbrev: "KD"
+     },
+     {
+          name: "Kano",
+          abbrev: "KN"
+     },
+     {
+          name: "Katsina",
+          abbrev: "KT"
+     },
+     {
+          name: "Kebbi",
+          abbrev: "KE"
+     },
+     {
+          name: "Kogi",
+          abbrev: "KO"
+     },
+     {
+          name: "Kwara",
+          abbrev: "KW"
+     },
+     {
+          name: "Lagos",
           abbrev: "LA"
      },
      {
-          name: "Maine",
-          abbrev: "ME"
+          name: "Nassarawa",
+          abbrev: "NA"
      },
      {
-          name: "Maryland",
-          abbrev: "MD"
+          name: "Niger",
+          abbrev: "NI"
      },
      {
-          name: "Massachusetts",
-          abbrev: "MA"
+          name: "Ogun",
+          abbrev: "OG"
      },
      {
-          name: "Michigan",
-          abbrev: "MI"
+          name: "Ondo",
+          abbrev: "ON"
      },
      {
-          name: "Minnesota",
-          abbrev: "MN"
+          name: "Osun",
+          abbrev: "OS"
      },
      {
-          name: "Mississippi",
-          abbrev: "MS"
+          name: "Oyo",
+          abbrev: "OY"
      },
      {
-          name: "Missouri",
-          abbrev: "MO"
+          name: "Plateau",
+          abbrev: "PL"
      },
      {
-          name: "Montana",
-          abbrev: "MT"
-     },
-     {
-          name: "Nebraska",
-          abbrev: "NE"
-     },
-     {
-          name: "Nevada",
-          abbrev: "NV"
-     },
-     {
-          name: "New Hampshire",
-          abbrev: "NH"
-     },
-     {
-          name: "New Jersey",
-          abbrev: "NJ"
-     },
-     {
-          name: "New Mexico",
-          abbrev: "NM"
-     },
-     {
-          name: "New York",
-          abbrev: "NY"
-     },
-     {
-          name: "North Carolina",
-          abbrev: "NC"
-     },
-     {
-          name: "North Dakota",
-          abbrev: "ND"
-     },
-     {
-          name: "Oklahoma",
-          abbrev: "Ok"
-     },
-     {
-          name: "Oregon",
-          abbrev: "OR"
-     },
-     {
-          name: "Pennsylvania",
-          abbrev: "PA"
-     },
-     {
-          name: "Puerto Rico",
-          abbrev: "PR"
-     },
-     {
-          name: "Rhode Island",
+          name: "Rivers",
           abbrev: "RI"
      },
      {
-          name: "South Carolina",
-          abbrev: "South Dakota"
+          name: "Sokoto",
+          abbrev: "SO"
      },
      {
-          name: "Tennessee",
-          abbrev: "TN"
+          name: "Taraba",
+          abbrev: "TA"
      },
      {
-          name: "Texas",
-          abbrev: "TX"
+          name: "Yobe",
+          abbrev: "YO"
      },
      {
-          name: "Utah",
-          abbrev: "UT"
+          name: "Zamfara",
+          abbrev: "ZA"
      },
-     {
-          name: "Vermont",
-          abbrev: "VT"
-     },
-     {
-          name: "Virginia",
-          abbrev: "VA"
-     },
-     {
-          name: "West Virginia",
-          abbrev: "WV"
-     },
-     {
-          name: "Wisconsin",
-          abbrev: "WI"
-     },
-     {
-          name: "Wyoming",
-          abbrev: "WY"
-     },
-
+    
 
 ];

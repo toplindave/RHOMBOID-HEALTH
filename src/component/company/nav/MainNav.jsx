@@ -66,7 +66,7 @@ const MainNav = () => {
       </div>
       <ul className="text-normalblack display-f justify-space-between align-center font-weight-semi">
 
-        <Link to="/rhomboid/home-care" className="ml-4 font-md text-normalblack">Home Care</Link>
+        <Link to="/rhomboid/home-care" className="ml-4 font-md text-normalblack">Home care</Link>
 
         <Link to="" className="ml-4 font-md text-normalblack">Referral</Link>
 

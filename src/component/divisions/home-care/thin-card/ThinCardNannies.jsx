@@ -1,24 +1,23 @@
 import React, { useContext, useState, useEffect } from 'react'
 import ThinCardElement from './ThinCardElement';
 import { useNavigate } from 'react-router-dom';
-import { findCareOptions } from '../../../../utils/homecare/findCareData';
+import { nannyOptions } from '../../../../utils/homecare/findCareData';
+import CustomThinCardElement from './custom-thin-card/CustomThinCardElement';
 import HomeCareContext from '../../../../context/HomeCareContext';
 import DataContext from '../../../../context/DataContext';
 
 
 
 
+const ThinCardNannies = () => {
 
-const ThinCard = () => {
-
-    // const { handleOptionSelect, handleNext, handlePrev, optionData } = props;
-
+    
 
 
     const navigate = useNavigate();
 
     const { currentCity } = useContext(DataContext);
-    const { handleProgressIndicator, setAdultCardValues, selectedLocation } = useContext(HomeCareContext);
+    const { handleProgressIndicator, setNannyCardValues, selectedLocation } = useContext(HomeCareContext);
 
 
     const [option, setOption] = useState(1);
@@ -28,18 +27,19 @@ const ThinCard = () => {
     const [optionData3, setOptionData3] = useState(null);
 
 
-    const numberOfOptions = findCareOptions.length;
+    
+    const numberOfOptions = nannyOptions.length;
 
 
 
     const [values, setValues] = useState({
         value1: "",
         value2: "",
-        value3: "",
     });
 
+  const [items, setItems] = useState([]);
 
-    const [error, setError] = useState("");
+  const [error, setError] = useState("");
 
 
 
@@ -48,7 +48,7 @@ const ThinCard = () => {
 
 
     useEffect(() => {
-        const newOption = findCareOptions.filter(o => o.id === option);
+        const newOption = nannyOptions.filter(o => o.id === option);
         setOptionData(newOption[0]);
 
         if (newOption[0].id === 1) {
@@ -63,7 +63,7 @@ const ThinCard = () => {
     }, [option]);
 
 
-
+    
     const handleOptionSelect = (element) => {
 
         const getData = (opts) => {
@@ -95,17 +95,11 @@ const ThinCard = () => {
             setValues({ ...values, value1: element.text })
 
 
-        } else if (option === 2) {
-            const newOption = { ...optionData2, elements: getData(optionData2) };
-
-            setOptionData2(newOption);
-            setValues({ ...values, value2: element.text })
-
-        } else {
+        }  else {
             const newOption = { ...optionData3, elements: getData(optionData3) };
 
             setOptionData3(newOption);
-            setValues({ ...values, value3: element.text })
+            setValues({ ...values, value2: element.text })
 
 
         }
@@ -133,99 +127,101 @@ const ThinCard = () => {
 
     const handleNext = () => {
 
+
+
         if(values.value1 === "" && option === 1){
-            setError("Please select who needs care");
-            return;
-        }else if(values.value2 === "" && option === 2){
-            setError("Please select the kind of care you want");
-            return;
-        }
-        else if(values.value3 === "" && option === 3){
             setError("Please select how soon you need care");
             return;
-        }        
-        
-        else{
-
+        }else if(items.length === 0 && option === 2){
+            setError("Please add the age of who needs care");
+            return;
+        }
+        else if(values.value2 === "" && option === 3){
+            setError("Please indicate if you need any other type of care");
+            return;
+        } else{
 
             setError("");
 
-
             if (option === numberOfOptions) {
+                
+                const data = {
+                    ...values,
+                    items,
+                    location: selectedLocation ? selectedLocation : currentCity
+                };
 
-                const data = {...values, location: selectedLocation ? selectedLocation : currentCity}
+                setNannyCardValues(data);
 
-                setAdultCardValues(data);
-                // console.log(values)
-                // return;
-                navigate(`/rhomboid/home-care/find-care/adult-care/confirmation`);
+                navigate(`/rhomboid/home-care/find-care/nannies/confirmation`);
                 handleProgressIndicator(100);
-    
-    
+
+
             } else {
                 setOption(option + 1);
-    
+
                 handleProgressIndicator((prev) => (prev < 100 ? prev + (100 / numberOfOptions) : 0));
             }
+
         }
-
-
-       
-
-         
     }
 
-
-
+   
 
     return (
-        <>
-          
-            <div className='thin-card'>
-                <div className="thin-card-title">
-                    {optionData?.title}
-                </div>
 
-                <div className="thin-card-elements">
+        <div className='thin-card'>
+            <div className="thin-card-title">
+                {optionData?.title}
+            </div>
 
-                    {
-                        optionData?.elements.map((o, i) => (
-                            <ThinCardElement
-                                key={i}
-                                element={o}
-                                handleOptionSelect={handleOptionSelect}
-                            />
+            <div className="thin-card-elements">
 
-                        ))
-                    }
+                {
+                    optionData?.elements.length !== 0 ? 
+                    optionData?.elements.map((o, i) => (
+                        <ThinCardElement
+                            key={i}
+                            element={o}
+                            handleOptionSelect={handleOptionSelect}
+                        />
+
+                    ))
+
+                    : 
+                    <CustomThinCardElement
+                        items={items}
+                        setItems={setItems}
+                     />
+                }
 
 
-                </div>
+            </div>
 
-                {error !== "" && <span className='thin-card-msg'>{error}</span>}
+            {error !== "" && <span className='thin-card-msg'>{error}</span>}
 
-                <div className="thin-card-btns">
 
-                    {<div
-                        className="prev-btn"
-                        onClick={handlePrev}
-                    >
-                        Back
-                    </div>}
+            <div className="thin-card-btns">
 
-                    <div
-                        className="next-btn"
-                        onClick={handleNext}
+                {<div
+                    className="prev-btn"
+                    onClick={handlePrev}
+                >
+                    Back
+                </div>}
 
-                    >
-                        Next
-                    </div>
+                <div
+                    className="next-btn"
+                    onClick={handleNext}
 
+                >
+                    Next
                 </div>
 
             </div>
-        </>
+
+        </div>
     )
 }
 
-export default ThinCard;
+export default ThinCardNannies;
