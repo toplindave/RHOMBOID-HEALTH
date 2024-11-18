@@ -9,96 +9,78 @@ import Faq from "../../../../component/globals/images/faq.png";
 import SearchWithIcon from "../../../../component/globals/searchwithicon/SearchWithIcon";
 import FaqDatas from "../../../../data/FAQ/FaqData";
 import FaqDropDown from "../../../../component/FaqDropDown/FaqDropDown";
-import RatingCards from "../../../../data/ratingcard/RatingCards";
-import RatingCard from "../../../../component/ratingCard/RatingCard";
+// import RatingCards from "../../../../data/ratingcard/RatingCards";
+// import RatingCard from "../../../../component/ratingCard/RatingCard";
 import "../../../../styles/index.scss";
-import { useEffect, useState, useRef, useContext } from "react";
+import {
+  //  useEffect,
+  useState,
+  //  useRef,
+  useContext,
+} from "react";
 import { searchData } from "../../../../utils/homecare/searchData";
 import DataContext from "../../../../context/DataContext";
 import Paginate from "../../../../component/globals/paginate/Paginate";
 import { reviews } from "../../../../data/reviews";
 import { Link } from "react-router-dom";
 
-
-
-
-
 const Home = () => {
-
-
-  const homeRef = useRef();
+  // const homeRef = useRef();
 
   const { currentCity } = useContext(DataContext);
 
   const [showAdult, setShowAdult] = useState(false);
   const [showLocation, setShowLocation] = useState(false);
 
-
   const [typeOfCare, setTypeOfCare] = useState(null);
   const [location, setLocation] = useState(null);
 
+  // const [review, setReview] = useState(0);
 
-  const [review, setReview] = useState(0);
-
-  function nextReview() {
-    if (review === 3) {
-      setReview(0);
-    } else {
-      setReview((prev) => prev + 1);
-    }
-  }
-  function previousReview() {
-    if (review === 0) {
-      setReview(3);
-    } else {
-      setReview((prev) => prev - 1);
-    }
-  }
+  // function nextReview() {
+  //   if (review === 3) {
+  //     setReview(0);
+  //   } else {
+  //     setReview((prev) => prev + 1);
+  //   }
+  // }
+  // function previousReview() {
+  //   if (review === 0) {
+  //     setReview(3);
+  //   } else {
+  //     setReview((prev) => prev - 1);
+  //   }
+  // }
 
   const handleAdult = () => {
     setShowAdult(true);
     setShowLocation(false);
-  }
+  };
   const handleLocation = () => {
     setShowAdult(false);
     setShowLocation(true);
-  }
-
-
-
-
+  };
 
   function handleClickOutside() {
-
     if (showAdult || showLocation) {
       setShowLocation(false);
 
       setShowAdult(false);
-
     }
-
-  };
-
+  }
 
   const onChangeCare = (e) => {
     const value = e.target.textContent;
     setTypeOfCare(value);
-
-  }
+  };
 
   const onChangeLocation = (e) => {
     const value = e.target.textContent;
     setLocation(value);
-
-  }
-
-
-
+  };
 
   return (
-    <div
-      onClick={handleClickOutside}
-    >
+    <div onClick={handleClickOutside}>
       <div className="__care-section-1 container-care">
         <div className="__sub-section-1 bg-ash display-f justify-space-between">
           <div className="__sub-left">
@@ -112,7 +94,9 @@ const Home = () => {
 
             <div className="__floating bg-normalwhite display-f">
               <div className="__floating-input">
-                <p className="font-weight-normal font-md">What brings you here today?</p>
+                <p className="font-weight-normal font-md">
+                  What brings you here today?
+                </p>
                 <SearchWithIcon
                   img={<SearchIcon />}
                   text={"Adult care"}
@@ -123,9 +107,7 @@ const Home = () => {
                   action={handleAdult}
                   value={typeOfCare ? typeOfCare : "Adult care"}
                   onChange={onChangeCare}
-
                 />
-
               </div>
               <div className="__floating-input">
                 <p className="font-weight-normal font-md">Location</p>
@@ -139,19 +121,15 @@ const Home = () => {
                   action={handleLocation}
                   value={location ? location : currentCity ? currentCity : ""}
                   onChange={onChangeLocation}
-
                 />
-
               </div>
-              <Link 
+              <Link
                 className="bg-brown-green text-normalwhite font-weight-semi font-md"
                 to="/rhomboid/home-care/find-care"
               >
                 Find Care
               </Link>
             </div>
-
-
           </div>
           <div className="__sub-right">
             <img src={AdultCare} alt="adult care" />
@@ -211,7 +189,6 @@ const Home = () => {
         </div>
       </div>
 
-      
       <div className="__ratings bg-ash">
         <div className="__rating-top">
           <h3 className="h3-text font-weight-semi text-brown-green">
@@ -225,12 +202,10 @@ const Home = () => {
           <div className="__grid-box" />
 
           <Paginate data={reviews} />
-
-         
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;

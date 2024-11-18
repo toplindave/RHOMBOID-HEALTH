@@ -1,0 +1,53 @@
+.__topcare-section {
+  // background: blue;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1%;
+  border-bottom: 1px solid map-get($primarycolors, ash);
+  .__location-input-and-find-care-container {
+    width: 40%;
+    gap: 20px;
+    @include xl {
+      // background: teal;
+    }
+    @include lg {
+      // background: tan;
+      // width: 45%;
+      // gap: 30px;
+    }
+    @include md {
+      // background: thistle;
+      width: 55%;
+      gap: 8px;
+    }
+    @include sm {
+      width: 55%;
+      // background: tomato;
+      gap: 5px;
+    }
+
+    button {
+      width: 40%;
+      // background: #526354;
+      border: none;
+      padding: 1%;
+      // color: #ffffff;
+      outline: none;
+      @include xl {
+        // background: teal;
+      }
+      @include lg {
+        width: 45%;
+      }
+      @include md {
+        // background: thistle;
+        // padding: 1%;
+        // height: 20px;
+      }
+      @include sm {
+        // background: tomato;
+        // padding: 1%;
+      }
+    }
+  }
+}

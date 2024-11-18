@@ -12,7 +12,7 @@
 
 // components( button, card, navbar)
 // @import 'component/card';
-@import "stylescomponent/button";
+// @import "stylescomponent/button";
 // @import "stylescomponent/forminput";
 // @import "stylescomponent/searchinput";
 @import "stylescomponent/container";
@@ -30,17 +30,22 @@
 @import "../pages/divisions/home-care/profile/profile";
 @import "../pages/divisions/home-care/find-care/findCare";
 @import "../component/divisions/home-care/sign-in/sign-in-web";
-@import "../component/globals/contact-section//contact-section.scss";
-@import "../component/divisions/home-care/profile-tabs/personal-information/personal-info.scss";
-@import "../component/divisions/home-care/profile-tabs/addresses/addresses.scss";
-@import "../component/divisions/home-care/profile-tabs/wallet/wallet.scss";
-@import "../component/divisions/home-care/profile-tabs/security/security.scss";
-@import "../component/divisions/home-care/profile-tabs/privacy/privacy.scss";
-@import "../component/divisions/home-care/profile-tabs/profile-display-card/profile-display-card.scss";
+@import "../component/globals/contact-section/contact-section";
+@import "../component/divisions/home-care/profile-tabs/personal-information/personal-info";
+@import "../component/divisions/home-care/profile-tabs/addresses/addresses";
+@import "../component/divisions/home-care/profile-tabs/wallet/wallet";
+@import "../component/divisions/home-care/profile-tabs/security/security";
+@import "../component/divisions/home-care/profile-tabs/privacy/privacy";
+@import "../component/divisions/home-care/profile-tabs/profile-display-card/profile-display-card";
+@import "../component/globals/topcaresection/topcaresection";
+@import "../component/globals/careinfosection/careinfosection";
+@import "../pages/divisions/home-care/adult-care/adultcare";
 @import "stylescomponent/searchSlide";
-
+@import "../pages/divisions/home-care/find-care/findCare";
+@import "../pages/divisions/home-care/children-care/nannies/nannies";
+@import "../pages/divisions/home-care/children-care/babysitters/babysitters";
 // @import 'component/navbar';
 // @import 'component/badge';
+//   utilities ( margin, paddind, opacity)
 
-// utilities ( margin, paddind, opacity)
 @import "utilities";

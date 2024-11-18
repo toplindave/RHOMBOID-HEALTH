@@ -1,17 +1,18 @@
-import { useRef, useEffect } from "react";
+import {
+  useRef,
+  //  useEffect
+} from "react";
 import "../../../styles/index.scss";
 
 function SearchWithIcon(props) {
-
-  const { img, text, id, content, action, showContent, value, onChange } = props;
-
+  const { img, text, id, content, action, showContent, value, onChange } =
+    props;
 
   const openRef = useRef();
- 
+
   const handleSelectValue = (e) => {
     onChange(e);
-  }
-
+  };
 
   // useEffect(() => {
   //   function handleClickOutside(e){
@@ -19,7 +20,7 @@ function SearchWithIcon(props) {
   //     if(showContent && (e.target.toString() !== openRef.current.toString())){
   //       setShowContent(false);
   //     }
-      
+
   //   };
 
   //   document.addEventListener('mousedown', handleClickOutside);
@@ -29,10 +30,7 @@ function SearchWithIcon(props) {
 
   //   }
 
-
   // }, [showContent]);
-
-
 
   return (
     <div className="search-container-with-icon">
@@ -44,32 +42,24 @@ function SearchWithIcon(props) {
           onClick={() => action(id)}
           value={value}
           onChange={onChange}
-
         />
       </div>
 
-      {showContent &&
-        <div 
-          className="search-dropdown"
-          ref={openRef}
-
-        >
-          {(Array.isArray(content.content)) ?
-            content.content.map((c, index) => (
-              <span 
-                className="search-dropdown-item "
-                key={index}
-                onClick={handleSelectValue}
-              >
-                {c.name}
-              </span>
-            ))
-            :
-            content.content
-          }
+      {showContent && (
+        <div className="search-dropdown" ref={openRef}>
+          {Array.isArray(content.content)
+            ? content.content.map((c, index) => (
+                <span
+                  className="search-dropdown-item "
+                  key={index}
+                  onClick={handleSelectValue}
+                >
+                  {c.name}
+                </span>
+              ))
+            : content.content}
         </div>
-      }
-
+      )}
     </div>
   );
 }

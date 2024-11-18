@@ -41,36 +41,3 @@ $breakpoints: (
     @content;
   }
 }
-
-.responsive-test {
-  @include xs {
-    background-color: red;
-    width: 100%;
-    height: 100px;
-  }
-  @include sm {
-    background-color: blue;
-    width: 100%;
-    height: 100px;
-  }
-  @include md {
-    background-color: green;
-    width: 100%;
-    height: 100px;
-  }
-  @include lg {
-    background-color: purple;
-    width: 100%;
-    height: 100px;
-  }
-  @include xl {
-    background-color: orange;
-    width: 100%;
-    height: 100px;
-  }
-  @include breakpoint(1400px) {
-    background-color: pink;
-    width: 100%;
-    height: 100px;
-  }
-}

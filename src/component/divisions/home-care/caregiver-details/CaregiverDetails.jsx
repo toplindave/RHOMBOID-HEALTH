@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../../styles/index.scss";
 import { ReactComponent as Star } from "../../../../component/globals/icons/starSharpSolid.svg";
 import { ReactComponent as AngleLeft } from "../../../../component/globals/icons/angleLeftLight.svg";
@@ -10,10 +10,29 @@ import { useParams } from "react-router-dom";
 import Caregiverdata from "../../../../data/Caregiverdata.json";
 
 function CaregiverDetails() {
+  const [available, setAvailable] = useState(0);
   const { careGiverId } = useParams();
   const thisDetails = Caregiverdata.find((detail) => detail.id === careGiverId);
   // const { firstName } = thisDetails;
   // console.log("render", firstName);
+  const slicedavalability1 = thisDetails.availabilities.slice(0, 4);
+  const slicedavalability2 = thisDetails.availabilities.slice(4, 8);
+
+  function nextAvalability() {
+    if (available === 1) {
+      setAvailable(0);
+    } else {
+      setAvailable((prev) => prev + 1);
+    }
+  }
+  function previousAvalability() {
+    if (available === 0) {
+      setAvailable(1);
+    } else {
+      setAvailable((prev) => prev - 1);
+    }
+  }
+
   return (
     <div className="__caregiver-details-container">
       <div className="__caregiver-details-sub-container">
@@ -56,10 +75,10 @@ function CaregiverDetails() {
         </div>
         <div className="__caregiver-details-date-section display-f justify-space-between bg-ash">
           <div className="__direction-btn">
-            <AngleLeft />
+            <AngleLeft onClick={previousAvalability} />
           </div>
           <div className="__caregiver-details-date-grid-container">
-            {thisDetails.availabilities.map((availability, id) => (
+            {/* {thisDetails.availabilities.map((availability, id) => (
               <div
                 className="__caregiver-details-available-date-and-time"
                 key={id}
@@ -75,10 +94,53 @@ function CaregiverDetails() {
                   ))}
                 </ul>
               </div>
-            ))}
+            ))} */}
+
+            {available === 0 &&
+              slicedavalability1.map((availability, id) => (
+                <div
+                  className="__caregiver-details-available-date-and-time"
+                  key={id}
+                >
+                  <h4 className=" normal-font-text font-weight-semi">
+                    {availability.day}
+                  </h4>
+                  <ul>
+                    {availability.shifts.map((shift, id) => (
+                      <li
+                        className=" normal-font-text text-brown-green"
+                        key={id}
+                      >
+                        {shift}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            {available === 1 &&
+              slicedavalability2.map((availability, id) => (
+                <div
+                  className="__caregiver-details-available-date-and-time"
+                  key={id}
+                >
+                  <h4 className=" normal-font-text font-weight-semi">
+                    {availability.day}
+                  </h4>
+                  <ul>
+                    {availability.shifts.map((shift, id) => (
+                      <li
+                        className=" normal-font-text text-brown-green"
+                        key={id}
+                      >
+                        {shift}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
           </div>
           <div className="__direction-btn">
-            <AngleRight />
+            <AngleRight onClick={nextAvalability} />
           </div>
         </div>
         <div className="__caregiver-details-about-section-all">
