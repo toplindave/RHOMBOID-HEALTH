@@ -3649,7 +3649,6 @@ svg {
 
 .__caregiver-profile {
   padding: 50px 3.5%;
-  border: 1px solid red;
 }
 @media screen and (max-width: 1200px) and (min-width: 960px) {
   .__caregiver-profile {

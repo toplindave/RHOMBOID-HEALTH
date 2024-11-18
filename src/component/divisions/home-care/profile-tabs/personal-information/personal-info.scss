@@ -1,257 +1,260 @@
 .info-display-section-1 {
-  width: 100%;
-  //   display: none;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 20px;
-  padding: 20px 30px 50px 30px;
-  background: #f1f1f1;
+    width: 100%;
+    //   display: none;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 20px 30px 50px 30px;
+    background: #f1f1f1;
 
-  // background: thistle;
-  @include lg {
-    // gap: 10px;
-    display: block;
-  }
-
-  @include md {
-    display: block;
-  }
-
-  @include sm {
-    display: block;
-  }
-
-  .__profile-display-card-container {
+    // background: thistle;
     @include lg {
-      margin-bottom: 30px;
+        // gap: 10px;
+        display: block;
     }
 
     @include md {
-      margin-bottom: 30px;
+        display: block;
     }
 
     @include sm {
-      margin-bottom: 30px;
+        display: block;
     }
 
-    h1 {
-      margin-bottom: 20px;
-
-      @include md {
-        margin-bottom: 10px;
-      }
-
-      @include sm {
-        margin-bottom: 10px;
-      }
-    }
-
-    .__profile-display-card-sub-container {
-      background: #e3e5e0;
-      // height: 75%;
-      height: 250px;
-      position: relative;
-
-      @include xl {
-        height: 190px;
-      }
-
-      @include lg {
-        height: 190px;
-      }
-
-      @include md {
-        height: 170px;
-      }
-
-      @include sm {
-        height: 150px;
-      }
-
-      .__profile-display-card {
-        gap: 25px;
-        padding: 4% 6%;
-
+    .__profile-display-card-container {
         @include lg {
-          gap: 40px;
-          padding: 3%;
+            margin-bottom: 30px;
         }
 
         @include md {
-          gap: 40px;
-          padding: 2%;
+            margin-bottom: 30px;
         }
 
         @include sm {
-          gap: 40px;
-          padding: 2%;
+            margin-bottom: 30px;
         }
 
-        svg {
-          width: 60px;
-          height: 60px;
-          fill: #526354;
-          margin-top: 0px;
+        h1 {
+            margin-bottom: 20px;
 
-          @include lg {
-            width: 70px;
-            height: 70px;
-          }
+            @include md {
+                margin-bottom: 10px;
+            }
 
-          @include md {
-            width: 70px;
-            height: 70px;
-          }
+            @include sm {
+                margin-bottom: 10px;
+            }
         }
 
-        .__profile-display-card-details {
-          width: 100%;
+        .__profile-display-card-sub-container {
+            background: #e3e5e0;
+            // height: 75%;
+            height: 250px;
+            position: relative;
 
-          .__first-name {
-            p {
-              margin-bottom: 5px;
+            @include xl {
+                height: 190px;
             }
 
-            margin-bottom: 10px;
-          }
-
-          .__last-name {
-            p {
-              margin-bottom: 5px;
+            @include lg {
+                height: 190px;
             }
 
-            margin-bottom: 10px;
-          }
-
-          .__phone-number {
-            p {
-              margin-bottom: 5px;
+            @include md {
+                height: 170px;
             }
-          }
-        }
-      }
+
+            @include sm {
+                height: 150px;
+            }
+
+            .__profile-display-card {
+                gap: 25px;
+                padding: 4% 6%;
+
+                @include lg {
+                    gap: 40px;
+                    padding: 3%;
+                }
+
+                @include md {
+                    gap: 40px;
+                    padding: 2%;
+                }
+
+                @include sm {
+                    gap: 40px;
+                    padding: 2%;
+                }
+
+                svg {
+                    width: 60px;
+                    height: 60px;
+                    fill: #526354;
+                    margin-top: 0px;
+
+                    @include lg {
+                        width: 70px;
+                        height: 70px;
+                    }
+
+                    @include md {
+                        width: 70px;
+                        height: 70px;
+                    }
+                }
+
+                .__profile-display-card-details {
+                    width: 100%;
+
+                    .__first-name {
+                        p {
+                            margin-bottom: 5px;
+                        }
+
+                        margin-bottom: 10px;
+                    }
+
+                    .__last-name {
+                        p {
+                            margin-bottom: 5px;
+                        }
+
+                        margin-bottom: 10px;
+                    }
+
                     .__phone-number {
                         p {
                             margin-bottom: 5px;
                         }
                     }
-
-
-                    .lbl{
-                        display: flex;
-                        justify-content: space-between;
-                        margin-bottom: 10px;
-    
-                        .lbl-1{
-                            width: 20%;
-    
-                        }
-    
-                        .lbl-2{
-                            width: 78%;
-    
-                        }
-                    }
                 }
             }
 
-      .__profile-display-email-address {
-        width: 100%;
-
+            .__phone-number {
                 p {
-                    margin-bottom: 15px;
-                }
-            }
-
-            .__profile-display-primary-address {
-                width: 100%;
-            }
-
-            .__edit-container {
-                // display: flex;
-                // justify-content: right;
-                position: absolute;
-                bottom: 20px;
-                right: 6%;
-
-                @include lg {
-                    bottom: 10px;
-                    right: 3%;
-                }
-
-                @include md {
-                    bottom: 10px;
-                    right: 3%;
-                }
-
-                @include md {
-                    bottom: 10px;
-                    right: 2%;
-                }
-
-                .__edit {
-                    margin-top: 20px;
-                    align-items: center;
-
-                    //   background: gray;
-                    // width: 50%;
-                    @include xl {
-                        // width: 70%;
-                    }
-
-                    @include lg {
-                        // width: 80%;
-                    }
-
-                    cursor: pointer;
-
-                    svg {
-                        width: 12px;
-                        height: 12px;
-                        fill: #0f7c62;
-                    }
+                    margin-bottom: 5px;
                 }
             }
 
 
-            .edit-container{
-                width: 100%;
-                position: absolute;
-                right: 0;
-                bottom: 20px;
-                padding: 0 15px;
+            .lbl {
                 display: flex;
                 justify-content: space-between;
-                align-items: center;
-    
-                .adr-desc{
-                    background: #B4CFA5;
-                    width: fit-content;
-                    padding: 5px 10px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    cursor: pointer;
+                margin-bottom: 10px;
+
+                .lbl-1 {
+                    width: 20%;
+
                 }
-    
-                .edit{
-                    width: fit-content;
-                    cursor: pointer;
-    
-    
-                    svg {
-                        width: 15px;
-                        height: 15px;
-                        fill: #0f7c62;
-                    }
-    
+
+                .lbl-2 {
+                    width: 78%;
+
                 }
             }
         }
     }
 
+    .__profile-display-email-address {
+        width: 100%;
 
-    
+        p {
+            margin-bottom: 15px;
+        }
+    }
+
+    .__profile-display-primary-address {
+        width: 100%;
+    }
+
+    .__edit-container {
+        // display: flex;
+        // justify-content: right;
+        position: absolute;
+        bottom: 20px;
+        right: 6%;
+
+        @include lg {
+            bottom: 10px;
+            right: 3%;
+        }
+
+        @include md {
+            bottom: 10px;
+            right: 3%;
+        }
+
+        @include md {
+            bottom: 10px;
+            right: 2%;
+        }
+
+        .__edit {
+            margin-top: 20px;
+            align-items: center;
+
+            //   background: gray;
+            // width: 50%;
+            @include xl {
+                // width: 70%;
+            }
+
+            @include lg {
+                // width: 80%;
+            }
+
+            cursor: pointer;
+
+            svg {
+                width: 12px;
+                height: 12px;
+                fill: #0f7c62;
+            }
+        }
+    }
+
+
+    .edit-container {
+        width: 100%;
+        position: absolute;
+        right: 0;
+        bottom: 20px;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .adr-desc {
+            background: #B4CFA5;
+            width: fit-content;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .edit {
+            width: fit-content;
+            cursor: pointer;
+
+
+            svg {
+                width: 15px;
+                height: 15px;
+                fill: #0f7c62;
+            }
+
+        }
+    }
+
+
+
+
+
 }
 
-.info-display-section-1.active-tab{
+
+
+.info-display-section-1.active-tab {
     display: grid;
 }
